@@ -99,9 +99,9 @@ Pause::Suspend
 
 ; relaciones
 
-::.ly::\,\land\,
+::.ly::\,\land\,{Space}
 
-::.lo::\,\lor\,
+::.lo::\,\lor\,{Space}
 
 ::.=::\equiv{Space}
 
@@ -353,7 +353,9 @@ Pause::Suspend
 
 ; otros
 
-::yy::\,&\,{Space}
+::.y::{Space}&{Space}
+
+::yy::{Space}&&{Space}
 
 ç::
 Send {Right}{Right}

@@ -9,151 +9,47 @@ Pause::Suspend
 
 ; rincónmatemático
 
-::rtt::[tex][/tex]{left 6}
+::tx::[tex][/tex]{left 6}
 
-::Rtt::[center][tex]\displaystyle{{}`n`n{}}[/tex][/center]{left 17}
+::Tx::[center][tex]\displaystyle{{}`n`n{}}[/tex][/center]{left 17}
 
 
 
 ; bbcode
 
-::bbi::[i][/i]{left 4}
+::ibb::[i][/i]{left 4}
 
 ::bbb::[b][/b]{left 4}
 
-::bbu::[url=][/url]{left 7}
+::ubb::[url=][/url]{left 7}
 
-::bbc::[code][/code]{left 7}
+::codbb::[code][/code]{left 7}
 
-::bbr::[color=][/color]{left 9}
+::colbb::[color=][/color]{left 9}
 
 
 
 ; entornos comunes
 
-::..ca::\begin{{}cases{}}\end{{}cases{}}{left 11}
+::casñ::\begin{{}cases{}}\end{{}cases{}}{left 11}
 
-::..al::\begin{{}align*{}}\end{{}align*{}}{left 12}
+::aliñ::\begin{{}align*{}}\end{{}align*{}}{left 12}
 
-::..bm::\begin{{}bmatrix{}}\end{{}bmatrix{}}{left 13}
+::bmñ::\begin{{}bmatrix{}}\end{{}bmatrix{}}{left 13}
 
-::..pm::\begin{{}pmatrix{}}\end{{}pmatrix{}}{left 13}
+::pmñ::\begin{{}pmatrix{}}\end{{}pmatrix{}}{left 13}
 
-::..sm::\begin{{}smallmatrix{}}\end{{}smallmatrix{}}{left 18}
+::smñ::\begin{{}smallmatrix{}}\end{{}smallmatrix{}}{left 17}
 
-::..ar::\begin{{}array{}}{{}{}}{{}{}}\end{{}array{}}{left 14}
-
-
-
-; operadores grandes
-
-::..s::\sum_{{}{}}{left 1}
-
-::..i::\int_{{}{}}{left 1}
-
-::..pr::\prod_{{}{}}{left 1}
-
-::..u::\bigcup_{{}{}}{left 1}
-
-::..n::\bigcap_{{}{}}{left 1}
-
-::..+::\bigoplus_{{}{}}{left 1} ; debe ir antes de .+
-
-
-
-; operadores pequeños
-
-::.pd::\partial{Space}
-
-::.+::\oplus{Space}
-
-::.*::\cdot{Space}
-
-::.re::\operatorname{{}Re{}}
-
-::.im::\operatorname{{}Im{}}
-
-::.lm::\lim_{{}{}}{left 1}
-
-::.li::\liminf_{{}{}}{left 1}
-
-::.ls::\limsup_{{}{}}{left 1}
-
-::.un::\cup_{{}{}}{left 1}
-
-::.in::\cap_{{}{}}{left 1}
-
-::.-::\setminus{Space}
-
-::.CC::{^}\complement{Space}
-
-::.fa::\forall{Space}
-
-::.ex::\exists{Space}
-
-::.ne::\nexists{Space}
-
-::.x::\times{Space}
-
-
-
-; relaciones
-
-::.ly::\,\land\,{Space}
-
-::.lo::\,\lor\,{Space}
-
-::.=::\equiv{Space}
-
-::.<::\leqslant{Space}
-
-::.>::\geqslant{Space}
-
-::.ss::\subset{Space}
-
-::.sn::\subsetneq{Space}
-
-::.Ss::\supset{Space}
-
-::.Sn::\supsetneq{Space}
-
-::.di::\mid{Space}
-
-::.nd::\nmid{Space}
-
-
-
-; construcciones comunes
-
-::.fr::\frac{{}{}}{{}{}}{left 3}
-
-::.bi::\binom{{}{}}{{}{}}{left 3}
-
-::.at::\atop{Space}
-
-::.sp::,\,{Space}
-
-::.q::,\quad{Space}
-
-::.tt::\text{{}{Space}{Space}{}}{left 2}
-
-::.cd::\cdots{Space}
-
-::.ld::\ldots{Space}
-
-::.dd::\ddots{Space}
-
-::.lt::\limits_{{}{}}{left 1}
-
-::.nl::\nolimits_{{}{}}{left 1}
+::arrñ::\begin{{}array{}}{{}{}}{{}{}}\end{{}array{}}{left 14}
 
 
 
 ; símbolos comunes
 
-::.es::\emptyset{Space}
+::0ñ::\emptyset{Space}
 
-::.oo::\infty{Space}
+::ooñ::\infty{Space}
 
 
 
@@ -193,167 +89,277 @@ Pause::Suspend
 
 ; letras griegas
 
-::gga::\alpha{Space}
+::gañ::\alpha{Space}
 
-::ggb::\beta{Space}
+::gbñ::\beta{Space}
 
-::ggB::\Beta{Space}
+::gBñ::\Beta{Space}
 
-::ggg::\gamma{Space}
+::ggñ::\gamma{Space}
 
-::ggG::\Gamma{Space}
+::gGñ::\Gamma{Space}
 
-::ggd::\delta{Space}
+::gdñ::\delta{Space}
 
-::ggD::\Delta{Space}
+::gDñ::\Delta{Space}
 
-::gge::\epsilon{Space}
+::geñ::\epsilon{Space}
 
-::ggh::\eta{Space}
+::getñ::\eta{Space}
 
-::ggk::\kappa{Space}
+::gkñ::\kappa{Space}
 
-::ggr::\rho{Space}
+::grñ::\rho{Space}
 
-::gvr::\varrho{Space}
+::gvrñ::\varrho{Space}
 
-::ggt::\theta{Space}
+::gthñ::\theta{Space}
 
-::ggT::\Theta{Space}
+::gThñ::\Theta{Space}
 
-::gt::\tau{Space} ; esta línea debe ir después de ggt
+::gtñ::\tau{Space}
 
-::ggf::\phi{Space}
+::gfñ::\phi{Space}
 
-::gvf::\varphi{Space}
+::gvfñ::\varphi{Space}
 
-::ggF::\Phi{Space}
+::gFñ::\Phi{Space}
 
-::ggz::\zeta{Space}
+::gzñ::\zeta{Space}
 
-::ggl::\lambda{Space}
+::glñ::\lambda{Space}
 
-::ggL::\Lambda{Space}
+::gLñ::\Lambda{Space}
 
-::ggs::\sigma{Space}
+::gsñ::\sigma{Space}
 
-::ggS::\Sigma{Space}
+::gSñ::\Sigma{Space}
 
-::ggc::\chi{Space}
+::gcñ::\chi{Space}
 
-::ggo::\omega{Space}
+::goñ::\omega{Space}
 
-::ggO::\Omega{Space}
+::gOñ::\Omega{Space}
 
-::ggp::\psi{Space}
+::gpsñ::\psi{Space}
 
-::ggP::\Psi{Space}
+::gPsñ::\Psi{Space}
 
-::gp::\pi{Space} ; esta línea debe ir después de ggp
+::gpñ::\pi{Space}
 
-::gP::\Pi{Space} ; esta línea debe ir después de ggP
+::gPñ::\Pi{Space}
 
-::ggx::\xi{Space}
+::gxñ::\xi{Space}
 
-::ggX::\Xi{Space}
+::gXñ::\Xi{Space}
 
-::ggn::\nu{Space}
+::gnñ::\nu{Space}
 
-::ggm::\mu{Space}
+::gmñ::\mu{Space}
 
 
 
 ; letras hebreas
 
-::hha::\aleph{Space}
+::hañ::\aleph{Space}
 
-::hhb::\beth{Space}
+::hbñ::\beth{Space}
 
 
 
 ; delimitadores
 
-::.pa::\left(\right){left 7}
+::Pañ::\left(\{!}\{!}\left(\right)\{!}\{!}\right){left 18}
 
-::.Pa::\left(\{!}\{!}\left(\right)\{!}\{!}\right){left 18}
+::pañ::\left(\right){left 7}
 
-::.co::\left[\right]{left 7}
+::Coñ::\left[\{!}\{!}\left[\right]\{!}\{!}\right]{left 18}
 
-::.Co::\left[\{!}\{!}\left[\right]\{!}\{!}\right]{left 18}
+::coñ::\left[\right]{left 7}
 
-::.ll::\left\{{}\right\{}}{left 8}
+::Llñ::\left\{{}\{!}\{!}\left\{{}\right\{}}\{!}\{!}\right\{}}{left 20}
 
-::.Ll::\left\{{}\{!}\{!}\left\{{}\right\{}}\{!}\{!}\right\{}}{left 20}
+::llñ::\left\{{}\right\{}}{left 8}
 
-::.an::\langle{Space}{Space}\rangle{left 8}
+::anñ::\langle{Space}{Space}\rangle{left 8}
 
-::.An::\left\langle{Space}{Space}\right\rangle{left 14}
+::Anñ::\left\langle{Space}{Space}\right\rangle{left 14}
 
-::.fl::\lfloor{Space}{Space}\rfloor{left 8}
+::flñ::\lfloor{Space}{Space}\rfloor{left 8}
 
-::.cl::\lceil{Space}{Space}\rceil{left 7}
+::clñ::\lceil{Space}{Space}\rceil{left 7}
 
-::.ab::\left|\right|{left 7}
+::abñ::\left|\right|{left 7}
 
-::.Ab::\left\|\right\|{left 8}
+::Abñ::\left\|\right\|{left 8}
 
 
 
 ; flechas
 
-::.to::\to{Space}
+::toñ::\to{Space}
 
-::.To::\longrightarrow{Space}
+::Toñ::\longrightarrow{Space}
 
-::.mt::\mapsto{Space}
+::mtñ::\mapsto{Space}
 
-::.ii::\iff{Space}
+::ssiñ::\iff{Space}
 
-::.Ii::\Leftrightarrow{Space}
+::Ssiñ::\Leftrightarrow{Space}
 
-::.ip::\implies{Space}
+::impñ::\implies{Space}
 
-::.Ip::\Rightarrow{Space}
+::Impñ::\Rightarrow{Space}
 
-::.ib::\impliedby{Space}
+::imbñ::\impliedby{Space}
 
-::.Ib::\Leftarrow{Space}
+::Imbñ::\Leftarrow{Space}
 
 
 
 ; formato
 
-::.op::\operatorname{{}{}}{left 1}
+::opñ::\operatorname{{}{}}{left 1}
 
-::.bf::\mathbf{{}{}}{left 1}
+::bfñ::\mathbf{{}{}}{left 1}
 
-::.rm::\mathrm{{}{}}{left 1}
+::rmñ::\mathrm{{}{}}{left 1}
 
-::.fk::\mathfrak{{}{}}{left 1}
+::fkñ::\mathfrak{{}{}}{left 1}
 
-::.ca::\mathcal{{}{}}{left 1}
+::cañ::\mathcal{{}{}}{left 1}
 
-::.sc::\mathscr{{}{}}{left 1}
+::scñ::\mathscr{{}{}}{left 1}
 
-::.ul::\underline{{}{}}{left 1}
+::ulñ::\underline{{}{}}{left 1}
 
-::.ol::\overline{{}{}}{left 1}
+::colñ::{{}\color{{}{}}{{}{}}{}}{left 4}  ; debe ir antes de olñ
 
-::.ub::\underbrace{{}{}}{{}{}}{left 3}
+::olñ::\overline{{}{}}{left 1}
 
-::.ob::\overbrace{{}{}}{{}{}}{left 3}
+::ubñ::\underbrace{{}{}}{{}{}}{left 3}
 
-::.os::\overset{{}{}}{{}{}}{left 3}
+::obñ::\overbrace{{}{}}{{}{}}{left 3}
 
-::.cc::{{}\color{{}{}}{{}{}}{}}{left 4}
+::osñ::\overset{{}{}}{{}{}}{left 3}
 
-::.bb::\bbox[5px,border:2px solid]{{}{}}{left 1}
+::bbñ::\bbox[5px,border:2px solid]{{}{}}{left 1}
+
+
+
+; construcciones comunes
+
+::fñ::\frac{{}{}}{{}{}}{left 3}
+
+::biñ::\binom{{}{}}{{}{}}{left 3}
+
+::atñ::\atop{Space}
+
+::,ñ::,\,{Space}
+
+::spñ::\,{Space}
+
+::qqñ::\qquad{Space}
+
+::,qñ::,\quad{Space}
+
+::qñ::\quad{Space} ; debe ir después de qqñ y ,qñ
+
+::ññ::\text{{}{Space}{Space}{}}{left 2}
+
+::cdñ::\cdots{Space}
+
+::ldñ::\ldots{Space}
+
+::ddñ::\ddots{Space}
+
+::ltñ::\limits_{{}{}}{left 1}
+
+::nlñ::\nolimits_{{}{}}{left 1}
+
+
+
+; relaciones
+
+::lyñ::\,\land\,{Space}
+
+::loñ::\,\lor\,{Space}
+
+::==::\equiv{Space}
+
+::<ñ::\leqslant{Space}
+
+::>ñ::\geqslant{Space}
+
+::ssñ::\subset{Space}
+
+::snñ::\subsetneq{Space}
+
+::Ssñ::\supset{Space}
+
+::Snñ::\supsetneq{Space}
+
+::ndñ::\nmid{Space} ; debe ir antes de dñ
+
+::dñ::\mid{Space}
+
+
+
+; operadores pequeños
+
+::ppñ::\partial{Space}
+
+::++::\oplus{Space}
+
+::..::\cdot{Space}
+
+::reñ::\operatorname{{}Re{}}
+
+::imñ::\operatorname{{}Im{}}
+
+::lñ::\lim_{{}{}}{left 1}
+
+::liñ::\liminf_{{}{}}{left 1}
+
+::lsñ::\limsup_{{}{}}{left 1}
+
+::uñ::\cup_{{}{}}{left 1}
+
+::nñ::\cap_{{}{}}{left 1}
+
+::--::\setminus{Space}
+
+::cc::{^}\complement{Space}
+
+::fañ::\forall{Space}
+
+::exñ::\exists{Space}
+
+::nexñ::\nexists{Space}
+
+::xx::\times{Space}
+
+
+
+; operadores grandes
+
+::sñ::\sum_{{}{}}{left 1}
+
+::iñ::\int_{{}{}}{left 1}
+
+::pñ::\prod_{{}{}}{left 1}
+
+::Uñ::\bigcup_{{}{}}{left 1}
+
+::Nñ::\bigcap_{{}{}}{left 1}
+
+::+ñ::\bigoplus_{{}{}}{left 1}
 
 
 
 ; otros
 
-::.y::{Space}&{Space}
+::yñ::{Space}&{Space}
 
 ::yy::{Space}&&{Space}
 

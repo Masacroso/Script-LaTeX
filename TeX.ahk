@@ -289,13 +289,9 @@ Pause::Suspend
 
 ::atñ::\atop{Space}
 
-::,ñ::,\,{Space}
-
 ::spñ::\,{Space}
 
 ::qqñ::\qquad{Space}
-
-::,qñ::,\quad{Space}
 
 ::qñ::\quad{Space}
 
@@ -333,9 +329,9 @@ Pause::Suspend
 
 ::Snñ::\supsetneq{Space}
 
-::ndñ::\nmid{Space}
+::n/ñ::\nmid{Space}
 
-::dñ::\mid{Space}
+::/ñ::\mid{Space}
 
 ::ninñ::\notin{Space}
 
@@ -346,6 +342,8 @@ Pause::Suspend
 ; operadores pequeños
 
 ::nabñ::\nabla{Space}
+
+::vpdñ::\frac{{}\mathrm{{}d{}}{}}{{}\mathrm{{}d{}}{}}{left 1}
 
 ::pdñ::\partial{Space}
 

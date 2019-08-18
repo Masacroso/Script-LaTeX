@@ -111,7 +111,7 @@ Pause::Suspend
 
 ::grñ::\rho{Space}
 
-::gvrñ::\varrho{Space}
+::vgrñ::\varrho{Space}
 
 ::gthñ::\theta{Space}
 
@@ -121,7 +121,7 @@ Pause::Suspend
 
 ::gfñ::\phi{Space}
 
-::gvfñ::\varphi{Space}
+::vgfñ::\varphi{Space}
 
 ::gFñ::\Phi{Space}
 
@@ -251,6 +251,10 @@ Pause::Suspend
 
 ::fñ::\frac{{}{}}{{}{}}{left 3}
 
+::vsqñ::\sqrt[]{}}{}}{left 3}
+
+::sqñ::\sqrt{}}{}}{left 1}
+
 ::biñ::\binom{{}{}}{{}{}}{left 3}
 
 ::atñ::\atop{Space}
@@ -319,7 +323,11 @@ Pause::Suspend
 
 ::lñ::\lim_{{}{}}{left 1}
 
+::vliñ::\varliminf_{{}{}}{left 1}
+
 ::liñ::\liminf_{{}{}}{left 1}
+
+::vlsñ::\varlimsup_{{}{}}{left 1}
 
 ::lsñ::\limsup_{{}{}}{left 1}
 
@@ -339,6 +347,10 @@ Pause::Suspend
 
 ::xx::\times{Space}
 
+::oñ::\odot{Space}
+
+::cñ::\circ{Space}
+
 
 
 ; operadores grandes
@@ -355,6 +367,11 @@ Pause::Suspend
 
 ::+ñ::\bigoplus_{{}{}}{left 1}
 
+::lYñ::\bigwedge_{{}{}}{left 1}
+
+::lOñ::\bigvee_{{}{}}{left 1}
+
+::Oñ::\bigodot_{{}{}}{left 1}
 
 
 ; otros

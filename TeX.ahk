@@ -41,6 +41,12 @@ Pause::Suspend
 
 ::bmñ::\begin{{}bmatrix{}}\end{{}bmatrix{}}{left 13}
 
+::Bmñ::\begin{{}Bmatrix{}}\end{{}Bmatrix{}}{left 13}
+
+::vmñ::\begin{{}vmatrix{}}\end{{}vmatrix{}}{left 13}
+
+::Vmñ::\begin{{}Vmatrix{}}\end{{}Vmatrix{}}{left 13}
+
 ::pmñ::\begin{{}pmatrix{}}\end{{}pmatrix{}}{left 13}
 
 ::smñ::\begin{{}smallmatrix{}}\end{{}smallmatrix{}}{left 17}
@@ -144,6 +150,8 @@ Pause::Suspend
 ::gpsñ::\psi{Space}
 
 ::gPsñ::\Psi{Space}
+
+::vgpñ::\varpi{Space}
 
 ::gpñ::\pi{Space}
 
@@ -251,6 +259,10 @@ Pause::Suspend
 
 ::opñ::\operatorname{{}{}}{left 1}
 
+::bbñ::\mathbb{{}{}}{left 1}
+
+::sfñ::\mathsf{{}{}}{left 1}
+
 ::bfñ::\mathbf{{}{}}{left 1}
 
 ::rmñ::\mathrm{{}{}}{left 1}
@@ -273,7 +285,7 @@ Pause::Suspend
 
 ::osñ::\overset{{}{}}{{}{}}{left 3}
 
-::bbñ::\bbox[5px,border:2px solid]{{}{}}{left 1}
+::boxñ::\bbox[5px,border:2px solid]{{}{}}{left 1}
 
 
 
@@ -303,10 +315,13 @@ Pause::Suspend
 
 ::ddñ::\ddots{Space}
 
+::vdñ::\vdots{Space}
+
 ::ltñ::\limits_{{}{}}{left 1}
 
 ::nlñ::\nolimits_{{}{}}{left 1}
 
+::stñ::\substack{{}{}}{left 1}
 
 
 ; relaciones
@@ -337,6 +352,12 @@ Pause::Suspend
 
 ::inñ::\in{Space}
 
+::apñ::\approx{Space}
+
+::thñ::\therefore{Space}
+
+::bcñ::\because{Space}
+
 
 
 ; operadores pequeños
@@ -364,6 +385,8 @@ Pause::Suspend
 ::vlsñ::\varlimsup_{{}{}}{left 1}
 
 ::lsñ::\limsup_{{}{}}{left 1}
+
+::vuñ::\sqcup_{{}{}}{left 1}
 
 ::uñ::\cup_{{}{}}{left 1}
 
@@ -397,9 +420,15 @@ Pause::Suspend
 
 ::iñ::\int_{{}{}}{left 1}
 
+::cpñ::\coprod_{{}{}}{left 1}
+
 ::pñ::\prod_{{}{}}{left 1}
 
+::vUñ::\bigcup{Space}
+
 ::Uñ::\bigcup_{{}{}}{left 1}
+
+::vNñ::\bigcap{Space}
 
 ::Nñ::\bigcap_{{}{}}{left 1}
 
@@ -416,6 +445,10 @@ Pause::Suspend
 
 
 ; otros
+
+::hh::\hline{Space}
+
+::vv::\vline{Space}
 
 ::yñ::{Space}&{Space}
 

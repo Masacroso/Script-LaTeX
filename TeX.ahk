@@ -347,7 +347,7 @@ Pause::Suspend
 
 ::nabñ::\nabla{Space}
 
-::ppñ::\partial{Space}
+::pdñ::\partial{Space}
 
 ::++::\oplus{Space}
 
@@ -423,29 +423,14 @@ Pause::Suspend
 
 ::yy::{Space}&&{Space}
 
-ç::
-Send {Right}{Right}
-Hotstring("Reset")
-return
+ç::Send {Right}{Right}
 
-+ç::
-Send {Left}{Left}
-Hotstring("Reset")
-return
++ç::Send {Left}{Left}
 
-^ç::
-Send {End}\\{Enter}
-Hotstring("Reset")
-return
+^ç::Send {End}\\{Enter}
 
-º::\
+º::Send \
 
-$_::
-Send _{{}{}}{left 1}
-Hotstring("Reset")
-return
+$_::Send _{{}{}}{left 1}
 
-$^::
-Send {^}{{}{}}{left 1}
-Hotstring("Reset")
-return
+$^::Send {^}{{}{}}{left 1}

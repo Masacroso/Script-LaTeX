@@ -353,7 +353,7 @@ Pause::Suspend
 
 ; otros
 
-::.y::\,&\,{Space}
+::yy::\,&\,{Space}
 
 ç::
 Send {Right}{Right}

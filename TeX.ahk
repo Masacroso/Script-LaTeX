@@ -7,8 +7,6 @@ Pause::Suspend
 
 #Hotstring c * ?
 
-; dividir en grupos: operadores, operadores grandes, formato, letras griegas, relaciones, entornos, organizadores, otros símbolos, delimitadores, otras construcciones, bbcode
-
 ; rincónmatemático
 
 ::rtt::[tex][/tex]{left 6}
@@ -367,7 +365,7 @@ Send {Left}{Left}
 Hotstring("Reset")
 return
 
-Ç::
+^ç::
 Send {End}\\{Enter}
 Hotstring("Reset")
 return

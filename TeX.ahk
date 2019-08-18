@@ -3,9 +3,13 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; el orden de las secuencias importa: si una secuencia está contenida dentro de otra entonces la contenida siempre debe ir después
+
 Pause::Suspend
 
 #Hotstring c * ?
+
+
 
 ; rincónmatemático
 
@@ -42,14 +46,6 @@ Pause::Suspend
 ::smñ::\begin{{}smallmatrix{}}\end{{}smallmatrix{}}{left 17}
 
 ::arrñ::\begin{{}array{}}{{}{}}{{}{}}\end{{}array{}}{left 14}
-
-
-
-; símbolos comunes
-
-::0ñ::\emptyset{Space}
-
-::ooñ::\infty{Space}
 
 
 
@@ -103,15 +99,19 @@ Pause::Suspend
 
 ::gDñ::\Delta{Space}
 
+::vgeñ::\varepsilon{Space}
+
 ::geñ::\epsilon{Space}
 
 ::getñ::\eta{Space}
 
 ::gkñ::\kappa{Space}
 
+::vgrñ::\varrho{Space}
+
 ::grñ::\rho{Space}
 
-::vgrñ::\varrho{Space}
+::vgthñ::\vartheta{Space}
 
 ::gthñ::\theta{Space}
 
@@ -119,9 +119,9 @@ Pause::Suspend
 
 ::gtñ::\tau{Space}
 
-::gfñ::\phi{Space}
-
 ::vgfñ::\varphi{Space}
+
+::gfñ::\phi{Space}
 
 ::gFñ::\Phi{Space}
 
@@ -157,6 +157,10 @@ Pause::Suspend
 
 ::gmñ::\mu{Space}
 
+::guñ::\upsilon{Space}
+
+::gUñ::\Upsilon{Space}
+
 
 
 ; letras hebreas
@@ -164,6 +168,22 @@ Pause::Suspend
 ::hañ::\aleph{Space}
 
 ::hbñ::\beth{Space}
+
+::hgñ::\gimel{Space}
+
+::hdñ::\dalet{Space}
+
+
+
+; símbolos comunes
+
+::0ñ::\emptyset{Space}
+
+::ooñ::\infty{Space}
+
+::psñ::\wp{Space}
+
+::1ñ::\mathbf{{}1{}}_{{}{}}{left 1}
 
 
 
@@ -203,6 +223,8 @@ Pause::Suspend
 
 ::mtñ::\mapsto{Space}
 
+::mTñ::\longmapsto{Space}
+
 ::ssiñ::\iff{Space}
 
 ::Ssiñ::\Leftrightarrow{Space}
@@ -214,6 +236,14 @@ Pause::Suspend
 ::imbñ::\impliedby{Space}
 
 ::Imbñ::\Leftarrow{Space}
+
+::upñ::\uparrow{Space}
+
+::doñ::\downarrow{Space}
+
+::neañ::\nearrow{Space}
+
+::seañ::\searrow{Space}
 
 
 
@@ -233,7 +263,7 @@ Pause::Suspend
 
 ::ulñ::\underline{{}{}}{left 1}
 
-::colñ::{{}\color{{}{}}{{}{}}{}}{left 4}  ; debe ir antes de olñ
+::colñ::{{}\color{{}{}}{{}{}}{}}{left 4}
 
 ::olñ::\overline{{}{}}{left 1}
 
@@ -267,7 +297,7 @@ Pause::Suspend
 
 ::,qñ::,\quad{Space}
 
-::qñ::\quad{Space} ; debe ir después de qqñ y ,qñ
+::qñ::\quad{Space}
 
 ::ññ::\text{{}{Space}{Space}{}}{left 2}
 
@@ -303,13 +333,19 @@ Pause::Suspend
 
 ::Snñ::\supsetneq{Space}
 
-::ndñ::\nmid{Space} ; debe ir antes de dñ
+::ndñ::\nmid{Space}
 
 ::dñ::\mid{Space}
+
+::ninñ::\notin{Space}
+
+::inñ::\in{Space}
 
 
 
 ; operadores pequeños
+
+::nabñ::\nabla{Space}
 
 ::ppñ::\partial{Space}
 
@@ -347,7 +383,11 @@ Pause::Suspend
 
 ::xx::\times{Space}
 
-::oñ::\odot{Space}
+::bxñ::\boxtimes{Space}
+
+::oxñ::\otimes{Space}
+
+::o.ñ::\odot{Space}
 
 ::cñ::\circ{Space}
 
@@ -371,7 +411,10 @@ Pause::Suspend
 
 ::lOñ::\bigvee_{{}{}}{left 1}
 
-::Oñ::\bigodot_{{}{}}{left 1}
+::O.ñ::\bigodot_{{}{}}{left 1}
+
+::Oxñ::\bigotimes_{{}{}}{left 1}
+
 
 
 ; otros

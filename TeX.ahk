@@ -39,17 +39,17 @@ Pause::Suspend
 
 ; funciones comunes
 
+::ct¡::\cot{Space}
+
+::cs¡::\cosec{Space}
+
+::sec¡::\sec{Space}
+
 ::as¡::\arcsin{Space}
 
 ::ac¡::\arccos{Space}
 
 ::at¡::\arctan{Space}
-
-::ash¡::\arcsinh{Space}
-
-::ach¡::\arccosh{Space}
-
-::ath¡::\arctanh{Space}
 
 ::s¡::\sin{Space}
 
@@ -68,12 +68,6 @@ Pause::Suspend
 ::l¡::\ln{Space}
 
 ::e¡::\exp\left(\right){left 7}
-
-::ct¡::\cot{Space}
-
-::cs¡::\cosec{Space}
-
-::sec¡::\sec{Space}
 
 
 

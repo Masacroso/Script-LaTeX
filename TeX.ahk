@@ -5,7 +5,11 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; el orden de las secuencias importa: si una secuencia está contenida dentro de otra entonces la contenida siempre debe ir después
 
+Suspend On
+
 Pause::Suspend
+
+!Space::Suspend
 
 #Hotstring c * ?
 
@@ -253,6 +257,10 @@ Pause::Suspend
 
 ::seañ::\searrow{Space}
 
+::hlañ::\hookleftarrow{Space}
+
+::hrañ::\hookrightarrow{Space}
+
 
 
 ; formato
@@ -286,6 +294,32 @@ Pause::Suspend
 ::osñ::\overset{{}{}}{{}{}}{left 3}
 
 ::boxñ::\bbox[5px,border:2px solid]{{}{}}{left 1}
+
+
+
+; acentos
+
+::wt'::\widetilde{{}{}}{left 1}
+
+::t'::\tilde{Space}
+
+::wh'::\widehat{{}{}}{left 1}
+
+::h'::\hat{Space}
+
+::ddd'::\dddot{Space}
+
+::dd'::\ddot{Space}
+
+::d'::\dot{Space}
+
+::b'::\bar{Space}
+
+::vv'::\overrightarrow{{}{}}{left 1}
+
+::v'::\vec{Space}
+
+::c'::\check{Space}
 
 
 
@@ -418,6 +452,14 @@ Pause::Suspend
 
 ::sñ::\sum_{{}{}}{left 1}
 
+::iiiñ::\iiint_{{}{}}{left 1}
+
+::oiiñ::\oiint{Space}
+
+::iiñ::\iint_{{}{}}{left 1}
+
+::oiñ::\oint{Space}
+
 ::iñ::\int_{{}{}}{left 1}
 
 ::cpñ::\coprod_{{}{}}{left 1}
@@ -446,9 +488,11 @@ Pause::Suspend
 
 ; otros
 
-::hh::\hline{Space}
+::,,::$$`n`n$${left 3}
 
-::vv::\vline{Space}
+::hhñ::\hline{Space}
+
+::vvñ::\vline{Space}
 
 ::yñ::{Space}&{Space}
 
@@ -462,6 +506,6 @@ Pause::Suspend
 
 º::Send \
 
-$_::Send _{{}{}}{left 1}
+!-::Send _{{}{}}{left 1}
 
-$^::Send {^}{{}{}}{left 1}
+!`::Send {^}{{}{}}{left 1}

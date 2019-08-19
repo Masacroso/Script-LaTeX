@@ -299,6 +299,8 @@ Pause::Suspend
 
 ; formato
 
+::vopñ::\operatorname*{{}{}}_{{}{}}{left 1}
+
 ::opñ::\operatorname{{}{}}{left 1}
 
 ::bbñ::\mathbb{{}{}}{left 1}
@@ -400,9 +402,13 @@ Pause::Suspend
 
 ::==::\equiv{Space}
 
-::<ñ::\leqslant{Space}
+::<=::\leqslant{Space}
 
-::>ñ::\geqslant{Space}
+::>=::\geqslant{Space}
+
+::<ñ::\prec{Space}
+
+::>ñ::\succ{Space}
 
 ::ssñ::\subset{Space}
 
@@ -479,6 +485,8 @@ Pause::Suspend
 ::o.ñ::\odot{Space}
 
 ::cñ::\circ{Space}
+
+::dñ::\,\mathrm d{Space}
 
 
 

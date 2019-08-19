@@ -37,6 +37,46 @@ Pause::Suspend
 
 
 
+; funciones comunes
+
+::as¡::\arcsin{Space}
+
+::ac¡::\arccos{Space}
+
+::at¡::\arctan{Space}
+
+::ash¡::\arcsinh{Space}
+
+::ach¡::\arccosh{Space}
+
+::ath¡::\arctanh{Space}
+
+::s¡::\sin{Space}
+
+::c¡::\cos{Space}
+
+::t¡::\tan{Space}
+
+::sh¡::\sinh{Space}
+
+::ch¡::\cosh{Space}
+
+::th¡::\tanh{Space}
+
+::vl¡::\log_{{}{}}{left 1}
+
+::l¡::\ln{Space}
+
+::e¡::\exp\left(\right){left 7}
+
+::ct¡::\cot{Space}
+
+::cs¡::\cosec{Space}
+
+::sec¡::\sec{Space}
+
+
+
 ; entornos comunes
 
 ::casñ::\begin{{}cases{}}\end{{}cases{}}{left 11}
@@ -249,9 +289,9 @@ Pause::Suspend
 
 ::Imbñ::\Leftarrow{Space}
 
-::upñ::\uparrow{Space}
+::uañ::\uparrow{Space}
 
-::doñ::\downarrow{Space}
+::dañ::\downarrow{Space}
 
 ::neañ::\nearrow{Space}
 

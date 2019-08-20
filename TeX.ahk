@@ -439,7 +439,7 @@ Pause::Suspend
 
 ::Ssñ::\supset{Space}
 
-::vSnñ::\supsetneq{Space}
+::Snñ::\supsetneq{Space}
 
 ::n|ñ::\nmid{Space}
 
@@ -457,9 +457,9 @@ Pause::Suspend
 
 ::fañ::\forall{Space}
 
-::exñ::\exists{Space}
-
 ::nexñ::\nexists{Space}
+
+::exñ::\exists{Space}
 
 
 

@@ -63,7 +63,7 @@ Pause::Suspend
 
 
 
-; Funciones matemáticas
+; Funciones comunes
 
 ::vsq¡::\sqrt[]{}}{}}{left 3}
 
@@ -175,28 +175,6 @@ Pause::Suspend
 
 
 
-; Entornos
-
-::casñ::\begin{{}cases{}}\end{{}cases{}}{left 11}
-
-::aliñ::\begin{{}align*{}}\end{{}align*{}}{left 12}
-
-::bmñ::\begin{{}bmatrix{}}\end{{}bmatrix{}}{left 13}
-
-::Bmñ::\begin{{}Bmatrix{}}\end{{}Bmatrix{}}{left 13}
-
-::vmñ::\begin{{}vmatrix{}}\end{{}vmatrix{}}{left 13}
-
-::Vmñ::\begin{{}Vmatrix{}}\end{{}Vmatrix{}}{left 13}
-
-::pmñ::\begin{{}pmatrix{}}\end{{}pmatrix{}}{left 13}
-
-::smñ::\begin{{}smallmatrix{}}\end{{}smallmatrix{}}{left 17}
-
-::arrñ::\begin{{}array{}}{{}{}}{{}{}}\end{{}array{}}{left 14}
-
-
-
 ; Letras griegas
 
 ::gañ::\alpha{Space}
@@ -291,11 +269,33 @@ Pause::Suspend
 
 
 
+; Entornos
+
+::casñ::\begin{{}cases{}}\end{{}cases{}}{left 11}
+
+::aliñ::\begin{{}align*{}}\end{{}align*{}}{left 12}
+
+::bmñ::\begin{{}bmatrix{}}\end{{}bmatrix{}}{left 13}
+
+::Bmñ::\begin{{}Bmatrix{}}\end{{}Bmatrix{}}{left 13}
+
+::vmñ::\begin{{}vmatrix{}}\end{{}vmatrix{}}{left 13}
+
+::Vmñ::\begin{{}Vmatrix{}}\end{{}Vmatrix{}}{left 13}
+
+::pmñ::\begin{{}pmatrix{}}\end{{}pmatrix{}}{left 13}
+
+::smñ::\begin{{}smallmatrix{}}\end{{}smallmatrix{}}{left 17}
+
+::arrñ::\begin{{}array{}}{{}{}}{{}{}}\end{{}array{}}{left 14}
+
+
+
 ; Objetos matemáticos comunes
 
 ::0ñ::\emptyset{Space}
 
-::ooñ::\infty{Space} ; por su forma
+::ooñ::\infty{Space} ; por su forma semejante
 
 ::cdñ::\cdots{Space}
 
@@ -417,7 +417,7 @@ Pause::Suspend
 
 
 
-; Relaciones
+; Relaciones y lógica
 
 ::==::\equiv{Space}
 
@@ -441,9 +441,9 @@ Pause::Suspend
 
 ::vSnñ::\supsetneq{Space}
 
-::n/ñ::\nmid{Space}
+::n|ñ::\nmid{Space}
 
-::/ñ::\mid{Space}
+::|ñ::\mid{Space}
 
 ::ninñ::\notin{Space}
 
@@ -455,9 +455,15 @@ Pause::Suspend
 
 ::bcñ::\because{Space}
 
+::fañ::\forall{Space}
+
+::exñ::\exists{Space}
+
+::nexñ::\nexists{Space}
 
 
-; Operadores pequeños
+
+; Operadores pequeños y otras funciones
 
 ::++::\oplus{Space}
 
@@ -491,15 +497,9 @@ Pause::Suspend
 
 ::uñ::\cup_{{}{}}{left 1}
 
-::nñ::\cap_{{}{}}{left 1} ; por su forma
+::nñ::\cap_{{}{}}{left 1} ; por su forma semejante
 
 ::Cñ::{^}\complement{Space}
-
-::fañ::\forall{Space}
-
-::exñ::\exists{Space}
-
-::nexñ::\nexists{Space}
 
 ::bxñ::\boxtimes{Space}
 
@@ -553,7 +553,7 @@ Pause::Suspend
 
 
 
-; Otras construcciones muy comunes
+; Otras construcciones comunes
 
 ::fñ::\frac{{}{}}{{}{}}{left 3}
 

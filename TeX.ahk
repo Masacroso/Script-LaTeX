@@ -65,9 +65,9 @@ Pause::Suspend
 
 ; Funciones comunes
 
-::vsq¡::\sqrt[]{}}{}}{left 3}
+::vsq¡::\sqrt[]{{}{}}{left 3}
 
-::sq¡::\sqrt{}}{}}{left 1}
+::sq¡::\sqrt{{}{}}{left 1}
 
 ::fl¡::\lfloor{Space}{Space}\rfloor{left 8}
 
@@ -271,23 +271,23 @@ Pause::Suspend
 
 ; Entornos
 
-::casñ::\begin{{}cases{}}\end{{}cases{}}{left 11}
+::casñ::\begin{{}cases{}}`n`n\end{{}cases{}}{left 12}
 
-::aliñ::\begin{{}align*{}}\end{{}align*{}}{left 12}
+::aliñ::\begin{{}align*{}}`n`n\end{{}align*{}}{left 13}
 
-::bmñ::\begin{{}bmatrix{}}\end{{}bmatrix{}}{left 13}
+::bmñ::\begin{{}bmatrix{}}`n`n\end{{}bmatrix{}}{left 14}
 
-::Bmñ::\begin{{}Bmatrix{}}\end{{}Bmatrix{}}{left 13}
+::Bmñ::\begin{{}Bmatrix{}}`n`n\end{{}Bmatrix{}}{left 14}
 
-::vmñ::\begin{{}vmatrix{}}\end{{}vmatrix{}}{left 13}
+::vmñ::\begin{{}vmatrix{}}`n`n\end{{}vmatrix{}}{left 14}
 
-::Vmñ::\begin{{}Vmatrix{}}\end{{}Vmatrix{}}{left 13}
+::Vmñ::\begin{{}Vmatrix{}}`n`n\end{{}Vmatrix{}}{left 14}
 
-::pmñ::\begin{{}pmatrix{}}\end{{}pmatrix{}}{left 13}
+::pmñ::\begin{{}pmatrix{}}`n`n\end{{}pmatrix{}}{left 14}
 
 ::smñ::\begin{{}smallmatrix{}}\end{{}smallmatrix{}}{left 17}
 
-::arrñ::\begin{{}array{}}{{}{}}{{}{}}\end{{}array{}}{left 14}
+::arrñ::\begin{{}array{}}{{}{}}`n`n\end{{}array{}}{left 14}
 
 
 
@@ -365,7 +365,7 @@ Pause::Suspend
 
 ; Otros formatos
 
-::vopñ::\operatorname*{{}{}}_{{}{}}{left 1}
+::vopñ::\operatorname*{{}{}}_{{}{}}{left 4}
 
 ::opñ::\operatorname{{}{}}{left 1}
 
@@ -493,11 +493,11 @@ Pause::Suspend
 
 ::lsñ::\limsup_{{}{}}{left 1}
 
-::vuñ::\sqcup_{{}{}}{left 1}
+::vuñ::\sqcup{Space}
 
-::uñ::\cup_{{}{}}{left 1}
+::uñ::\cup{Space}
 
-::nñ::\cap_{{}{}}{left 1} ; por su forma semejante
+::nñ::\cap{Space} ; por su forma semejante
 
 ::Cñ::{^}\complement{Space}
 
@@ -516,6 +516,12 @@ Pause::Suspend
 
 
 ; Operadores grandes
+
+::O+::\bigoplus_{{}{}}{left 1}
+
+::O.::\bigodot_{{}{}}{left 1}
+
+::Ox::\bigotimes_{{}{}}{left 1}
 
 ::sñ::\sum_{{}{}}{left 1}
 
@@ -541,15 +547,9 @@ Pause::Suspend
 
 ::Nñ::\bigcap_{{}{}}{left 1}
 
-::+ñ::\bigoplus_{{}{}}{left 1}
-
 ::bwñ::\bigwedge_{{}{}}{left 1}
 
 ::bvñ::\bigvee_{{}{}}{left 1}
-
-::O.ñ::\bigodot_{{}{}}{left 1}
-
-::Oxñ::\bigotimes_{{}{}}{left 1}
 
 
 

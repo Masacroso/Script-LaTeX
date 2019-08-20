@@ -167,7 +167,7 @@ Pause::Suspend
 
 ::b'::\bar{Space}
 
-::vv'::\overrightarrow{{}{}}{left 1}
+::vv'::\overrightarrow{{}{}}{left 1} ; como variación de "\vec"
 
 ::v'::\vec{Space}
 
@@ -295,7 +295,7 @@ Pause::Suspend
 
 ::0ñ::\emptyset{Space}
 
-::ooñ::\infty{Space}
+::ooñ::\infty{Space} ; por su forma
 
 ::cdñ::\cdots{Space}
 
@@ -391,9 +391,9 @@ Pause::Suspend
 
 ::osñ::\overset{{}{}}{{}{}}{left 3}
 
-::hhñ::\hline{Space}
+::hlñ::\hline{Space}
 
-::vvñ::\vline{Space}
+::vlñ::\vline{Space}
 
 ::yyñ::{Space}&&{Space} ; castellanizado
 
@@ -425,9 +425,9 @@ Pause::Suspend
 
 ::>=::\geqslant{Space}
 
-::lyñ::\,\land\,{Space}
+::lyñ::\,\land\,{Space} ; castellanizado
 
-::loñ::\,\lor\,{Space}
+::loñ::\,\lor\,{Space} ; castellanizado
 
 ::<ñ::\prec{Space}
 
@@ -491,7 +491,7 @@ Pause::Suspend
 
 ::uñ::\cup_{{}{}}{left 1}
 
-::nñ::\cap_{{}{}}{left 1}
+::nñ::\cap_{{}{}}{left 1} ; por su forma
 
 ::Cñ::{^}\complement{Space}
 
@@ -511,7 +511,7 @@ Pause::Suspend
 
 ::dñ::\,\mathrm d{Space}
 
-::psñ::\wp{Space}
+::wpñ::\wp{Space}
 
 
 

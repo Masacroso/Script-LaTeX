@@ -3,27 +3,53 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-; el orden de las secuencias importa: si una secuencia está contenida dentro de otra entonces la contenida siempre debe ir después
+
+; El script se inicia en modo suspendido gracias a la siguiente línea, para activarlo basta pulsar la tecla de pausa
+; o la combinación Alt+Espacio
 
 Suspend On
+
+
+
+; Hotkeys
 
 Pause::Suspend
 
 !Space::Suspend
 
+ç::Send {Right}{Right}
+
++ç::Send {Left}{Left}
+
+^ç::Send {End}\\{Enter}
+
+º::Send \
+
+!-::Send _{{}{}}{left 1}
+
+!`::Send {^}{{}{}}{left 1}
+
+
+
+; El orden en el que aparecen las hotstrings en la siguiente lista importa: si una hotstring está contenida dentro de otra entonces la contenida siempre debe ir después
+
+; A partir de aquí todos son hotstrings, y la siguiente línea define las opciones globales para todas ellas
+
 #Hotstring c * ?
 
 
 
-; rincónmatemático
+; Etiquetas del foro de rincónmatemático y de MSE
 
 ::tx::[tex][/tex]{left 6}
 
 ::Tx::[center][tex]\displaystyle{{}`n`n{}}[/tex][/center]{left 17}
 
+::,,::$$`n`n$${left 3}
 
 
-; bbcode
+
+; Etiquetas de bbcode
 
 ::ibb::[i][/i]{left 4}
 
@@ -37,7 +63,15 @@ Pause::Suspend
 
 
 
-; funciones comunes
+; Funciones matemáticas
+
+::vsq¡::\sqrt[]{}}{}}{left 3}
+
+::sq¡::\sqrt{}}{}}{left 1}
+
+::fl¡::\lfloor{Space}{Space}\rfloor{left 8}
+
+::cl¡::\lceil{Space}{Space}\rceil{left 7}
 
 ::ct¡::\cot{Space}
 
@@ -69,31 +103,15 @@ Pause::Suspend
 
 ::e¡::\exp\left(\right){left 7}
 
+::1¡::\mathbf{{}1{}}_{{}{}}{left 1}
 
+::a¡::\left|\right|{left 7}
 
-; entornos comunes
-
-::casñ::\begin{{}cases{}}\end{{}cases{}}{left 11}
-
-::aliñ::\begin{{}align*{}}\end{{}align*{}}{left 12}
-
-::bmñ::\begin{{}bmatrix{}}\end{{}bmatrix{}}{left 13}
-
-::Bmñ::\begin{{}Bmatrix{}}\end{{}Bmatrix{}}{left 13}
-
-::vmñ::\begin{{}vmatrix{}}\end{{}vmatrix{}}{left 13}
-
-::Vmñ::\begin{{}Vmatrix{}}\end{{}Vmatrix{}}{left 13}
-
-::pmñ::\begin{{}pmatrix{}}\end{{}pmatrix{}}{left 13}
-
-::smñ::\begin{{}smallmatrix{}}\end{{}smallmatrix{}}{left 17}
-
-::arrñ::\begin{{}array{}}{{}{}}{{}{}}\end{{}array{}}{left 14}
+::n¡::\left\|\right\|{left 8}
 
 
 
-; letras de conjuntos
+; Notaciones de conjuntos matemáticos comunes
 
 ::RR::\Bbb R{Space}
 
@@ -127,7 +145,59 @@ Pause::Suspend
 
 
 
-; letras griegas
+; Acentos y formatos similares
+
+::ol'::\overline{{}{}}{left 1}
+
+::ul'::\underline{{}{}}{left 1}
+
+::wt'::\widetilde{{}{}}{left 1}
+
+::t'::\tilde{Space}
+
+::wh'::\widehat{{}{}}{left 1}
+
+::h'::\hat{Space}
+
+::ddd'::\dddot{Space}
+
+::dd'::\ddot{Space}
+
+::d'::\dot{Space}
+
+::b'::\bar{Space}
+
+::vv'::\overrightarrow{{}{}}{left 1}
+
+::v'::\vec{Space}
+
+::c'::\check{Space}
+
+
+
+; Entornos
+
+::casñ::\begin{{}cases{}}\end{{}cases{}}{left 11}
+
+::aliñ::\begin{{}align*{}}\end{{}align*{}}{left 12}
+
+::bmñ::\begin{{}bmatrix{}}\end{{}bmatrix{}}{left 13}
+
+::Bmñ::\begin{{}Bmatrix{}}\end{{}Bmatrix{}}{left 13}
+
+::vmñ::\begin{{}vmatrix{}}\end{{}vmatrix{}}{left 13}
+
+::Vmñ::\begin{{}Vmatrix{}}\end{{}Vmatrix{}}{left 13}
+
+::pmñ::\begin{{}pmatrix{}}\end{{}pmatrix{}}{left 13}
+
+::smñ::\begin{{}smallmatrix{}}\end{{}smallmatrix{}}{left 17}
+
+::arrñ::\begin{{}array{}}{{}{}}{{}{}}\end{{}array{}}{left 14}
+
+
+
+; Letras griegas
 
 ::gañ::\alpha{Space}
 
@@ -209,7 +279,7 @@ Pause::Suspend
 
 
 
-; letras hebreas
+; Letras hebreas
 
 ::hañ::\aleph{Space}
 
@@ -221,67 +291,63 @@ Pause::Suspend
 
 
 
-; símbolos comunes
+; Objetos matemáticos comunes
 
 ::0ñ::\emptyset{Space}
 
 ::ooñ::\infty{Space}
 
-::psñ::\wp{Space}
+::cdñ::\cdots{Space}
 
-::1ñ::\mathbf{{}1{}}_{{}{}}{left 1}
+::ldñ::\ldots{Space}
+
+::ddñ::\ddots{Space}
+
+::vdñ::\vdots{Space}
 
 
 
-; delimitadores
+; Delimitadores
 
-::Pañ::\left(\{!}\{!}\left(\right)\{!}\{!}\right){left 18}
+::dpañ::\left(\{!}\{!}\left(\right)\{!}\{!}\right){left 18}
 
 ::pañ::\left(\right){left 7}
 
-::Coñ::\left[\{!}\{!}\left[\right]\{!}\{!}\right]{left 18}
+::dcoñ::\left[\{!}\{!}\left[\right]\{!}\{!}\right]{left 18} ; castellanizado
 
-::coñ::\left[\right]{left 7}
+::coñ::\left[\right]{left 7} ; castellanizado
 
-::Llñ::\left\{{}\{!}\{!}\left\{{}\right\{}}\{!}\{!}\right\{}}{left 20}
+::dllñ::\left\{{}\{!}\{!}\left\{{}\right\{}}\{!}\{!}\right\{}}{left 20} ; castellanizado
 
-::llñ::\left\{{}\right\{}}{left 8}
-
-::anñ::\langle{Space}{Space}\rangle{left 8}
+::llñ::\left\{{}\right\{}}{left 8} ; castellanizado
 
 ::Anñ::\left\langle{Space}{Space}\right\rangle{left 14}
 
-::flñ::\lfloor{Space}{Space}\rfloor{left 8}
-
-::clñ::\lceil{Space}{Space}\rceil{left 7}
-
-::abñ::\left|\right|{left 7}
-
-::Abñ::\left\|\right\|{left 8}
+::anñ::\langle{Space}{Space}\rangle{left 8}
 
 
 
-; flechas
+; Flechas
+
+::lrañ::\longrightarrow{Space}
 
 ::toñ::\to{Space}
 
-::Toñ::\longrightarrow{Space}
+::lmtñ::\longmapsto{Space}
 
 ::mtñ::\mapsto{Space}
 
-::mTñ::\longmapsto{Space}
+::lrañ::\Leftrightarrow{Space}
 
-::ssiñ::\iff{Space}
+::iffñ::\iff{Space}
 
-::Ssiñ::\Leftrightarrow{Space}
+::Rañ::\Rightarrow{Space}
 
 ::impñ::\implies{Space}
 
-::Impñ::\Rightarrow{Space}
+::Lañ::\Leftarrow{Space}
 
 ::imbñ::\impliedby{Space}
-
-::Imbñ::\Leftarrow{Space}
 
 ::uañ::\uparrow{Space}
 
@@ -297,7 +363,7 @@ Pause::Suspend
 
 
 
-; formato
+; Otros formatos
 
 ::vopñ::\operatorname*{{}{}}_{{}{}}{left 1}
 
@@ -317,11 +383,7 @@ Pause::Suspend
 
 ::scñ::\mathscr{{}{}}{left 1}
 
-::ulñ::\underline{{}{}}{left 1}
-
 ::colñ::{{}\color{{}{}}{{}{}}{}}{left 4}
-
-::olñ::\overline{{}{}}{left 1}
 
 ::ubñ::\underbrace{{}{}}{{}{}}{left 3}
 
@@ -329,63 +391,13 @@ Pause::Suspend
 
 ::osñ::\overset{{}{}}{{}{}}{left 3}
 
-::boxñ::\bbox[5px,border:2px solid]{{}{}}{left 1}
+::hhñ::\hline{Space}
 
+::vvñ::\vline{Space}
 
+::yyñ::{Space}&&{Space} ; castellanizado
 
-; acentos
-
-::wt'::\widetilde{{}{}}{left 1}
-
-::t'::\tilde{Space}
-
-::wh'::\widehat{{}{}}{left 1}
-
-::h'::\hat{Space}
-
-::ddd'::\dddot{Space}
-
-::dd'::\ddot{Space}
-
-::d'::\dot{Space}
-
-::b'::\bar{Space}
-
-::vv'::\overrightarrow{{}{}}{left 1}
-
-::v'::\vec{Space}
-
-::c'::\check{Space}
-
-
-
-; construcciones comunes
-
-::fñ::\frac{{}{}}{{}{}}{left 3}
-
-::vsqñ::\sqrt[]{}}{}}{left 3}
-
-::sqñ::\sqrt{}}{}}{left 1}
-
-::biñ::\binom{{}{}}{{}{}}{left 3}
-
-::atñ::\atop{Space}
-
-::spñ::\,{Space}
-
-::qqñ::\qquad{Space}
-
-::qñ::\quad{Space}
-
-::ññ::\text{{}{Space}{Space}{}}{left 2}
-
-::cdñ::\cdots{Space}
-
-::ldñ::\ldots{Space}
-
-::ddñ::\ddots{Space}
-
-::vdñ::\vdots{Space}
+::yñ::{Space}&{Space} ; castellanizado
 
 ::ltñ::\limits_{{}{}}{left 1}
 
@@ -393,18 +405,29 @@ Pause::Suspend
 
 ::stñ::\substack{{}{}}{left 1}
 
+::atñ::\atop{Space}
 
-; relaciones
+::qqñ::\qquad{Space}
 
-::lyñ::\,\land\,{Space}
+::qñ::\quad{Space}
 
-::loñ::\,\lor\,{Space}
+::tñ::\text{{}{Space}{Space}{}}{left 2}
+
+::boxñ::\bbox[5px,border:2px solid]{{}{}}{left 1}
+
+
+
+; Relaciones
 
 ::==::\equiv{Space}
 
 ::<=::\leqslant{Space}
 
 ::>=::\geqslant{Space}
+
+::lyñ::\,\land\,{Space}
+
+::loñ::\,\lor\,{Space}
 
 ::<ñ::\prec{Space}
 
@@ -416,7 +439,7 @@ Pause::Suspend
 
 ::Ssñ::\supset{Space}
 
-::Snñ::\supsetneq{Space}
+::vSnñ::\supsetneq{Space}
 
 ::n/ñ::\nmid{Space}
 
@@ -434,17 +457,21 @@ Pause::Suspend
 
 
 
-; operadores pequeños
+; Operadores pequeños
+
+::++::\oplus{Space}
+
+::..::\cdot{Space}
+
+::--::\setminus{Space}
+
+::xx::\times{Space}
 
 ::nabñ::\nabla{Space}
 
 ::vpdñ::\frac{{}\mathrm{{}d{}}{}}{{}\mathrm{{}d{}}{}}{left 1}
 
 ::pdñ::\partial{Space}
-
-::++::\oplus{Space}
-
-::..::\cdot{Space}
 
 ::reñ::\operatorname{{}Re{}}
 
@@ -466,17 +493,13 @@ Pause::Suspend
 
 ::nñ::\cap_{{}{}}{left 1}
 
-::--::\setminus{Space}
-
-::cc::{^}\complement{Space}
+::Cñ::{^}\complement{Space}
 
 ::fañ::\forall{Space}
 
 ::exñ::\exists{Space}
 
 ::nexñ::\nexists{Space}
-
-::xx::\times{Space}
 
 ::bxñ::\boxtimes{Space}
 
@@ -488,9 +511,11 @@ Pause::Suspend
 
 ::dñ::\,\mathrm d{Space}
 
+::psñ::\wp{Space}
 
 
-; operadores grandes
+
+; Operadores grandes
 
 ::sñ::\sum_{{}{}}{left 1}
 
@@ -518,9 +543,9 @@ Pause::Suspend
 
 ::+ñ::\bigoplus_{{}{}}{left 1}
 
-::lYñ::\bigwedge_{{}{}}{left 1}
+::bwñ::\bigwedge_{{}{}}{left 1}
 
-::lOñ::\bigvee_{{}{}}{left 1}
+::bvñ::\bigvee_{{}{}}{left 1}
 
 ::O.ñ::\bigodot_{{}{}}{left 1}
 
@@ -528,26 +553,8 @@ Pause::Suspend
 
 
 
-; otros
+; Otras construcciones muy comunes
 
-::,,::$$`n`n$${left 3}
+::fñ::\frac{{}{}}{{}{}}{left 3}
 
-::hhñ::\hline{Space}
-
-::vvñ::\vline{Space}
-
-::yñ::{Space}&{Space}
-
-::yy::{Space}&&{Space}
-
-ç::Send {Right}{Right}
-
-+ç::Send {Left}{Left}
-
-^ç::Send {End}\\{Enter}
-
-º::Send \
-
-!-::Send _{{}{}}{left 1}
-
-!`::Send {^}{{}{}}{left 1}
+::bñ::\binom{{}{}}{{}{}}{left 3}

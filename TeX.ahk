@@ -21,13 +21,15 @@ Pause::Suspend
 
 +ç::Send {Left}{Left}
 
-^ç::Send {End}\\{Enter}
+!ç::Send {End}\\{Enter}
 
 º::Send \
 
 !-::Send _{{}{}}{left 1}
 
 !`::Send {^}{{}{}}{left 1}
+
+!ñ::Send {Enter}$${Enter}
 
 
 
@@ -39,13 +41,13 @@ Pause::Suspend
 
 
 
-; Etiquetas del foro de rincónmatemático y de MSE
+; Hotstrings para aplicaciones
 
-::++::[tex][/tex]{left 6}
+::++::[tex][/tex]{left 6} ; foro rincón matemático
 
-::ññ::[center][tex]\displaystyle{{}`n`n{}}[/tex][/center]{left 17}
+::ññ::[center][tex]\displaystyle{{}`n`n{}}[/tex][/center]{left 17} ; foro rincón matemático
 
-::,,::$$`n`n$${left 3}
+::,,::$$`n`n$${left 3} ; para MSE
 
 
 
@@ -302,6 +304,8 @@ Pause::Suspend
 
 
 ; Objetos matemáticos comunes
+
+::btñ::\bullet{Space}
 
 ::0ñ::\emptyset{Space}
 

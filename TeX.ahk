@@ -85,6 +85,8 @@ Pause::Suspend
 
 ::at¡::\arctan{Space}
 
+::vs¡::\operatorname{{}sen{}}{Space}
+
 ::s¡::\sin{Space}
 
 ::c¡::\cos{Space}

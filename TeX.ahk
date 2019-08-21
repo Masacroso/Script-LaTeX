@@ -41,9 +41,9 @@ Pause::Suspend
 
 ; Etiquetas del foro de rincónmatemático y de MSE
 
-::tx::[tex][/tex]{left 6}
+::++::[tex][/tex]{left 6}
 
-::Tx::[center][tex]\displaystyle{{}`n`n{}}[/tex][/center]{left 17}
+::ññ::[center][tex]\displaystyle{{}`n`n{}}[/tex][/center]{left 17}
 
 ::,,::$$`n`n$${left 3}
 
@@ -167,7 +167,7 @@ Pause::Suspend
 
 ::b'::\bar{Space}
 
-::vv'::\overrightarrow{{}{}}{left 1} ; como variación de "\vec"
+::vv'::\overrightarrow{{}{}}{left 1} ; como variación de v'
 
 ::v'::\vec{Space}
 
@@ -177,95 +177,103 @@ Pause::Suspend
 
 ; Letras griegas
 
-::gañ::\alpha{Space}
+::agg::\alpha{Space}
 
-::gbñ::\beta{Space}
+::bgg::\beta{Space}
 
-::gBñ::\Beta{Space}
+::Bgg::\Beta{Space}
 
-::ggñ::\gamma{Space}
+::ggg::\gamma{Space}
 
-::gGñ::\Gamma{Space}
+::Ggg::\Gamma{Space}
 
-::gdñ::\delta{Space}
+::dgg::\delta{Space}
 
-::gDñ::\Delta{Space}
+::Dgg::\Delta{Space}
 
-::vgeñ::\varepsilon{Space}
+::vegg::\varepsilon{Space}
 
-::geñ::\epsilon{Space}
+::egg::\epsilon{Space}
 
-::getñ::\eta{Space}
+::etgg::\eta{Space}
 
-::gkñ::\kappa{Space}
+::kgg::\kappa{Space}
 
-::vgrñ::\varrho{Space}
+::vrgg::\varrho{Space}
 
-::grñ::\rho{Space}
+::rgg::\rho{Space}
 
-::vgthñ::\vartheta{Space}
+::vthgg::\vartheta{Space}
 
-::gthñ::\theta{Space}
+::thgg::\theta{Space}
 
-::gThñ::\Theta{Space}
+::Thgg::\Theta{Space}
 
-::gtñ::\tau{Space}
+::tgg::\tau{Space}
 
-::vgfñ::\varphi{Space}
+::vfgg::\varphi{Space}
 
-::gfñ::\phi{Space}
+::fgg::\phi{Space}
 
-::gFñ::\Phi{Space}
+::Fgg::\Phi{Space}
 
-::gzñ::\zeta{Space}
+::zgg::\zeta{Space}
 
-::glñ::\lambda{Space}
+::lgg::\lambda{Space}
 
-::gLñ::\Lambda{Space}
+::Lgg::\Lambda{Space}
 
-::gsñ::\sigma{Space}
+::sgg::\sigma{Space}
 
-::gSñ::\Sigma{Space}
+::Sgg::\Sigma{Space}
 
-::gcñ::\chi{Space}
+::cgg::\chi{Space}
 
-::goñ::\omega{Space}
+::ogg::\omega{Space}
 
-::gOñ::\Omega{Space}
+::Ogg::\Omega{Space}
 
-::gpsñ::\psi{Space}
+::psgg::\psi{Space}
 
-::gPsñ::\Psi{Space}
+::Psgg::\Psi{Space}
 
-::vgpñ::\varpi{Space}
+::vpgg::\varpi{Space}
 
-::gpñ::\pi{Space}
+::pgg::\pi{Space}
 
-::gPñ::\Pi{Space}
+::Pgg::\Pi{Space}
 
-::gxñ::\xi{Space}
+::xgg::\xi{Space}
 
-::gXñ::\Xi{Space}
+::Xgg::\Xi{Space}
 
-::gnñ::\nu{Space}
+::ngg::\nu{Space}
 
-::gmñ::\mu{Space}
+::mgg::\mu{Space}
 
-::guñ::\upsilon{Space}
+::ugg::\upsilon{Space}
 
-::gUñ::\Upsilon{Space}
+::Ugg::\Upsilon{Space}
 
 
 
 ; Letras hebreas
 
-::hañ::\aleph{Space}
+::ahh::\aleph{Space}
 
-::hbñ::\beth{Space}
+::bhh::\beth{Space}
 
-::hgñ::\gimel{Space}
+::ghh::\gimel{Space}
 
-::hdñ::\dalet{Space}
+::dhh::\dalet{Space}
+
+
+
+; Otras letras
+
+::ell::\ell{Space}
+
+::wp::\wp{Space}
 
 
 
@@ -369,6 +377,8 @@ Pause::Suspend
 
 ::opñ::\operatorname{{}{}}{left 1}
 
+::ttñ::\mathtt{{}{}}{left 1}
+
 ::bbñ::\mathbb{{}{}}{left 1}
 
 ::sfñ::\mathsf{{}{}}{left 1}
@@ -465,8 +475,6 @@ Pause::Suspend
 
 ; Operadores pequeños y otras funciones
 
-::++::\oplus{Space}
-
 ::..::\cdot{Space}
 
 ::--::\setminus{Space}
@@ -493,15 +501,17 @@ Pause::Suspend
 
 ::lsñ::\limsup_{{}{}}{left 1}
 
-::vuñ::\sqcup{Space}
+::vuñ::\sqcup{Space} ; variación de uñ
 
-::uñ::\cup{Space}
+::uñ::\cup{Space} ; por su forma semejante
 
 ::nñ::\cap{Space} ; por su forma semejante
 
 ::Cñ::{^}\complement{Space}
 
 ::bxñ::\boxtimes{Space}
+
+::o+ñ::\oplus{Space}
 
 ::oxñ::\otimes{Space}
 
@@ -511,17 +521,15 @@ Pause::Suspend
 
 ::dñ::\,\mathrm d{Space}
 
-::wpñ::\wp{Space}
-
 
 
 ; Operadores grandes
 
-::O+::\bigoplus_{{}{}}{left 1}
+::O+ñ::\bigoplus_{{}{}}{left 1}
 
-::O.::\bigodot_{{}{}}{left 1}
+::O.ñ::\bigodot_{{}{}}{left 1}
 
-::Ox::\bigotimes_{{}{}}{left 1}
+::Oxñ::\bigotimes_{{}{}}{left 1}
 
 ::sñ::\sum_{{}{}}{left 1}
 

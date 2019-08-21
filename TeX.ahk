@@ -275,9 +275,9 @@ Pause::Suspend
 
 ; Otras letras
 
-::ell::\ell{Space}
+::ellñ::\ell{Space}
 
-::wp::\wp{Space}
+::wpñ::\wp{Space}
 
 
 

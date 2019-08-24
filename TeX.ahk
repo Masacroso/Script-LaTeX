@@ -151,6 +151,10 @@ Pause::Suspend
 
 ; Acentos y formatos similares
 
+::op'::\overparen{{}{}}{left 1}
+
+::up'::\underparen{{}{}}{left 1}
+
 ::ol'::\overline{{}{}}{left 1}
 
 ::ul'::\underline{{}{}}{left 1}

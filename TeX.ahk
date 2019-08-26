@@ -51,7 +51,7 @@ Pause::Suspend
 
 
 
-; Etiquetas de bbcode
+; Etiquetas de bbcode comunes
 
 ::ibb::[i][/i]{left 4}
 
@@ -59,7 +59,9 @@ Pause::Suspend
 
 ::ubb::[url=][/url]{left 7}
 
-::codbb::[code][/code]{left 7}
+::cbb::[code][/code]{left 7}
+
+::sbb::[size=][/size]{left 8}
 
 ::colbb::[color=][/color]{left 9}
 
@@ -315,7 +317,7 @@ Pause::Suspend
 
 ::btñ::\bullet{Space}
 
-::0ñ::\emptyset{Space}
+::0ñ::\emptyset{Space} ; por su forma semejante
 
 ::ooñ::\infty{Space} ; por su forma semejante
 
@@ -353,11 +355,11 @@ Pause::Suspend
 
 ::lrañ::\longrightarrow{Space}
 
+::lmtoñ::\longmapsto{Space}
+
+::mtoñ::\mapsto{Space}
+
 ::toñ::\to{Space}
-
-::lmtñ::\longmapsto{Space}
-
-::mtñ::\mapsto{Space}
 
 ::lrañ::\Leftrightarrow{Space}
 

@@ -181,6 +181,10 @@ Pause::Suspend
 
 ::c'::\check{Space}
 
+::i'::\imath{Space}
+
+::j'::\jmath{Space}
+
 
 
 ; Letras griegas
@@ -331,13 +335,13 @@ Pause::Suspend
 
 ::pañ::\left(\right){left 7}
 
-::dcoñ::\left[\{!}\{!}\left[\right]\{!}\{!}\right]{left 18} ; castellanizado
+::dcoñ::\left[\{!}\{!}\left[\right]\{!}\{!}\right]{left 18} ; castellanizado de "doble corchete"
 
-::coñ::\left[\right]{left 7} ; castellanizado
+::coñ::\left[\right]{left 7} ; castellanizado de "corchete"
 
-::dllñ::\left\{{}\{!}\{!}\left\{{}\right\{}}\{!}\{!}\right\{}}{left 20} ; castellanizado
+::dllñ::\left\{{}\{!}\{!}\left\{{}\right\{}}\{!}\{!}\right\{}}{left 20} ; castellanizado de "doble llave"
 
-::llñ::\left\{{}\right\{}}{left 8} ; castellanizado
+::llñ::\left\{{}\right\{}}{left 8} ; castellanizado de "llave"
 
 ::Anñ::\left\langle{Space}{Space}\right\rangle{left 14}
 
@@ -445,9 +449,9 @@ Pause::Suspend
 
 ::>=::\geqslant{Space}
 
-::lyñ::\,\land\,{Space} ; castellanizado
+::lañ::\,\land\,{Space}
 
-::loñ::\,\lor\,{Space} ; castellanizado
+::loñ::\,\lor\,{Space}
 
 ::<ñ::\prec{Space}
 

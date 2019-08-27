@@ -9,13 +9,12 @@ Menu, Tray, Icon, %A_ScriptDir%\inactivo.png,,1
 ; para generar un borde que nos avisa que los reemplazos están activos
 
 SysGet, m1, Monitor, 1
-CustomColor = white
+CustomColor = blue
 Gui, +LastFound +AlwaysOnTop -Caption +ToolWindow -DPIScale
 Gui, Color, %CustomColor%
-;Gui, Add, Picture, X0 Y0 BackGroundTrans, %A_ScriptDir%\barras.png
+WinSet, TransColor, %CustomColor% 200
+;Gui, Add, Picture, X0 Y0 w%A_ScreenWidth% h%A_ScreenHeight% AltSubmit BackGroundTrans, %A_ScriptDir%\frame.png
 Gui, Add, Picture, X0 Y0 w%A_ScreenWidth% h%A_ScreenHeight%, %A_ScriptDir%\barras.png
-WinSet, TransColor, %CustomColor%
-
 
 
 ; El script se inicia en modo suspendido gracias a la siguiente línea, 
@@ -532,7 +531,7 @@ return
 
 ::nabñ::\nabla{Space}
 
-::vpdñ::\frac{{}\mathrm{{}d{}}{}}{{}\mathrm{{}d{}}{}}{left 1}
+::vpdñ::\frac{{}\mathrm{{}d{}}{}}{{}\mathrm{{}d{}}{}}{left 1} ; variación de pdñ
 
 ::pdñ::\partial{Space}
 

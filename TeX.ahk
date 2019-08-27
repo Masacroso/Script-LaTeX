@@ -12,8 +12,7 @@ SysGet, m1, Monitor, 1
 CustomColor = blue
 Gui, +LastFound +AlwaysOnTop -Caption +ToolWindow -DPIScale
 Gui, Color, %CustomColor%
-WinSet, TransColor, %CustomColor% 200
-;Gui, Add, Picture, X0 Y0 w%A_ScreenWidth% h%A_ScreenHeight% AltSubmit BackGroundTrans, %A_ScriptDir%\frame.png
+WinSet, TransColor, %CustomColor% 180
 Gui, Add, Picture, X0 Y0 w%A_ScreenWidth% h%A_ScreenHeight%, %A_ScriptDir%\barras.png
 
 

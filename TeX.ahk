@@ -3,6 +3,8 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+Menu, Tray, Icon, %A_ScriptDir%\inactivo.png,,1
+
 ; El siguiente bloque de código será utilizado posteriormente
 ; para generar un borde que nos avisa que los reemplazos están activos
 
@@ -11,17 +13,15 @@ SysGet, m1, Monitor, 1
 CustomColor = white
 Gui, +LastFound +AlwaysOnTop -Caption +ToolWindow
 Gui, Color, %CustomColor%
-Gui, Add, Picture, X0 Y0 BackGroundTrans, %A_ScriptDir%\frame.png
+Gui, Add, Picture, X0 Y0 BackGroundTrans, %A_ScriptDir%\barras.png
 WinSet, TransColor, %CustomColor%
 }
-
 
 
 ; El script se inicia en modo suspendido gracias a la siguiente línea, 
 ; para activarlo basta pulsar la tecla de pausa o Alt+Espacio
 
 Suspend On
-
 
 
 ; Hotkeys
@@ -31,9 +31,11 @@ Suspend
 if (A_ScreenHeight = 1080) {
 	if (A_IsSuspended) {
 	Gui, Hide
+	Menu, Tray, Icon, %A_ScriptDir%\inactivo.png,,1
 	}
 	else {
 	Gui, Show, NoActivate
+	Menu, Tray, Icon, %A_ScriptDir%\activo.png,,1
 	}
 }
 return

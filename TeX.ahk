@@ -3,9 +3,22 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; El siguiente bloque de código será utilizado posteriormente
+; para generar un borde que nos avisa que los reemplazos están activos
 
-; El script se inicia en modo suspendido gracias a la siguiente línea, para activarlo basta pulsar la tecla de pausa
-; o la combinación Alt+Espacio
+if (A_ScreenHeight = 1080) {
+SysGet, m1, Monitor, 1
+CustomColor = white
+Gui, +LastFound +AlwaysOnTop -Caption +ToolWindow
+Gui, Color, %CustomColor%
+Gui, Add, Picture, X0 Y0 BackGroundTrans, %A_ScriptDir%\frame.png
+WinSet, TransColor, %CustomColor%
+}
+
+
+
+; El script se inicia en modo suspendido gracias a la siguiente línea, 
+; para activarlo basta pulsar la tecla de pausa o Alt+Espacio
 
 Suspend On
 
@@ -13,9 +26,29 @@ Suspend On
 
 ; Hotkeys
 
-Pause::Suspend
+Pause::
+Suspend
+if (A_ScreenHeight = 1080) {
+	if (A_IsSuspended) {
+	Gui, Hide
+	}
+	else {
+	Gui, Show, NoActivate
+	}
+}
+return
 
-!Space::Suspend
+!Space::
+Suspend
+if (A_ScreenHeight = 1080) {
+	if (A_IsSuspended) {
+	Gui, Hide
+	}
+	else {
+	Gui, Show, NoActivate
+	}
+}
+return
 
 ç::Send {Right}{Right}
 

@@ -8,14 +8,14 @@ Menu, Tray, Icon, %A_ScriptDir%\inactivo.png,,1
 ; El siguiente bloque de código será utilizado posteriormente
 ; para generar un borde que nos avisa que los reemplazos están activos
 
-if (A_ScreenHeight = 1080) {
 SysGet, m1, Monitor, 1
 CustomColor = white
-Gui, +LastFound +AlwaysOnTop -Caption +ToolWindow
+Gui, +LastFound +AlwaysOnTop -Caption +ToolWindow -DPIScale
 Gui, Color, %CustomColor%
-Gui, Add, Picture, X0 Y0 BackGroundTrans, %A_ScriptDir%\barras.png
+;Gui, Add, Picture, X0 Y0 BackGroundTrans, %A_ScriptDir%\barras.png
+Gui, Add, Picture, X0 Y0 w%A_ScreenWidth% h%A_ScreenHeight%, %A_ScriptDir%\barras.png
 WinSet, TransColor, %CustomColor%
-}
+
 
 
 ; El script se inicia en modo suspendido gracias a la siguiente línea, 
@@ -28,27 +28,25 @@ Suspend On
 
 Pause::
 Suspend
-if (A_ScreenHeight = 1080) {
-	if (A_IsSuspended) {
-	Gui, Hide
-	Menu, Tray, Icon, %A_ScriptDir%\inactivo.png,,1
-	}
-	else {
-	Gui, Show, NoActivate
-	Menu, Tray, Icon, %A_ScriptDir%\activo.png,,1
-	}
+if (A_IsSuspended) {
+Gui, Hide
+Menu, Tray, Icon, %A_ScriptDir%\inactivo.png,,1
+}
+else {
+Gui, Show, NoActivate
+Menu, Tray, Icon, %A_ScriptDir%\activo.png,,1
 }
 return
 
 !Space::
 Suspend
-if (A_ScreenHeight = 1080) {
-	if (A_IsSuspended) {
-	Gui, Hide
-	}
-	else {
-	Gui, Show, NoActivate
-	}
+if (A_IsSuspended) {
+Gui, Hide
+Menu, Tray, Icon, %A_ScriptDir%\inactivo.png,,1
+}
+else {
+Gui, Show, NoActivate
+Menu, Tray, Icon, %A_ScriptDir%\activo.png,,1
 }
 return
 

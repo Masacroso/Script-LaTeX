@@ -10,7 +10,7 @@ Menu, Tray, Icon, %A_ScriptDir%\inactivo.png,,1
 
 SysGet, m1, Monitor, 1
 CustomColor = blue
-Gui, +LastFound +AlwaysOnTop -Caption +ToolWindow -DPIScale
+Gui, +LastFound -Caption +ToolWindow -DPIScale +AlwaysOnTop
 Gui, Color, %CustomColor%
 WinSet, TransColor, %CustomColor% 180
 Gui, Add, Picture, X0 Y0 w%A_ScreenWidth% h%A_ScreenHeight%, %A_ScriptDir%\barras.png

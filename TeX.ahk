@@ -366,13 +366,19 @@ return
 
 ::dpañ::\left(\{!}\{!}\left(\right)\{!}\{!}\right){left 18}
 
+::bpañ::\big(\big){left 5}
+
 ::pañ::\left(\right){left 7}
 
 ::dcoñ::\left[\{!}\{!}\left[\right]\{!}\{!}\right]{left 18} ; castellanizado de "doble corchete"
 
+::bcoñ::\big[\big]{left 5}
+
 ::coñ::\left[\right]{left 7} ; castellanizado de "corchete"
 
 ::dllñ::\left\{{}\{!}\{!}\left\{{}\right\{}}\{!}\{!}\right\{}}{left 20} ; castellanizado de "doble llave"
+
+::bllñ::\big\{{}\big\{}}{left 6}
 
 ::llñ::\left\{{}\right\{}}{left 8} ; castellanizado de "llave"
 

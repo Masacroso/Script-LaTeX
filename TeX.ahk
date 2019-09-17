@@ -449,9 +449,9 @@ return
 
 ::colñ::{{}\color{{}{}}{{}{}}{}}{left 4}
 
-::ubñ::\underbrace{{}{}}{{}{}}{left 3}
+::ubñ::\underbrace{{}{}}_{{}{}}{left 4}
 
-::obñ::\overbrace{{}{}}{{}{}}{left 3}
+::obñ::\overbrace{{}{}}^{{}{}}{left 3}
 
 ::osñ::\overset{{}{}}{{}{}}{left 3}
 

@@ -399,7 +399,7 @@ return
 
 ::toñ::\to{Space}
 
-::lrañ::\Leftrightarrow{Space}
+::Lrañ::\Leftrightarrow{Space}
 
 ::iffñ::\iff{Space}
 

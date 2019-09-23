@@ -369,17 +369,23 @@ return
 
 ::bpañ::\big(\big){left 5}
 
+::vpañ::(){left 1}
+
 ::pañ::\left(\right){left 7}
 
 ::dcoñ::\left[\{!}\{!}\left[\right]\{!}\{!}\right]{left 18} ; castellanizado de "doble corchete"
 
 ::bcoñ::\big[\big]{left 5}
 
+::vcoñ::[]{left 1}
+
 ::coñ::\left[\right]{left 7} ; castellanizado de "corchete"
 
 ::dllñ::\left\{{}\{!}\{!}\left\{{}\right\{}}\{!}\{!}\right\{}}{left 20} ; castellanizado de "doble llave"
 
 ::bllñ::\big\{{}\big\{}}{left 6}
+
+::vllñ::\{{}\{}}{left 2}
 
 ::llñ::\left\{{}\right\{}}{left 8} ; castellanizado de "llave"
 
@@ -482,6 +488,8 @@ return
 
 
 ; Relaciones y lógica
+
+::n=::\neq{Space}
 
 ::==::\equiv{Space}
 
@@ -616,6 +624,8 @@ return
 
 
 ; Otras construcciones comunes
+
+::vfñ::\frac1{{}{}}{left 1}
 
 ::fñ::\frac{{}{}}{{}{}}{left 3}
 

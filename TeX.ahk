@@ -555,6 +555,10 @@ return
 
 ::lñ::\lim_{{}{}}{left 1}
 
+::supñ::\sup_{{}{}}{left 1}
+
+::infñ::\inf_{{}{}}{left 1}
+
 ::vliñ::\varliminf_{{}{}}{left 1}
 
 ::liñ::\liminf_{{}{}}{left 1}
@@ -593,6 +597,8 @@ return
 
 ::Oxñ::\bigotimes_{{}{}}{left 1}
 
+::vsñ::\sum{Space}
+
 ::sñ::\sum_{{}{}}{left 1}
 
 ::iiiñ::\iiint_{{}{}}{left 1}
@@ -602,6 +608,8 @@ return
 ::iiñ::\iint_{{}{}}{left 1}
 
 ::oiñ::\oint{Space}
+
+::viñ::\int{Space}
 
 ::iñ::\int_{{}{}}{left 1}
 

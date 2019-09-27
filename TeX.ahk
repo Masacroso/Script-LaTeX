@@ -541,6 +541,8 @@ return
 
 ::--::\setminus{Space}
 
+::triñ::\,\triangle\,{Space}
+
 ::xx::\times{Space}
 
 ::nabñ::\nabla{Space}

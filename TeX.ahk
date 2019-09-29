@@ -489,7 +489,7 @@ return
 
 ; Relaciones y lógica
 
-::n=::\neq{Space}
+::=ñ::\neq{Space}
 
 ::==::\equiv{Space}
 

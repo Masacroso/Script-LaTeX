@@ -637,6 +637,8 @@ return
 
 ::vfñ::\frac1{{}{}}{left 1}
 
+::tfñ::\tfrac{{}{}}{{}{}}{left 3}
+
 ::fñ::\frac{{}{}}{{}{}}{left 3}
 
 ::bñ::\binom{{}{}}{{}{}}{left 3}

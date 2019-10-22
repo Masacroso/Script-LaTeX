@@ -75,11 +75,11 @@ return
 
 ; Hotstrings para aplicaciones
 
-::´ñ::[tex][/tex]{left 6} ; foro rincón matemático
+::++::[tex][/tex]{left 6} ; foro rincón matemático
 
 ::ññ::[center][tex]\displaystyle{{}`n`n{}}[/tex][/center]{left 17} ; foro rincón matemático
 
-::`ñ::$$`n`n$${left 3} ; para MSE
+::,,::$$`n`n$${left 3} ; para MSE
 
 
 
@@ -153,9 +153,7 @@ return
 
 ::RR::\Bbb R{Space}
 
-::R++::\Bbb R_{{}> 0{}}{Space}
-
-::R+::\Bbb R_{{}\ge 0{}}{Space}
+::R+::\Bbb R_{{}\geqslant 0{}}{Space}
 
 ::R0::\Bbb R\setminus{{}0{}}{Space}
 
@@ -175,7 +173,7 @@ return
 
 ::N+::\Bbb N_{{}> 0{}}{Space}
 
-::N0::\Bbb N_{{}\ge 0{}}{Space}
+::N0::\Bbb N_{{}\geqslant 0{}}{Space}
 
 ::PP::\Bbb P{Space}
 

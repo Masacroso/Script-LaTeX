@@ -75,11 +75,11 @@ return
 
 ; Hotstrings para aplicaciones
 
-::´´::[tex][/tex]{left 6} ; foro rincón matemático
+::´ñ::[tex][/tex]{left 6} ; foro rincón matemático
 
 ::ññ::[center][tex]\displaystyle{{}`n`n{}}[/tex][/center]{left 17} ; foro rincón matemático
 
-::``::$$`n`n$${left 3} ; para MSE
+::`ñ::$$`n`n$${left 3} ; para MSE
 
 
 

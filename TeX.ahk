@@ -271,6 +271,10 @@ return
 
 ::Lgg::\Lambda{Space}
 
+::psgg::\psi{Space}
+
+::Psgg::\Psi{Space}
+
 ::sgg::\sigma{Space}
 
 ::Sgg::\Sigma{Space}
@@ -280,10 +284,6 @@ return
 ::ogg::\omega{Space}
 
 ::Ogg::\Omega{Space}
-
-::psgg::\psi{Space}
-
-::Psgg::\Psi{Space}
 
 ::vpgg::\varpi{Space}
 

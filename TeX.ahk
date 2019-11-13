@@ -151,13 +151,13 @@ return
 
 ; Notaciones de conjuntos matemáticos comunes
 
-::RR::\Bbb R{Space}
+:*0:RR::\Bbb R{Space}
 
 ::R+::\Bbb R_{{}\geqslant 0{}}{Space}
 
 ::R0::\Bbb R\setminus{{}0{}}{Space}
 
-::CC::\Bbb C{Space}
+:*0:CC::\Bbb C{Space}
 
 ::C0::\Bbb C\setminus{{}0{}}{Space}
 
@@ -182,6 +182,10 @@ return
 ::BB::\Bbb B{Space}
 
 ::SS::\Bbb S{Space}
+
+::KK::\Bbb K{Space}
+
+::FF::\Bbb F{Space}
 
 
 
@@ -216,10 +220,6 @@ return
 ::v'::\vec{Space}
 
 ::c'::\check{Space}
-
-::i'::\imath{Space}
-
-::j'::\jmath{Space}
 
 
 
@@ -319,9 +319,13 @@ return
 
 ; Otras letras
 
-::ellñ::\ell{Space}
+::pmm::\wp{Space}
 
-::wpñ::\wp{Space}
+::lmm::\ell{Space}
+
+::imm::\imath{Space}
+
+::jmm::\jmath{Space}
 
 
 
@@ -515,10 +519,6 @@ return
 
 ::Snñ::\supsetneq{Space}
 
-::n|ñ::\nmid{Space}
-
-::|ñ::\mid{Space}
-
 ::ninñ::\notin{Space}
 
 ::inñ::\in{Space}
@@ -543,11 +543,13 @@ return
 
 ::--::\setminus{Space}
 
-::triñ::\,\triangle\,{Space}
+::trñ::\,\triangle\,{Space}
+
+::sqñ::\,\square\,{Space}
 
 ::xx::\times{Space}
 
-::nabñ::\nabla{Space}
+::nbñ::\nabla{Space}
 
 ::vpdñ::\frac{{}\mathrm{{}d{}}{}}{{}\mathrm{{}d{}}{}}{left 1} ; variación de pdñ
 

@@ -367,6 +367,7 @@ return
 
 ::vdñ::\vdots{Space}
 
+::sqñ::\,\square\,{Space}
 
 
 ; Delimitadores
@@ -544,8 +545,6 @@ return
 ::--::\setminus{Space}
 
 ::trñ::\,\triangle\,{Space}
-
-::sqñ::\,\square\,{Space}
 
 ::xx::\times{Space}
 

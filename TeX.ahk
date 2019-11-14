@@ -151,13 +151,13 @@ return
 
 ; Notaciones de conjuntos matemáticos comunes
 
-:*0:RR::\Bbb R{Space}
+:*0:RR::\Bbb R
 
 ::R+::\Bbb R_{{}\geqslant 0{}}{Space}
 
 ::R0::\Bbb R\setminus{{}0{}}{Space}
 
-:*0:CC::\Bbb C{Space}
+:*0:CC::\Bbb C
 
 ::C0::\Bbb C\setminus{{}0{}}{Space}
 

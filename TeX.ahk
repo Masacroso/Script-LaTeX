@@ -71,6 +71,8 @@ return
 
 #Hotstring c * ?
 
+#Hotstring Endchars ()[]{}`n `t
+
 
 
 ; Hotstrings para aplicaciones
@@ -140,6 +142,8 @@ return
 ::l¡::\ln{Space}
 
 ::e¡::\exp\left(\right){left 7}
+
+::v1¡::\chi_{{}{}}{left 1}
 
 ::1¡::\mathbf{{}1{}}_{{}{}}{left 1}
 
@@ -323,7 +327,7 @@ return
 
 ::lmm::\ell{Space}
 
-::imm::\imath{Space}
+:*0:imm::\imath{Space}
 
 ::jmm::\jmath{Space}
 
@@ -512,6 +516,10 @@ return
 
 ::>ñ::\succ{Space}
 
+::<<::\ll{Space}
+
+::>>::\gg{Space}
+
 ::ssñ::\subset{Space}
 
 ::snñ::\subsetneq{Space}
@@ -540,7 +548,7 @@ return
 
 ; Operadores pequeños y otras funciones
 
-::..::\cdot{Space}
+::..ñ::\cdot{Space}
 
 ::--::\setminus{Space}
 

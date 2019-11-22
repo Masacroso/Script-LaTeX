@@ -550,7 +550,7 @@ return
 
 ::..ñ::\cdot{Space}
 
-::--::\setminus{Space}
+::-ñ::\setminus{Space}
 
 ::trñ::\,\triangle\,{Space}
 

@@ -71,7 +71,7 @@ return
 
 #Hotstring c * ?
 
-#Hotstring Endchars ()[]{}`n `t
+#Hotstring Endchars :$()[]{}`n `t
 
 
 
@@ -373,6 +373,19 @@ return
 
 ::sqñ::\,\square\,{Space}
 
+::dagñ::\dagger{Space}
+
+::ddagñ::\ddagger{Space}
+
+::spñ::\spadesuit{Space}
+
+::diñ::\diamondsuit{Space}
+
+::heñ::\heartsuit{Space}
+
+::clñ::\clubsuit{Space}
+
+
 
 ; Delimitadores
 
@@ -653,3 +666,21 @@ return
 ::fñ::\frac{{}{}}{{}{}}{left 3}
 
 ::bñ::\binom{{}{}}{{}{}}{left 3}
+
+::r1ñ::\mathrm{{}(1){}}{Space}
+
+::r2ñ::\mathrm{{}(2){}}{Space}
+
+::r3ñ::\mathrm{{}(3){}}{Space}
+
+::r4ñ::\mathrm{{}(4){}}{Space}
+
+::r5ñ::\mathrm{{}(5){}}{Space}
+
+::r6ñ::\mathrm{{}(6){}}{Space}
+
+::r7ñ::\mathrm{{}(7){}}{Space}
+
+::r8ñ::\mathrm{{}(8){}}{Space}
+
+::r9ñ::\mathrm{{}(9){}}{Space}

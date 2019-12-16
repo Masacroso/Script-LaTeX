@@ -61,8 +61,6 @@ return
 
 !`::Send {^}{{}{}}{left 1}
 
-!ñ::Send {Enter}$${Enter}
-
 
 
 ; El orden en el que aparecen las hotstrings en la siguiente lista importa: si una hotstring está contenida dentro de otra entonces la contenida siempre debe ir después
@@ -355,7 +353,7 @@ return
 
 
 
-; Objetos matemáticos comunes
+; Objetos matemáticos comunes y otros símbolos
 
 ::btñ::\bullet{Space}
 
@@ -371,7 +369,11 @@ return
 
 ::vdñ::\vdots{Space}
 
-::sqñ::\,\square\,{Space}
+::vsqñ::\,\square\,{Space}
+
+::sqñ::\square{Space}
+
+::trñ::\triangle{Space}
 
 ::dagñ::\dagger{Space}
 
@@ -513,8 +515,6 @@ return
 
 ; Relaciones y lógica
 
-::=ñ::\neq{Space}
-
 ::==::\equiv{Space}
 
 ::<=::\leqslant{Space}
@@ -524,14 +524,6 @@ return
 ::lañ::\,\land\,{Space}
 
 ::loñ::\,\lor\,{Space}
-
-::<ñ::\prec{Space}
-
-::>ñ::\succ{Space}
-
-::<<::\ll{Space}
-
-::>>::\gg{Space}
 
 ::ssñ::\subset{Space}
 
@@ -557,6 +549,10 @@ return
 
 ::exñ::\exists{Space}
 
+::Tñ::\top{Space}
+
+::Fñ::\bot{Space}
+
 
 
 ; Operadores pequeños y otras funciones
@@ -565,7 +561,7 @@ return
 
 ::-ñ::\setminus{Space}
 
-::trñ::\,\triangle\,{Space}
+::sdñ::\,\triangle\,{Space} ; representación de la diferencia simétrica
 
 ::xx::\times{Space}
 
@@ -612,6 +608,8 @@ return
 ::cñ::\circ{Space}
 
 ::dñ::\,\mathrm d{Space}
+
+::ppñ::\perp{Space}
 
 
 
@@ -666,6 +664,14 @@ return
 ::fñ::\frac{{}{}}{{}{}}{left 3}
 
 ::bñ::\binom{{}{}}{{}{}}{left 3}
+
+::tmñ::\tag{{}\(\){}}{left 3}
+
+::refñ::\mathrm{{}(1){}}{left 2}
+
+::spanñ::\operatorname{{}span{}}{Space}
+
+::nullñ::\operatorname{{}null{}}{Space}
 
 ::r1ñ::\mathrm{{}(1){}}{Space}
 

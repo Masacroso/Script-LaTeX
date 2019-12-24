@@ -667,7 +667,7 @@ return
 
 ::tmñ::\tag{{}\(\){}}{left 3}
 
-::refñ::\mathrm{{}(1){}}{left 2}
+::refñ::\mathrm{{}(){}}{left 2}
 
 ::spanñ::\operatorname{{}span{}}{Space}
 

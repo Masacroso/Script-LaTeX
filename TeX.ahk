@@ -485,7 +485,7 @@ return
 
 ::ubñ::\underbrace{{}{}}_{{}{}}{left 4}
 
-::obñ::\overbrace{{}{}}^{{}{}}{left 3}
+::obñ::\overbrace{{}{}}{^}{{}{}}{left 3}
 
 ::osñ::\overset{{}{}}{{}{}}{left 3}
 

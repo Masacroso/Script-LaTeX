@@ -157,31 +157,33 @@ return
 
 ::R+::\Bbb R_{{}\geqslant 0{}}{Space}
 
-::R0::\Bbb R\setminus{{}0{}}{Space}
+::R0::\Bbb R\setminus\{{}0\{}}{Space}
 
 :*0:CC::\Bbb C
 
-::C0::\Bbb C\setminus{{}0{}}{Space}
+::C0::\Bbb C\setminus\{{}0\{}}{Space}
 
 ::ZZ::\Bbb Z{Space}
 
-::Z0::\Bbb Z\setminus{{}0{}}{Space}
+::Z0::\Bbb Z\setminus\{{}0\{}}{Space}
 
 ::QQ::\Bbb Q{Space}
 
-::Q0::\Bbb Q\setminus{{}0{}}{Space}
+::Q0::\Bbb Q\setminus\{{}0\{}}{Space}
 
 ::NN::\Bbb N{Space}
 
-::N+::\Bbb N_{{}> 0{}}{Space}
+::N+::\Bbb N\setminus\{{}0\{}}{Space}
 
-::N0::\Bbb N_{{}\geqslant 0{}}{Space}
+::N0::\Bbb N\cup\{{}0\{}}{Space}
 
 ::PP::\Bbb P{Space}
 
 ::DD::\Bbb D{Space}
 
 ::BB::\Bbb B{Space}
+
+::HH::\Bbb H{Space}
 
 ::SS::\Bbb S{Space}
 

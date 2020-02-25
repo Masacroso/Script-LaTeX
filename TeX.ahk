@@ -153,13 +153,19 @@ return
 
 ; Notaciones de conjuntos matemáticos comunes
 
-:*0:RR::\Bbb R
+::RRñ::\Bbb R{Space}
+
+::RR2::\overline{{}\Bbb R{}}{Space}
+
+::RR1::\hat{{}\Bbb R{}}{Space}
 
 ::R+::\Bbb R_{{}\geqslant 0{}}{Space}
 
 ::R0::\Bbb R\setminus\{{}0\{}}{Space}
 
-:*0:CC::\Bbb C
+::CCñ::\Bbb C{Space}
+
+::CC1::\hat{{}\Bbb C{}}{Space}
 
 ::C0::\Bbb C\setminus\{{}0\{}}{Space}
 
@@ -176,6 +182,8 @@ return
 ::N+::\Bbb N\setminus\{{}0\{}}{Space}
 
 ::N0::\Bbb N\cup\{{}0\{}}{Space}
+
+::N1::\Bbb N\cup\{{}\infty\{}}{Space}
 
 ::PP::\Bbb P{Space}
 
@@ -353,6 +361,8 @@ return
 
 ::arrñ::\begin{{}array{}}{{}{}}`n`n\end{{}array{}}{left 14}
 
+::CDñ::\require{{}AMScd{}}`n\begin{{}CD{}}`n{Space}@>>>{Space}\\`n@VVV{Space}@VVV\\`n@>>>`n\end{{}CD{}}{left 37}
+
 
 
 ; Objetos matemáticos comunes y otros símbolos
@@ -472,6 +482,8 @@ return
 ::sfñ::\mathsf{{}{}}{left 1}
 
 ::bfñ::\mathbf{{}{}}{left 1}
+
+::bsñ::\boldsymbol{{}{}}{left 1}
 
 ::rmñ::\mathrm{{}{}}{left 1}
 
@@ -674,6 +686,8 @@ return
 ::spanñ::\operatorname{{}span{}}{Space}
 
 ::nullñ::\operatorname{{}null{}}{Space}
+
+::Hñ::$\Box$
 
 ::r1ñ::\mathrm{{}(1){}}{Space}
 

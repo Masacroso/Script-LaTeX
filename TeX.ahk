@@ -667,6 +667,10 @@ return
 
 ::bvñ::\bigvee_{{}{}}{left 1}
 
+::wñ::\wedge{Space}
+
+::vñ::\vee{Space}
+
 
 
 ; Otras construcciones comunes
@@ -683,9 +687,9 @@ return
 
 ::refñ::\mathrm{{}(){}}{left 2}
 
-::spanñ::\operatorname{{}span{}}{Space}
+::SPñ::\operatorname{{}span{}}{Space}
 
-::nullñ::\operatorname{{}null{}}{Space}
+::NLñ::\operatorname{{}null{}}{Space}
 
 ::Hñ::$\Box$
 

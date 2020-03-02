@@ -85,6 +85,10 @@ return
 
 ; Funciones comunes
 
+::sig¡::\operatorname{{}sign{}}{Space}
+
+::id¡::\operatorname{{}id{}}{Space}
+
 ::vsq¡::\sqrt[]{{}{}}{left 3}
 
 ::sq¡::\sqrt{{}{}}{left 1}
@@ -401,6 +405,8 @@ return
 
 ::b{ñ::\big\{{}\big\{}}{left 6}
 
+::v{ñ::\{{}\{}}{left 2}
+
 ::{ñ::\left\{{}\right\{}}{left 8}
 
 ::b<ñ::\left\langle{Space}{Space}\right\rangle{left 14}
@@ -537,7 +543,9 @@ return
 
 ; Operadores pequeños y otras funciones
 
-::..::\cdot{Space}
+::..ñ::\cdot{Space}
+
+::*ñ::\star{Space}
 
 ::-ñ::\setminus{Space}
 
@@ -559,9 +567,9 @@ return
 
 ::lñ::\lim_{{}{}}{left 1}
 
-::supñ::\sup_{{}{}}{left 1}
+::Sñ::\sup_{{}{}}{left 1}
 
-::infñ::\inf_{{}{}}{left 1}
+::Iñ::\inf_{{}{}}{left 1}
 
 ::vliñ::\varliminf_{{}{}}{left 1}
 

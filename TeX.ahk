@@ -25,7 +25,7 @@ Suspend On
 
 ; Hotkeys
 
-Pause::
+ç::
 Suspend
 if (A_IsSuspended) {
 Gui, Hide
@@ -37,25 +37,9 @@ Menu, Tray, Icon, %A_ScriptDir%\activo.png,,1
 }
 return
 
-!Space::
-Suspend
-if (A_IsSuspended) {
-Gui, Hide
-Menu, Tray, Icon, %A_ScriptDir%\inactivo.png,,1
-}
-else {
-Gui, Show, NoActivate
-Menu, Tray, Icon, %A_ScriptDir%\activo.png,,1
-}
-return
 
-ç::Send {Right}{Right}
-
-+ç::Send {Left}{Left}
 
 !ç::Send {End}\\{Enter}
-
-º::Send \
 
 !-::Send _{{}{}}{left 1}
 
@@ -121,8 +105,6 @@ return
 
 ::at¡::\arctan{Space}
 
-::vs¡::\operatorname{{}sen{}}{Space}
-
 ::s¡::\sin{Space}
 
 ::c¡::\cos{Space}
@@ -153,7 +135,7 @@ return
 
 ; Notaciones de conjuntos matemáticos comunes
 
-::RRñ::\Bbb R{Space}
+::Rñ::\Bbb R{Space}
 
 ::RR2::\overline{{}\Bbb R{}}{Space}
 
@@ -403,33 +385,27 @@ return
 
 ; Delimitadores
 
-::dpañ::\left(\{!}\{!}\left(\right)\{!}\{!}\right){left 18}
+::((ñ::\left(\{!}\{!}\left(\right)\{!}\{!}\right){left 18}
 
-::bpañ::\big(\big){left 5}
+::b(ñ::\big(\big){left 5}
 
-::vpañ::(){left 1}
+::(ñ::\left(\right){left 7}
 
-::pañ::\left(\right){left 7}
+::[[ñ::\left[\{!}\{!}\left[\right]\{!}\{!}\right]{left 18}
 
-::dcoñ::\left[\{!}\{!}\left[\right]\{!}\{!}\right]{left 18} ; castellanizado de "doble corchete"
+::b[ñ::\big[\big]{left 5}
 
-::bcoñ::\big[\big]{left 5}
+::[ñ::\left[\right]{left 7}
 
-::vcoñ::[]{left 1}
+::{{ñ::\left\{{}\{!}\{!}\left\{{}\right\{}}\{!}\{!}\right\{}}{left 20}
 
-::coñ::\left[\right]{left 7} ; castellanizado de "corchete"
+::b{ñ::\big\{{}\big\{}}{left 6}
 
-::dllñ::\left\{{}\{!}\{!}\left\{{}\right\{}}\{!}\{!}\right\{}}{left 20} ; castellanizado de "doble llave"
+::{ñ::\left\{{}\right\{}}{left 8}
 
-::bllñ::\big\{{}\big\{}}{left 6}
+::b<ñ::\left\langle{Space}{Space}\right\rangle{left 14}
 
-::vllñ::\{{}\{}}{left 2}
-
-::llñ::\left\{{}\right\{}}{left 8} ; castellanizado de "llave"
-
-::Anñ::\left\langle{Space}{Space}\right\rangle{left 14}
-
-::anñ::\langle{Space}{Space}\rangle{left 8}
+::<ñ::\langle{Space}{Space}\rangle{left 8}
 
 
 
@@ -501,18 +477,6 @@ return
 
 ::osñ::\overset{{}{}}{{}{}}{left 3}
 
-::hlñ::\hline{Space}
-
-::vlñ::\vline{Space}
-
-::yyñ::{Space}&&{Space} ; castellanizado
-
-::yñ::{Space}&{Space} ; castellanizado
-
-::ltñ::\limits_{{}{}}{left 1}
-
-::nlñ::\nolimits_{{}{}}{left 1}
-
 ::stñ::\substack{{}{}}{left 1}
 
 ::atñ::\atop{Space}
@@ -528,6 +492,8 @@ return
 
 
 ; Relaciones y lógica
+
+::=ñ::\neq{Space}
 
 ::==::\equiv{Space}
 
@@ -547,19 +513,19 @@ return
 
 ::Snñ::\supsetneq{Space}
 
-::ninñ::\notin{Space}
+::niñ::\notin{Space}
 
 ::inñ::\in{Space}
 
 ::apñ::\approx{Space}
 
-::thñ::\therefore{Space}
+::thñ::\therefore\quad{Space}
 
-::bcñ::\because{Space}
+::bcñ::\because\quad{Space}
 
 ::fañ::\forall{Space}
 
-::nexñ::\nexists{Space}
+::neñ::\nexists{Space}
 
 ::exñ::\exists{Space}
 
@@ -571,7 +537,7 @@ return
 
 ; Operadores pequeños y otras funciones
 
-::..ñ::\cdot{Space}
+::..::\cdot{Space}
 
 ::-ñ::\setminus{Space}
 
@@ -581,13 +547,15 @@ return
 
 ::nbñ::\nabla{Space}
 
-::vpdñ::\frac{{}\mathrm{{}d{}}{}}{{}\mathrm{{}d{}}{}}{left 1} ; variación de pdñ
+::vpdñ::\frac{{}\mathrm{{}d{}}{}}{{}\mathrm{{}d{}}{}}{left 1}
 
 ::pdñ::\partial{Space}
 
 ::reñ::\operatorname{{}Re{}}
 
 ::imñ::\operatorname{{}Im{}}
+
+::mñ::\mid{Space}
 
 ::lñ::\lim_{{}{}}{left 1}
 
@@ -603,7 +571,7 @@ return
 
 ::lsñ::\limsup_{{}{}}{left 1}
 
-::vuñ::\sqcup{Space} ; variación de uñ
+::vuñ::\sqcup{Space}
 
 ::uñ::\cup{Space} ; por su forma semejante
 
@@ -613,15 +581,23 @@ return
 
 ::bxñ::\boxtimes{Space}
 
+::b+ñ::\boxplus{Space}
+
+::b-ñ::\boxminus{Space}
+
+::b.ñ::\boxdot{Space}
+
 ::o+ñ::\oplus{Space}
 
 ::oxñ::\otimes{Space}
+
+::o-ñ::\ominus{Space}
 
 ::o.ñ::\odot{Space}
 
 ::cñ::\circ{Space}
 
-::dñ::\,\mathrm d{Space}
+::dñ::\mathop{{}{}}\{!}d{Space}
 
 ::ppñ::\perp{Space}
 
@@ -638,12 +614,6 @@ return
 ::vsñ::\sum{Space}
 
 ::sñ::\sum_{{}{}}{left 1}
-
-::iiiñ::\iiint_{{}{}}{left 1}
-
-::oiiñ::\oiint{Space}
-
-::iiñ::\iint_{{}{}}{left 1}
 
 ::oiñ::\oint{Space}
 
@@ -683,30 +653,30 @@ return
 
 ::bñ::\binom{{}{}}{{}{}}{left 3}
 
-::tmñ::\tag{{}\(\){}}{left 3}
-
-::refñ::\mathrm{{}(){}}{left 2}
-
 ::SPñ::\operatorname{{}span{}}{Space}
 
 ::NLñ::\operatorname{{}null{}}{Space}
 
+::vLñ::x^1,\ldots,x^n{Space}{left 15}
+
+::Lñ::x_1,\ldots,x_n{Space}{left 15}
+
 ::Hñ::$\Box$
 
-::r1ñ::\mathrm{{}(1){}}{Space}
+::r1ñ::$\mathrm{{}(1){}}${Space}
 
-::r2ñ::\mathrm{{}(2){}}{Space}
+::r2ñ::$\mathrm{{}(2){}}${Space}
 
-::r3ñ::\mathrm{{}(3){}}{Space}
+::r3ñ::$\mathrm{{}(3){}}${Space}
 
-::r4ñ::\mathrm{{}(4){}}{Space}
+::r4ñ::$\mathrm{{}(4){}}${Space}
 
-::r5ñ::\mathrm{{}(5){}}{Space}
+::r5ñ::$\mathrm{{}(5){}}${Space}
 
-::r6ñ::\mathrm{{}(6){}}{Space}
+::r6ñ::$\mathrm{{}(6){}}${Space}
 
-::r7ñ::\mathrm{{}(7){}}{Space}
+::r7ñ::$\mathrm{{}(7){}}${Space}
 
-::r8ñ::\mathrm{{}(8){}}{Space}
+::r8ñ::$\mathrm{{}(8){}}${Space}
 
-::r9ñ::\mathrm{{}(9){}}{Space}
+::r9ñ::$\mathrm{{}(9){}}${Space}

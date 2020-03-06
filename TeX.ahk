@@ -235,6 +235,8 @@ return
 
 ::dgg::\delta{Space}
 
+::igg::\iota{Space}
+
 ::Dgg::\Delta{Space}
 
 ::vegg::\varepsilon{Space}

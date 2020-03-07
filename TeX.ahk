@@ -663,6 +663,8 @@ return
 
 ::bñ::\binom{{}{}}{{}{}}{left 3}
 
+::rkñ::\operatorname{{}rank{}}{Space}
+
 ::SPñ::\operatorname{{}span{}}{Space}
 
 ::NLñ::\operatorname{{}null{}}{Space}

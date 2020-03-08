@@ -415,6 +415,8 @@ return
 
 ::<ñ::\langle{Space}{Space}\rangle{left 8}
 
+::|ñ::\left .\right|{left 7}
+
 
 
 ; Flechas
@@ -557,7 +559,7 @@ return
 
 ::nbñ::\nabla{Space}
 
-::vpdñ::\frac{{}\mathrm{{}d{}}{}}{{}\mathrm{{}d{}}{}}{left 1}
+::vpdñ::\frac{{}\partial{}}{{}\partial{Space}{}}{left 1}
 
 ::pdñ::\partial{Space}
 

@@ -18,7 +18,7 @@ Gui, Add, Picture, X0 Y0 w%A_ScreenWidth% h%A_ScreenHeight%, %A_ScriptDir%\barra
 
 
 ; El script se inicia en modo suspendido gracias a la siguiente línea, 
-; para activarlo basta pulsar la tecla de pausa o Alt+Espacio
+; para activarlo basta pulsar la tecla de la cedilla
 
 Suspend On
 
@@ -235,7 +235,7 @@ return
 
 ::dgg::\delta{Space}
 
-::igg::\iota{Space}
+:*0:igg::\iota
 
 ::Dgg::\Delta{Space}
 
@@ -323,7 +323,7 @@ return
 
 ::lmm::\ell{Space}
 
-:*0:imm::\imath{Space}
+:*0:imm::\imath
 
 ::jmm::\jmath{Space}
 

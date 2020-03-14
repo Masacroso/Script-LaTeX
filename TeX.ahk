@@ -423,9 +423,9 @@ return
 
 ::lrañ::\longrightarrow{Space}
 
-::lmtoñ::\longmapsto{Space}
+::lmtñ::\longmapsto{Space}
 
-::mtoñ::\mapsto{Space}
+::mtñ::\mapsto{Space}
 
 ::toñ::\to{Space}
 

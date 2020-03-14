@@ -139,51 +139,51 @@ return
 
 ; Notaciones de conjuntos matemáticos comunes
 
-::Rñ::\Bbb R{Space}
+::Rñ::\mathbb{{}R{}}{Space}
 
-::RR2::\overline{{}\Bbb R{}}{Space}
+::RR2::\overline{{}\mathbb {{}R{}}{}}{Space}
 
-::RR1::\hat{{}\Bbb R{}}{Space}
+::RR1::\hat{{}\mathbb {{}R{}}{}}{Space}
 
-::R+::\Bbb R_{{}\geqslant 0{}}{Space}
+::R+::\mathbb{{}R{}}_{{}\geqslant 0{}}{Space}
 
-::R0::\Bbb R\setminus\{{}0\{}}{Space}
+::R0::\mathbb R\setminus\{{}0\{}}{Space}
 
-::CCñ::\Bbb C{Space}
+::CCñ::\mathbb C{Space}
 
-::CC1::\hat{{}\Bbb C{}}{Space}
+::CC1::\hat{{}\mathbb C{}}{Space}
 
-::C0::\Bbb C\setminus\{{}0\{}}{Space}
+::C0::\mathbb C\setminus\{{}0\{}}{Space}
 
-::ZZ::\Bbb Z{Space}
+::ZZ::\mathbb Z{Space}
 
-::Z0::\Bbb Z\setminus\{{}0\{}}{Space}
+::Z0::\mathbb Z\setminus\{{}0\{}}{Space}
 
-::QQ::\Bbb Q{Space}
+::QQ::\mathbb Q{Space}
 
-::Q0::\Bbb Q\setminus\{{}0\{}}{Space}
+::Q0::\mathbb Q\setminus\{{}0\{}}{Space}
 
-::NN::\Bbb N{Space}
+::NN::\mathbb N{Space}
 
-::N+::\Bbb N\setminus\{{}0\{}}{Space}
+::N+::\mathbb N\setminus\{{}0\{}}{Space}
 
-::N0::\Bbb N\cup\{{}0\{}}{Space}
+::N0::\mathbb N\cup\{{}0\{}}{Space}
 
-::N1::\Bbb N\cup\{{}\infty\{}}{Space}
+::N1::\mathbb N\cup\{{}\infty\{}}{Space}
 
-::PP::\Bbb P{Space}
+::PP::\mathbb P{Space}
 
-::DD::\Bbb D{Space}
+::DD::\mathbb D{Space}
 
-::BB::\Bbb B{Space}
+::BB::\mathbb B{Space}
 
-::HH::\Bbb H{Space}
+::HH::\mathbb H{Space}
 
-::SS::\Bbb S{Space}
+::SS::\mathbb S{Space}
 
-::KK::\Bbb K{Space}
+::KK::\mathbb K{Space}
 
-::FF::\Bbb F{Space}
+::FF::\mathbb F{Space}
 
 
 
@@ -345,7 +345,7 @@ return
 
 ::pmñ::\begin{{}pmatrix{}}`n`n\end{{}pmatrix{}}{left 14}
 
-::smñ::\begin{{}smallmatrix{}}\end{{}smallmatrix{}}{left 17}
+::smñ::\left[\begin{{}smallmatrix{}}\end{{}smallmatrix{}}\right]{left 24}
 
 ::arrñ::\begin{{}array{}}{{}{}}`n`n\end{{}array{}}{left 14}
 
@@ -375,9 +375,9 @@ return
 
 ::trñ::\triangle{Space}
 
-::dagñ::\dagger{Space}
+::ddgñ::\ddagger{Space}
 
-::ddagñ::\ddagger{Space}
+::dgñ::\dagger{Space}
 
 ::spñ::\spadesuit{Space}
 
@@ -411,7 +411,7 @@ return
 
 ::{ñ::\left\{{}\right\{}}{left 8}
 
-::b<ñ::\left\langle{Space}{Space}\right\rangle{left 14}
+::v<ñ::\left\langle{Space}{Space}\right\rangle{left 14}
 
 ::<ñ::\langle{Space}{Space}\rangle{left 8}
 
@@ -559,7 +559,7 @@ return
 
 ::nbñ::\nabla{Space}
 
-::vpdñ::\frac{{}\partial{}}{{}\partial{Space}{}}{left 1}
+::vpdñ::\frac{{}\partial {}}{{}\partial {}}{left 12}
 
 ::pdñ::\partial{Space}
 

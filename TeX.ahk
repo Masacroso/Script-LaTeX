@@ -81,15 +81,22 @@ return
 
 ::colbb::[color=][/color]{left 9}
 
+::spbb::[spoiler][/spoiler]{left 10}
+
+
 
 
 ; Funciones comunes
+
+::ib¡::_\mathfrak{{}I{}}\![]{left 1} ; Iverson bracket
 
 ::sig¡::\operatorname{{}sign{}}{Space}
 
 ::id¡::\operatorname{{}id{}}{Space}
 
-::vsq¡::\sqrt[]{{}{}}{left 3}
+::asq¡::\sqrt[]{{}{}}{left 3}
+
+::p¡::\operatorname{{}proj{}}_{{}{}}{left 1}
 
 ::sq¡::\sqrt{{}{}}{left 1}
 
@@ -121,13 +128,11 @@ return
 
 ::th¡::\tanh{Space}
 
-::vl¡::\log_{{}{}}{left 1}
-
-::l¡::\ln{Space}
+::l¡::\log{Space}
 
 ::e¡::\exp\left(\right){left 7}
 
-::v1¡::\chi_{{}{}}{left 1}
+::chi¡::\chi_{{}{}}{left 1}
 
 ::1¡::\mathbf{{}1{}}_{{}{}}{left 1}
 
@@ -139,19 +144,19 @@ return
 
 ; Notaciones de conjuntos matemáticos comunes
 
-::Rñ::\mathbb{{}R{}}{Space}
+:*0:RR::\mathbb{{}R{}}{Space}
 
-::RR2::\overline{{}\mathbb {{}R{}}{}}{Space}
+::R2::\overline{{}\mathbb {{}R{}}{}}{Space}
 
-::RR1::\hat{{}\mathbb {{}R{}}{}}{Space}
+::R1::\hat{{}\mathbb {{}R{}}{}}{Space}
 
 ::R+::\mathbb{{}R{}}_{{}\geqslant 0{}}{Space}
 
 ::R0::\mathbb R\setminus\{{}0\{}}{Space}
 
-::CCñ::\mathbb C{Space}
+:*0:CC::\mathbb C{Space}
 
-::CC1::\hat{{}\mathbb C{}}{Space}
+::C1::\hat{{}\mathbb C{}}{Space}
 
 ::C0::\mathbb C\setminus\{{}0\{}}{Space}
 
@@ -211,13 +216,11 @@ return
 
 ::d'::\dot{Space}
 
-::b'::\bar{Space}
-
-::vv'::\overrightarrow{{}{}}{left 1} ; como variación de v'
+::av'::\overrightarrow{{}{}}{left 1} ; como variación de v'
 
 ::v'::\vec{Space}
 
-::c'::\check{Space}
+:*0:c'::\check{Space}
 
 
 
@@ -369,7 +372,7 @@ return
 
 ::vdñ::\vdots{Space}
 
-::vsqñ::\,\square\,{Space}
+::asqñ::\,\square\,{Space}
 
 ::sqñ::\square{Space}
 
@@ -391,27 +394,15 @@ return
 
 ; Delimitadores
 
-::((ñ::\left(\{!}\{!}\left(\right)\{!}\{!}\right){left 18}
-
-::b(ñ::\big(\big){left 5}
-
 ::(ñ::\left(\right){left 7}
-
-::[[ñ::\left[\{!}\{!}\left[\right]\{!}\{!}\right]{left 18}
-
-::b[ñ::\big[\big]{left 5}
 
 ::[ñ::\left[\right]{left 7}
 
-::{{ñ::\left\{{}\{!}\{!}\left\{{}\right\{}}\{!}\{!}\right\{}}{left 20}
-
-::b{ñ::\big\{{}\big\{}}{left 6}
-
-::v{ñ::\{{}\{}}{left 2}
+::{{::\{{}\{}}{left 2}
 
 ::{ñ::\left\{{}\right\{}}{left 8}
 
-::v<ñ::\left\langle{Space}{Space}\right\rangle{left 14}
+::s<ñ::\left\langle{Space}{Space}\right\rangle{left 14}
 
 ::<ñ::\langle{Space}{Space}\rangle{left 8}
 
@@ -431,7 +422,7 @@ return
 
 ::Lrañ::\Leftrightarrow{Space}
 
-::iffñ::\iff{Space}
+::iff::\iff{Space}
 
 ::Rañ::\Rightarrow{Space}
 
@@ -449,15 +440,13 @@ return
 
 ::seañ::\searrow{Space}
 
-::hlañ::\hookleftarrow{Space}
+::injñ::\hookrightarrow{Space}
 
-::hrañ::\hookrightarrow{Space}
+::surñ::\twoheadrightarrow{Space}
 
 
 
 ; Otros formatos
-
-::vopñ::\operatorname*{{}{}}_{{}{}}{left 4}
 
 ::opñ::\operatorname{{}{}}{left 1}
 
@@ -475,9 +464,9 @@ return
 
 ::fkñ::\mathfrak{{}{}}{left 1}
 
-::cañ::\mathcal{{}{}}{left 1}
+::calñ::\mathcal{{}{}}{left 1}
 
-::scñ::\mathscr{{}{}}{left 1}
+::scrñ::\mathscr{{}{}}{left 1}
 
 ::colñ::{{}\color{{}{}}{{}{}}{}}{left 4}
 
@@ -503,7 +492,9 @@ return
 
 ; Relaciones y lógica
 
-::=ñ::\neq{Space}
+::/=::\neq{Space}
+
+::isoñ::\cong{Space}
 
 ::==::\equiv{Space}
 
@@ -527,7 +518,7 @@ return
 
 ::inñ::\in{Space}
 
-::apñ::\approx{Space}
+::appñ::\approx{Space}
 
 ::thñ::\therefore\quad{Space}
 
@@ -559,9 +550,15 @@ return
 
 ::nbñ::\nabla{Space}
 
-::vpdñ::\frac{{}\partial {}}{{}\partial {}}{left 12}
+::pd1::\frac{{}d {}}{{}d x {}}{left 2}
 
-::pdñ::\partial{Space}
+::pd2::\frac{{}\partial {}}{{}\partial x {}}{left 2}
+
+::pd3::\partial{Space}
+
+::Pñ::\pr{Space}
+
+::Eñ::\mathbb{{}E{}}{Space}
 
 ::reñ::\operatorname{{}Re{}}
 
@@ -583,11 +580,11 @@ return
 
 ::lsñ::\limsup_{{}{}}{left 1}
 
-::vuñ::\sqcup{Space}
+::squñ::\sqcup{Space}
 
-::uñ::\cup{Space} ; por su forma semejante
+::uñ::\cup{Space}
 
-::nñ::\cap{Space} ; por su forma semejante
+::nñ::\cap{Space}
 
 ::Cñ::{^}\complement{Space}
 
@@ -623,13 +620,13 @@ return
 
 ::Oxñ::\bigotimes_{{}{}}{left 1}
 
-::vsñ::\sum{Space}
+::asñ::\sum{Space}
 
 ::sñ::\sum_{{}{}}{left 1}
 
 ::oiñ::\oint{Space}
 
-::viñ::\int{Space}
+::aiñ::\int{Space}
 
 ::iñ::\int_{{}{}}{left 1}
 
@@ -637,17 +634,17 @@ return
 
 ::pñ::\prod_{{}{}}{left 1}
 
-::vUñ::\bigcup{Space}
+::aUñ::\bigcup{Space}
 
 ::Uñ::\bigcup_{{}{}}{left 1}
 
-::vNñ::\bigcap{Space}
+::aNñ::\bigcap{Space}
 
 ::Nñ::\bigcap_{{}{}}{left 1}
 
-::bwñ::\bigwedge_{{}{}}{left 1}
+::Wñ::\bigwedge_{{}{}}{left 1}
 
-::bvñ::\bigvee_{{}{}}{left 1}
+::Vñ::\bigvee_{{}{}}{left 1}
 
 ::wñ::\wedge{Space}
 
@@ -657,7 +654,7 @@ return
 
 ; Otras construcciones comunes
 
-::vfñ::\frac1{{}{}}{left 1}
+::f1::\frac1{{}{}}{left 1}
 
 ::tfñ::\tfrac{{}{}}{{}{}}{left 3}
 
@@ -665,32 +662,12 @@ return
 
 ::bñ::\binom{{}{}}{{}{}}{left 3}
 
-::rkñ::\operatorname{{}rank{}}{Space}
+::rankñ::\operatorname{{}rank{}}{Space}
 
-::SPñ::\operatorname{{}span{}}{Space}
+::spanñ::\operatorname{{}span{}}{Space}
 
-::NLñ::\operatorname{{}null{}}{Space}
+::nullñ::\operatorname{{}null{}}{Space}
 
-::vLñ::x^1,\ldots,x^n{Space}{left 15}
+::axL::x^1,\ldots,x^n
 
-::Lñ::x_1,\ldots,x_n{Space}{left 15}
-
-::Hñ::$\Box$
-
-::r1ñ::$\mathrm{{}(1){}}${Space}
-
-::r2ñ::$\mathrm{{}(2){}}${Space}
-
-::r3ñ::$\mathrm{{}(3){}}${Space}
-
-::r4ñ::$\mathrm{{}(4){}}${Space}
-
-::r5ñ::$\mathrm{{}(5){}}${Space}
-
-::r6ñ::$\mathrm{{}(6){}}${Space}
-
-::r7ñ::$\mathrm{{}(7){}}${Space}
-
-::r8ñ::$\mathrm{{}(8){}}${Space}
-
-::r9ñ::$\mathrm{{}(9){}}${Space}
+::xL::x_1,\ldots,x_n

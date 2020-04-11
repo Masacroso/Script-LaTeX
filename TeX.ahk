@@ -25,7 +25,7 @@ Suspend On
 
 ; Hotkeys
 
-ç::
+!ñ::
 Suspend
 if (A_IsSuspended) {
 Gui, Hide
@@ -41,6 +41,8 @@ return
 
 !ç::Send {End}\\{Enter}
 
+^ç::Send {End}\\[3ex]{Enter}
+
 !-::Send _{{}{}}{left 1}
 
 !`::Send {^}{{}{}}{left 1}
@@ -51,7 +53,7 @@ return
 
 ; A partir de aquí todos son hotstrings, y la siguiente línea define las opciones globales para todas ellas
 
-#Hotstring c * ?
+#Hotstring c *
 
 #Hotstring Endchars :$()[]{}`n `t
 
@@ -90,9 +92,9 @@ return
 
 ::ib¡::_\mathfrak{{}I{}}\![]{left 1} ; Iverson bracket
 
-::sig¡::\operatorname{{}sign{}}{Space}
+::sig¡::\operatorname{{}sign{}}
 
-::id¡::\operatorname{{}id{}}{Space}
+::id¡::\operatorname{{}id{}}
 
 ::asq¡::\sqrt[]{{}{}}{left 3}
 
@@ -144,41 +146,43 @@ return
 
 ; Notaciones de conjuntos matemáticos comunes
 
-:*0:RR::\mathbb{{}R{}}{Space}
+::RR::\mathbb{{}R{}}
 
-::R2::\overline{{}\mathbb {{}R{}}{}}{Space}
+::R2::\overline{{}\mathbb {{}R{}}{}}
 
-::R1::\hat{{}\mathbb {{}R{}}{}}{Space}
+::R1::\hat{{}\mathbb {{}R{}}{}}
 
-::R+::\mathbb{{}R{}}_{{}\geqslant 0{}}{Space}
+::R+::\mathbb{{}R{}}_{{}\geqslant 0{}}
 
-::R0::\mathbb R\setminus\{{}0\{}}{Space}
+::R0::\mathbb R\setminus\{{}0\{}}
 
-:*0:CC::\mathbb C{Space}
+::CC::\mathbb C{Space}
 
-::C1::\hat{{}\mathbb C{}}{Space}
+::C1::\hat{{}\mathbb C{}}
 
-::C0::\mathbb C\setminus\{{}0\{}}{Space}
+::C0::\mathbb C\setminus\{{}0\{}}
 
 ::ZZ::\mathbb Z{Space}
 
-::Z0::\mathbb Z\setminus\{{}0\{}}{Space}
+::Z0::\mathbb Z\setminus\{{}0\{}}
 
 ::QQ::\mathbb Q{Space}
 
-::Q0::\mathbb Q\setminus\{{}0\{}}{Space}
+::Q0::\mathbb Q\setminus\{{}0\{}}
 
 ::NN::\mathbb N{Space}
 
-::N+::\mathbb N\setminus\{{}0\{}}{Space}
+::N+::\mathbb N\setminus\{{}0\{}}
 
-::N0::\mathbb N\cup\{{}0\{}}{Space}
+::N0::\mathbb N\cup\{{}0\{}}
 
-::N1::\mathbb N\cup\{{}\infty\{}}{Space}
+::N1::\mathbb N\cup\{{}\infty\{}}
 
 ::PP::\mathbb P{Space}
 
 ::DD::\mathbb D{Space}
+
+::cB::\overline{{}\mathbb B{}}
 
 ::BB::\mathbb B{Space}
 
@@ -216,11 +220,11 @@ return
 
 ::d'::\dot{Space}
 
-::av'::\overrightarrow{{}{}}{left 1} ; como variación de v'
+::av'::\overrightarrow{{}{}}{left 1}
 
 ::v'::\vec{Space}
 
-:*0:c'::\check{Space}
+:*0:c'::\check
 
 
 
@@ -238,7 +242,7 @@ return
 
 ::dgg::\delta{Space}
 
-:*0:igg::\iota
+::igg::\iota{Space}
 
 ::Dgg::\Delta{Space}
 
@@ -406,7 +410,11 @@ return
 
 ::<ñ::\langle{Space}{Space}\rangle{left 8}
 
-::|ñ::\left .\right|{left 7}
+::|ñ::\left .\right|_{{}{}}{left 1}
+
+::|b::\bigg|_{{}{}}{left 1}
+
+::|B::\Big|_{{}{}}{left 1}
 
 
 
@@ -550,15 +558,15 @@ return
 
 ::nbñ::\nabla{Space}
 
-::pd1::\frac{{}d {}}{{}d x {}}{left 2}
+::pd1::\frac{{}d{}}{{}dx{}}{left 1}
 
-::pd2::\frac{{}\partial {}}{{}\partial x {}}{left 2}
+::pd2::\frac{{}\partial{}}{{}\partial x{}}{left 1}
 
 ::pd3::\partial{Space}
 
 ::Pñ::\pr{Space}
 
-::Eñ::\mathrm{{}E{}}{Space}
+::Eñ::\mathrm{{}E{}}
 
 ::reñ::\operatorname{{}Re{}}
 
@@ -662,12 +670,34 @@ return
 
 ::bñ::\binom{{}{}}{{}{}}{left 3}
 
-::rankñ::\operatorname{{}rank{}}{Space}
+::rankñ::\operatorname{{}rank{}}
 
-::spanñ::\operatorname{{}span{}}{Space}
+::spanñ::\operatorname{{}span{}}
 
-::nullñ::\operatorname{{}null{}}{Space}
+::nullñ::\operatorname{{}null{}}
 
-::axL::x^1,\ldots,x^n
+::seqñ::\{{}\{}}_{{}n\in \mathbb N{}}{left 19}
 
-::xL::x_1,\ldots,x_n
+::1n::\in\{}}1,\ldots,n\{}}
+
+::pxL::\partial/\partial x^1,\ldots,\partial/\partial x^n
+
+::pyL::\partial/\partial y^1,\ldots,\partial/\partial y^n
+
+::dxL::dx^1,\ldots,dx^n
+
+::dyL::dy^1,\ldots,dy^n
+
+::axL::x_1,\ldots,x_n
+
+::xL::x^1,\ldots,x^n
+
+::yL::y^1,\ldots,y^n
+
+::rL::r^1,\ldots,r^n
+
+::aL::a_1,\ldots,a_n
+
+::bL::b_1,\ldots,b_n
+
+::cL::c_1,\ldots,c_n

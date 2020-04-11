@@ -224,7 +224,7 @@ return
 
 ::v'::\vec{Space}
 
-:*0:c'::\check
+::ch'::\check{Space}
 
 
 

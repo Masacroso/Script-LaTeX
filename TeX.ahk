@@ -558,7 +558,7 @@ return
 
 ::Pñ::\pr{Space}
 
-::Eñ::\mathbb{{}E{}}{Space}
+::Eñ::\mathrm{{}E{}}{Space}
 
 ::reñ::\operatorname{{}Re{}}
 

@@ -92,6 +92,8 @@ return
 
 ::ib¡::_\mathfrak{{}I{}}\![]{left 1} ; Iverson bracket
 
+::tr¡::\operatorname{{}tr{}}
+
 ::sig¡::\operatorname{{}sign{}}
 
 ::id¡::\operatorname{{}id{}}
@@ -141,6 +143,10 @@ return
 ::a¡::\left|\right|{left 7}
 
 ::n¡::\left\|\right\|{left 8}
+
+::di¡::\dim{Space}
+
+::d¡::\det{Space}
 
 
 

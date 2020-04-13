@@ -53,7 +53,7 @@ return
 
 ; A partir de aquí todos son hotstrings, y la siguiente línea define las opciones globales para todas ellas
 
-#Hotstring c *
+#Hotstring c * ?
 
 #Hotstring Endchars :$()[]{}`n `t
 

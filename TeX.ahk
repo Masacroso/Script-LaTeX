@@ -90,7 +90,7 @@ return
 
 ; Funciones comunes
 
-::ib¡::_\mathfrak{{}I{}}\![]{left 1} ; Iverson bracket
+::ib¡::[]_\mathfrak{{}I{}}{left 14} ; Iverson bracket
 
 ::tr¡::\operatorname{{}tr{}}
 

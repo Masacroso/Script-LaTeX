@@ -454,7 +454,11 @@ return
 
 ::seañ::\searrow{Space}
 
-::injñ::\hookrightarrow{Space}
+::incñ::\hookrightarrow{Space}
+
+::injñ::\rightarrowtail{Space}
+
+::bijñ::\leftrightarrow{Space}
 
 ::surñ::\twoheadrightarrow{Space}
 
@@ -508,7 +512,11 @@ return
 
 ::/=::\neq{Space}
 
-::isoñ::\cong{Space}
+::iso1::\cong{Space}
+
+::iso2::\simeq{Space}
+
+::erñ::\sim{Space}
 
 ::==::\equiv{Space}
 

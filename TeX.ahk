@@ -578,7 +578,7 @@ return
 
 ::pd3::\partial{Space}
 
-::Pñ::\pr{Space}
+::Pñ::\Pr{Space}
 
 ::Eñ::\mathrm{{}E{}}
 

@@ -692,7 +692,7 @@ return
 
 ::seqñ::\{{}\{}}_{{}n\in \mathbb N{}}{left 19}
 
-::1n::\in\{}}1,\ldots,n\{}}
+::1n::\in\{{}1,\ldots,n\{}}
 
 ::pxL::\partial/\partial x^1,\ldots,\partial/\partial x^n
 

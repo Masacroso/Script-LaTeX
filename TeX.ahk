@@ -684,12 +684,6 @@ return
 
 ::bñ::\binom{{}{}}{{}{}}{left 3}
 
-::rankñ::\operatorname{{}rank{}}
-
-::spanñ::\operatorname{{}span{}}
-
-::nullñ::\operatorname{{}null{}}
-
 ::seqñ::\{{}\{}}_{{}n\in \mathbb N{}}{left 19}
 
 ::1n::\in\{{}1,\ldots,n\{}}

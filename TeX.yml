@@ -1,4 +1,4 @@
-﻿name: tex
+name: tex
 parent: default
 
 matches:
@@ -407,7 +407,7 @@ matches:
   - trigger: "bijñ"
     replace: "\\leftrightarrow "
   - trigger: "surñ"
-    replace: "\	woheadrightarrow "
+    replace: "\\twoheadrightarrow "
 
 
   # Otros formatos

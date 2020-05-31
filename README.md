@@ -1,4 +1,4 @@
-Scripts diversos para escribir más rápido código de LaTeX. Básicamente estos scripts sustituyen el tecleo de algunas cadenas de caracteres por otras. Están diseñados para escribir LaTeX muy rápido y esencialmente hacen lo mismo aunque hay pequeñas diferencias.
+Scripts diversos para escribir más rápido código de LaTeX. Básicamente estos scripts sustituyen el tecleo de algunas cadenas de caracteres por otras. Están diseñados para escribir LaTeX muy rápido y esencialmente hacen lo mismo aunque hay pequeñas diferencias. El diseño de los scripts tiene en consideración la distribución del teclado que se utiliza comúnmente en España e Hispanoamérica.
 
 ## Script para autohotkey:
 

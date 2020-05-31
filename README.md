@@ -14,4 +14,4 @@ Autokey es un programa para correr scripts de sustitución de cadenas de texto y
 
 Espanso es otro porgrama para definir y ejecutar scripts de sustituciones de cadenas de texto, y aunque no puede definir hotkeys como los programas anteriores su ventaja radica en que funciona en cualquier sistema operativo. Para utilizarlo hay que colocar el archivo TeX.yml en la carpeta "/user" donde espanso guarda los scripts, en sistemas como ubuntu se encuentra en "$HOME/.config/espanso/user/"
 
-En sistemas linux para activar el programa hay que ejecutar el comando "espanso start" en la consola, y para pasar de modo activo a inactivo hay que pulsar dos veces seguidas la tecla ALT.
+Para pasar de modo activo a inactivo (o viceversa) hay que pulsar dos veces seguidas la tecla ALT.

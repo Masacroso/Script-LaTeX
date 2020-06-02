@@ -45,7 +45,11 @@ return
 
 !-::Send _{{}{}}{left 1}
 
+::--::_{{}{}}{left 1}
+
 !`::Send {^}{{}{}}{left 1}
+
+::++::{^}{{}{}}{left 1}
 
 
 
@@ -61,7 +65,7 @@ return
 
 ; Hotstrings para aplicaciones
 
-::++::[tex][/tex]{left 6} ; foro rincón matemático
+::çç::[tex][/tex]{left 6} ; foro rincón matemático
 
 ::ññ::[center][tex]\displaystyle{{}`n`n{}}[/tex][/center]{left 17} ; foro rincón matemático
 

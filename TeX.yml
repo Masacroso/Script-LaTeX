@@ -506,7 +506,7 @@ matches:
 
   # Operadores pequeños y otras funciones
 
-  - trigger: "..ñ"
+  - trigger: ".."
     replace: "\\cdot "
   - trigger: "*ñ"
     replace: "\\star "

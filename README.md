@@ -4,14 +4,20 @@ Scripts diversos para escribir más rápido código de LaTeX. Básicamente estos
 
 Autohotkey es un programa para correr scripts de sustitución de cadenas de texto y definir hotkeys entre otras cosas, y sólo está disponible para sistemas windows.
 
-El archivo TeX.ahk es el archivo de texto que contiene las sustituciones de cadenas de texto y hotkeys que se han definido, y se puede utilizar sin necesidad de compilarlo en un ejecutable si se tiene instalado autohotkey en el sistema. Para usar el script sin necesidad de tener autohotkey instalado se puede utilizar el script compilado en forma de ejecutable que está contenido en el archivo TeX.zip, simplemente hay que descomprimir este archivo a alguna carpeta y ejecutar el archivo TeX.exe, aparecerá un icono de color verde en la barra de tareas que indica que el programa está en ejecución pero desactivado, para activarlo (o volverlo a desactivar) hay que presionar Alt+Ñ en el teclado. Cuando el programa está activo (es decir, que hace sustituciones de cadenas de texto) el icono pasará a tener color rojo.
+El archivo TeX.ahk es el archivo de texto que contiene las sustituciones de cadenas de texto y hotkeys que se han definido, y una vez instalado autohotkey se puede poner en funcionamiento haciendo doble-click sobre el archivo. Para usar el script sin necesidad de tener autohotkey instalado se puede utilizar el script compilado en forma de ejecutable que está contenido en el archivo TeX.zip, simplemente hay que descomprimir este archivo a alguna carpeta y ejecutar el archivo TeX.exe.
+
+Cuando el script se ha iniciado aparecerá un icono de color verde en la barra de tareas que indica que el programa está en ejecución pero inactivo (es decir que no realiza sustituciones). Para activarlo (o volverlo a desactivar) hay que presionar la combinación de teclas `Alt+Ñ`. Cuando el programa está activo (es decir, que hace sustituciones de cadenas de texto) el icono pasará a tener color rojo.
 
 ## Script para autokey:
 
-Autokey es un programa para correr scripts de sustitución de cadenas de texto y definir hotkeys entre otras cosas, y sólo está disponible para sistemas linux. El archivo latex.zip contiene una carpeta que define un script para autokey. Debe descomprimirse en la carpeta donde autokey guarda las definiciones de las sustituciones y scripts, la cual se puede abrir desde la interfaz del programa y en distribuciones tipo ubuntu es "$HOME/.config/autokey/data/latex/"
+Autokey es un programa para correr scripts de sustitución de cadenas de texto y definir hotkeys entre otras cosas, y sólo está disponible para sistemas linux. 
+
+Para utilizar esta versión del script hay que instalar autokey en el sistema y luego descomprimir el archivo latex.zip en la carpeta donde autokey guarda las definiciones de las sustituciones y scripts, la cual se puede abrir desde la interfaz del programa (y en distribuciones tipo ubuntu es `$HOME/.config/autokey/data/latex/`).
 
 ## Script para espanso:
 
-Espanso es otro porgrama para definir y ejecutar scripts de sustituciones de cadenas de texto, y aunque no puede definir hotkeys como los programas anteriores su ventaja radica en que funciona en cualquier sistema operativo. Para utilizarlo hay que colocar el archivo TeX.yml en la carpeta "/user" donde espanso guarda los scripts, en sistemas como ubuntu se encuentra en "$HOME/.config/espanso/user/"
+Espanso es otro porgrama para definir y ejecutar scripts de sustituciones de cadenas de texto, y aunque no puede definir hotkeys como los programas anteriores su ventaja radica en que funciona en cualquier sistema operativo. 
+
+Para utilizar el script hay que instalar espanso en el sistema y una vez hecho esto colocar el archivo TeX.yml en la carpeta `/user` donde espanso guarda los scripts. Dependiendo del sistema operativo esta carpeta se encuentra en diferentes lugares, para saber dónde está se debe ejecutar el comando `espanso path` en una terminal del sistema (por ejemplo en sistemas como ubuntu se encuentra en `$HOME/.config/espanso/user/`).
 
 Para pasar de modo activo a inactivo (o viceversa) hay que pulsar dos veces seguidas la tecla ALT.

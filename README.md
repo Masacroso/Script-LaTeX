@@ -6,7 +6,7 @@ Hay tres versiones del script, cada una diseñada para un sistema de scripting d
 
 Autohotkey es un programa para correr scripts de sustitución de cadenas de texto y definir hotkeys entre otras cosas, y sólo está disponible para sistemas windows.
 
-El archivo TeX.ahk es el archivo de texto que contiene las sustituciones de cadenas de texto y hotkeys que se han definido, y una vez instalado autohotkey se puede poner en funcionamiento haciendo doble-click sobre el archivo. Para usar el script sin necesidad de tener autohotkey instalado se puede utilizar el script compilado en forma de ejecutable que está contenido en el archivo TeX.zip, simplemente hay que descomprimir este archivo a alguna carpeta y ejecutar el archivo TeX.exe.
+El archivo TeX.ahk es el archivo de texto que contiene las sustituciones de cadenas de texto y hotkeys que se han definido, no hace falta descargarlo simplemente se puede utilizar como referencia o modelo. Para usar el script simplemente hay que descargar y descomprimir el archivo TeX.zip y ejecutar el archivo TeX.exe.
 
 Cuando el script se ha iniciado aparecerá un icono de color verde en la barra de tareas que indica que el programa está en ejecución pero inactivo (es decir que no realiza sustituciones). Para activarlo (o volverlo a desactivar) hay que presionar la combinación de teclas `Alt+Ñ`. Cuando el programa está activo (es decir, que hace sustituciones de cadenas de texto) el icono pasará a tener color rojo.
 

@@ -1,4 +1,6 @@
-Scripts diversos para escribir más rápido código de LaTeX. Básicamente estos scripts sustituyen el tecleo de algunas cadenas de caracteres por otras. Están diseñados para escribir LaTeX muy rápido y esencialmente hacen lo mismo aunque hay pequeñas diferencias. El diseño de los scripts tiene en consideración la distribución del teclado que se utiliza comúnmente en España e Hispanoamérica.
+Script de sustitución de tecleos diseñado para escribir código de LaTeX muy rápidamente. El diseño de los scripts tiene en consideración la distribución del teclado que se utiliza comúnmente en España e Hispanoamérica. 
+
+Hay tres versiones del script, cada una diseñada para un sistema de scripting diferente pero esencialmente todas las versiones tienen la misma funcionalidad, hay una versión para el sistema de scripting de autohotkey, otra para el sistema de scripting de autokey, y una última para el sistema de scripting de espanso.
 
 ## Script para autohotkey:
 

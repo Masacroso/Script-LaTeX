@@ -45,11 +45,7 @@ return
 
 !-::Send _{{}{}}{left 1}
 
-::--::_{{}{}}{left 1}
-
 !`::Send {^}{{}{}}{left 1}
-
-::++::{^}{{}{}}{left 1}
 
 
 
@@ -564,7 +560,7 @@ return
 
 ; Operadores pequeños y otras funciones
 
-::..ñ::\cdot{Space}
+::..::\cdot{Space}
 
 ::*ñ::\star{Space}
 
@@ -688,9 +684,11 @@ return
 
 ::bñ::\binom{{}{}}{{}{}}{left 3}
 
-::seqñ::\{{}\{}}_{{}n\in \mathbb N{}}{left 19}
+::seQ::\{{}\{}}_{{}n\in \mathbb N{}}{left 19}
 
 ::1n::\in\{{}1,\ldots,n\{}}
+
+::0n::\in\{{}0,\ldots,n\{}}
 
 ::pxL::\partial/\partial x^1,\ldots,\partial/\partial x^n
 
@@ -713,3 +711,11 @@ return
 ::bL::b_1,\ldots,b_n
 
 ::cL::c_1,\ldots,c_n
+
+::loo::\lim_{{}\to\infty{}}{left 10}
+
+::i0::\int_0^{{}{}}{left 1}
+
+::s0::\sum_{{}\geqslant 0{}}{left 12}
+
+::s1::\sum_{{}\geqslant 1{}}{left 12}

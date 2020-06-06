@@ -596,11 +596,11 @@ return
 
 ::vliñ::\varliminf_{{}{}}{left 1}
 
-::liñ::\liminf_{{}{}}{left 1}
+::liñ::\liminf_{{}\to\infty{}}{left 10}
 
 ::vlsñ::\varlimsup_{{}{}}{left 1}
 
-::lsñ::\limsup_{{}{}}{left 1}
+::lsñ::\limsup_{{}\to\infty{}}{left 10}
 
 ::squñ::\sqcup{Space}
 
@@ -684,7 +684,27 @@ return
 
 ::bñ::\binom{{}{}}{{}{}}{left 3}
 
-::seQ::\{{}\{}}_{{}n\in \mathbb N{}}{left 19}
+::sN::\{{}\{}}_{{}n\in \mathbb N{}}{left 19}
+
+::sZ::\{{}\{}}_{{}k\in \mathbb Z{}}{left 19}
+
+::loo::\lim_{{}\to\infty{}}{left 10}
+
+::too::\to\infty{Space}
+
+::t0::\to 0{Space}
+
+::d0::\searrow 0{Space}
+
+::i0::\int_0^{{}{}}{left 1}
+
+::s0::\sum_{{}\geqslant 0{}}{left 12}
+
+::s1::\sum_{{}\geqslant 1{}}{left 12}
+
+
+
+; Listas
 
 ::1n::\in\{{}1,\ldots,n\{}}
 
@@ -712,10 +732,4 @@ return
 
 ::cL::c_1,\ldots,c_n
 
-::loo::\lim_{{}\to\infty{}}{left 10}
 
-::i0::\int_0^{{}{}}{left 1}
-
-::s0::\sum_{{}\geqslant 0{}}{left 12}
-
-::s1::\sum_{{}\geqslant 1{}}{left 12}

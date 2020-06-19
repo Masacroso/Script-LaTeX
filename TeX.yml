@@ -13,6 +13,7 @@ matches:
     replace: "$$\n$|$\n$$"
   - trigger: "++"
     replace: "^{$|$}"
+    force_clipboard: true
   - trigger: "--"
     replace: "_{$|$}"
 

@@ -439,6 +439,7 @@ matches:
     replace: "\\underbrace{$|$}_{}"
   - trigger: "obñ"
     replace: "\\overbrace{$|$}^{}"
+    force_clipboard: true
   - trigger: "osñ"
     replace: "\\overset{$|$}{}"
   - trigger: "stñ"
@@ -557,6 +558,7 @@ matches:
     replace: "\\cap "
   - trigger: "Cñ"
     replace: "^\\complement "
+    force_clipboard: true
   - trigger: "bxñ"
     replace: "\\boxtimes "
   - trigger: "b+ñ"
@@ -649,6 +651,7 @@ matches:
     replace: "\\sum_{$|$\\geqslant 0}"
   - trigger: "i0"
     replace: "\\int_0^{$|$}"
+    force_clipboard: true
     
     
   # Listas
@@ -659,20 +662,27 @@ matches:
     replace: "\\in\\\\{0,\\ldots,n\\\\}"
   - trigger: "pxL"
     replace: "\\partial/\\partial x^1,\\ldots,\\partial/\\partial x^n"
+    force_clipboard: true
   - trigger: "pyL"
     replace: "\\partial/\\partial y^1,\\ldots,\\partial/\\partial y^n"
+    force_clipboard: true
   - trigger: "dxL"
     replace: "dx^1,\\ldots,dx^n"
+    force_clipboard: true
   - trigger: "dyL"
     replace: "dy^1,\\ldots,dy^n"
+    force_clipboard: true
   - trigger: "axL"
     replace: "x_1,\\ldots,x_n"
   - trigger: "xL"
     replace: "x^1,\\ldots,x^n"
+    force_clipboard: true
   - trigger: "yL"
     replace: "y^1,\\ldots,y^n"
+    force_clipboard: true
   - trigger: "rL"
     replace: "r^1,\\ldots,r^n"
+    force_clipboard: true
   - trigger: "aL"
     replace: "a_1,\\ldots,a_n"
   - trigger: "bL"

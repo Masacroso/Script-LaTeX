@@ -409,6 +409,8 @@ matches:
     replace: "\\leftrightarrow "
   - trigger: "surñ"
     replace: "\\twoheadrightarrow "
+  - trigger: "xañ"
+    replace: "\\xrightarrow{$|$}"
 
 
   # Otros formatos

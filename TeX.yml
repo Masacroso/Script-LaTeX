@@ -1,4 +1,4 @@
-name: tex
+fname: tex
 parent: default
 
 matches:
@@ -521,7 +521,7 @@ matches:
   - trigger: "xx"
     replace: "\\times "
   - trigger: "nbñ"
-    replace: "\nabla "
+    replace: "\\nabla "
   - trigger: "pd1"
     replace: "\\frac{d}{dx}"
   - trigger: "pd2"

@@ -658,9 +658,9 @@ matches:
     
   # Listas
   
-  - trigger: "1n"
+  - trigger: "1nñ"
     replace: "\\in\\\\{1,\\ldots,n\\\\}"
-  - trigger: "0n"
+  - trigger: "0nñ"
     replace: "\\in\\\\{0,\\ldots,n\\\\}"
   - trigger: "pxL"
     replace: "\\partial/\\partial x^1,\\ldots,\\partial/\\partial x^n"
@@ -691,3 +691,15 @@ matches:
     replace: "b_1,\\ldots,b_n"
   - trigger: "cL"
     replace: "c_1,\\ldots,c_n"
+  - trigger: "eL"
+    replace: "e_1,\\ldots,e_n"
+  - trigger: "fL"
+    replace: "f_1,\\ldots,f_n"
+  - trigger: "gL"
+    replace: "g_1,\\ldots,g_n"
+  - trigger: "hL"
+    replace: "h_1,\\ldots,h_n"
+  - trigger: "vL"
+    replace: "v_1,\\ldots,v_n"
+  - trigger: "wL"
+    replace: "w_1,\\ldots,w_n"

@@ -18,7 +18,7 @@ Para utilizar esta versión del script hay que instalar autokey en el sistema y 
 
 ## Script para espanso:
 
-[Espanso](https://espanso.org/) es otro porgrama para definir y ejecutar scripts de sustituciones de cadenas de texto, y aunque no puede definir hotkeys como los programas anteriores su ventaja radica en que funciona en cualquier sistema operativo. 
+[Espanso](https://espanso.org/) es otro programa para definir y ejecutar scripts de sustituciones de cadenas de texto, y aunque no puede definir hotkeys como los programas anteriores su ventaja radica en que funciona en cualquier sistema operativo. 
 
 Para utilizar el script hay que instalar espanso en el sistema y una vez hecho esto colocar el archivo TeX.yml en la carpeta `/user` donde espanso guarda los scripts. Dependiendo del sistema operativo esta carpeta se encuentra en diferentes lugares, para saber dónde está se debe ejecutar el comando `espanso path` en una terminal del sistema (por ejemplo en sistemas como ubuntu se encuentra en `$HOME/.config/espanso/user/`).
 

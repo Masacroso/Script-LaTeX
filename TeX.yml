@@ -383,7 +383,7 @@ matches:
     replace: "\\to "
   - trigger: "Lrañ"
     replace: "\\Leftrightarrow "
-  - trigger: "iff"
+  - trigger: "ifñ"
     replace: "\\iff "
   - trigger: "Rañ"
     replace: "\\Rightarrow "

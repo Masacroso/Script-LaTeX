@@ -1,5 +1,4 @@
-fname: tex
-parent: default
+filter_title: "Rincón|Mathematics|Typora|Previsualizar|Modificar"
 
 matches:
   
@@ -309,6 +308,8 @@ matches:
     replace: "\\begin{pmatrix}\n$|$\n\\end{pmatrix}"
   - trigger: "smñ"
     replace: "\\left[\\begin{smallmatrix}$|$\\end{smallmatrix}\\right]"
+  - trigger: "asmñ"
+    replace: "\\left(\\begin{smallmatrix}$|$\\end{smallmatrix}\\right)"
   - trigger: "arrñ"
     replace: "\\begin{array}{$|$}\n\n\\end{array}"
 
@@ -654,7 +655,8 @@ matches:
   - trigger: "i0"
     replace: "\\int_0^{$|$}"
     force_clipboard: true
-    
+  - trigger: "phñ"
+    replace: "\\,\\cdot\\,"
     
   # Listas
   

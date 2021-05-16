@@ -67,6 +67,10 @@ return
 
 ::,,::$$`n`n$${left 3} ; para MSE
 
+::++::{^}{{}{}}{left 1}
+
+::--::_{{}{}}{left 1}
+
 
 
 ; Etiquetas de bbcode comunes
@@ -152,7 +156,7 @@ return
 
 ; Notaciones de conjuntos matemáticos comunes
 
-::RR::\mathbb{{}R{}}
+::Rñ::\mathbb{{}R{}}
 
 ::R2::\overline{{}\mathbb {{}R{}}{}}
 
@@ -162,7 +166,7 @@ return
 
 ::R0::\mathbb R\setminus\{{}0\{}}
 
-::CC::\mathbb C{Space}
+::Cñ::\mathbb C{Space}
 
 ::C1::\hat{{}\mathbb C{}}
 
@@ -204,33 +208,33 @@ return
 
 ; Acentos y formatos similares
 
-::op'::\overparen{{}{}}{left 1}
+::opç::\overparen{{}{}}{left 1}
 
-::up'::\underparen{{}{}}{left 1}
+::upç::\underparen{{}{}}{left 1}
 
-::ol'::\overline{{}{}}{left 1}
+::olç::\overline{{}{}}{left 1}
 
-::ul'::\underline{{}{}}{left 1}
+::ulç::\underline{{}{}}{left 1}
 
-::wt'::\widetilde{{}{}}{left 1}
+::wtç::\widetilde{{}{}}{left 1}
 
-::t'::\tilde{Space}
+::tç::\tilde{Space}
 
-::wh'::\widehat{{}{}}{left 1}
+::whç::\widehat{{}{}}{left 1}
 
-::h'::\hat{Space}
+::hç::\hat{Space}
 
-::ddd'::\dddot{Space}
+::dddç::\dddot{Space}
 
-::dd'::\ddot{Space}
+::ddç::\ddot{Space}
 
-::d'::\dot{Space}
+::dç::\dot{Space}
 
-::av'::\overrightarrow{{}{}}{left 1}
+::avç::\overrightarrow{{}{}}{left 1}
 
-::v'::\vec{Space}
+::vç::\vec{Space}
 
-::ch'::\check{Space}
+::chç::\check{Space}
 
 
 
@@ -414,13 +418,15 @@ return
 
 ::s<ñ::\left\langle{Space}{Space}\right\rangle{left 14}
 
+::<<ñ::\langle\{!}\langle{Space}{Space}\rangle\{!}\rangle{left 17}
+
 ::<ñ::\langle{Space}{Space}\rangle{left 8}
 
 ::|ñ::\left .\right|_{{}{}}{left 1}
 
-::|b::\bigg|_{{}{}}{left 1}
+; ::|b::\bigg|_{{}{}}{left 1}
 
-::|B::\Big|_{{}{}}{left 1}
+; ::|B::\Big|_{{}{}}{left 1}
 
 
 
@@ -436,7 +442,7 @@ return
 
 ::Lrañ::\Leftrightarrow{Space}
 
-::iff::\iff{Space}
+::ifñ::\iff{Space}
 
 ::Rañ::\Rightarrow{Space}
 
@@ -490,7 +496,7 @@ return
 
 ::ubñ::\underbrace{{}{}}_{{}{}}{left 4}
 
-::obñ::\overbrace{{}{}}{^}{{}{}}{left 3}
+::obñ::\overbrace{{}{}}{^}{{}{}}{left 4}
 
 ::osñ::\overset{{}{}}{{}{}}{left 3}
 
@@ -560,7 +566,7 @@ return
 
 ; Operadores pequeños y otras funciones
 
-::..::\cdot{Space}
+::..ñ::\cdot{Space}
 
 ::*ñ::\star{Space}
 
@@ -580,7 +586,7 @@ return
 
 ::Pñ::\Pr{Space}
 
-::Eñ::\mathrm{{}E{}}
+::Eñ::\operatorname{{}E{}}
 
 ::reñ::\operatorname{{}Re{}}
 
@@ -608,7 +614,7 @@ return
 
 ::nñ::\cap{Space}
 
-::Cñ::{^}\complement{Space}
+::coñ::{^}\complement{Space}
 
 ::bxñ::\boxtimes{Space}
 
@@ -664,6 +670,8 @@ return
 
 ::Nñ::\bigcap_{{}{}}{left 1}
 
+::aWñ::\bigwedge{Space}
+
 ::Wñ::\bigwedge_{{}{}}{left 1}
 
 ::Vñ::\bigvee_{{}{}}{left 1}
@@ -688,19 +696,21 @@ return
 
 ::sZ::\{{}\{}}_{{}k\in \mathbb Z{}}{left 19}
 
-::loo::\lim_{{}\to\infty{}}{left 10}
+; ::loo::\lim_{{}\to\infty{}}{left 10}
 
-::too::\to\infty{Space}
+; ::too::\to\infty{Space}
 
-::t0::\to 0{Space}
+; ::t0::\to 0{Space}
 
-::d0::\searrow 0{Space}
+; ::d0::\searrow 0{Space}
 
-::i0::\int_0^{{}{}}{left 1}
+::i0::\int_0{^}{{}{}}{left 1}
 
 ::s0::\sum_{{}\geqslant 0{}}{left 12}
 
 ::s1::\sum_{{}\geqslant 1{}}{left 12}
+
+::qed::∎
 
 
 
@@ -710,21 +720,21 @@ return
 
 ::0n::\in\{{}0,\ldots,n\{}}
 
-::pxL::\partial/\partial x^1,\ldots,\partial/\partial x^n
+::pxL::\partial/\partial x{^}1,\ldots,\partial/\partial x{^}n
 
-::pyL::\partial/\partial y^1,\ldots,\partial/\partial y^n
+::pyL::\partial/\partial y{^}1,\ldots,\partial/\partial y{^}n
 
-::dxL::dx^1,\ldots,dx^n
+::dxL::dx{^}1,\ldots,dx{^}n
 
-::dyL::dy^1,\ldots,dy^n
+::dyL::dy{^}1,\ldots,dy{^}n
 
 ::axL::x_1,\ldots,x_n
 
-::xL::x^1,\ldots,x^n
+::xL::x{^}1,\ldots,x{^}n
 
-::yL::y^1,\ldots,y^n
+::yL::y{^}1,\ldots,y{^}n
 
-::rL::r^1,\ldots,r^n
+::rL::r{^}1,\ldots,r{^}n
 
 ::aL::a_1,\ldots,a_n
 

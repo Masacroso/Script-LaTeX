@@ -35,8 +35,6 @@ matches:
 
   # Funciones comunes
 
-  - trigger: "ib¡"
-    replace: "[$|$]_\\mathfrak{I}"
   - trigger: "tr¡"
     replace: "\\operatorname{tr}"
   - trigger: "sig¡"
@@ -81,18 +79,12 @@ matches:
     replace: "\\log "
   - trigger: "e¡"
     replace: "\\exp\\left($|$\\right)"
-  - trigger: "chi¡"
-    replace: "\\chi_{$|$}"
   - trigger: "1¡"
     replace: "\\mathbf{1}_{$|$}"
   - trigger: "a¡"
     replace: "\\left| $|$ \\right|"
   - trigger: "n¡"
     replace: "\\left\\| $|$ \\right\\|"
-  - trigger: "di¡"
-    replace: "\\dim "
-  - trigger: "d¡"
-    replace: "\\det "
 
   # Notaciones de conjuntos matemáticos comunes
 
@@ -291,8 +283,6 @@ matches:
     replace: "\\begin{cases}\n$|$\n\\end{cases}"
   - trigger: "aliñ"
     replace: "\\begin{align*}\n$|$\n\\end{align*}"
-  - trigger: "ali2"
-    replace: "\\begin{aligned}\n$|$\n\\end{aligned}"
   - trigger: "bmñ"
     replace: "\\begin{bmatrix}\n$|$\n\\end{bmatrix}"
   - trigger: "Bmñ"
@@ -326,8 +316,6 @@ matches:
     replace: "\\ddots "
   - trigger: "vdñ"
     replace: "\\vdots "
-  - trigger: "asqñ"
-    replace: "\\,\\square\\, "
   - trigger: "sqñ"
     replace: "\\square "
   - trigger: "trñ"
@@ -340,14 +328,6 @@ matches:
     replace: "\\ddagger "
   - trigger: "dgñ"
     replace: "\\dagger "
-  - trigger: "spñ"
-    replace: "\\spadesuit "
-  - trigger: "diñ"
-    replace: "\\diamondsuit "
-  - trigger: "heñ"
-    replace: "\\heartsuit "
-  - trigger: "clñ"
-    replace: "\\clubsuit "
 
   # Delimitadores
 
@@ -548,7 +528,7 @@ matches:
     replace: "\\varlimsup_{$|$}"
   - trigger: "lsñ"
     replace: "\\limsup_{$|$\\to\\infty}"
-  - trigger: "squñ"
+  - trigger: "duñ"
     replace: "\\sqcup "
   - trigger: "uñ"
     replace: "\\cup "
@@ -556,6 +536,15 @@ matches:
     replace: "\\cap "
   - trigger: "coñ"
     replace: "^\\complement "
+    force_clipboard: true
+  - trigger: "t1"
+    replace: "^\\top "
+    force_clipboard: true
+  - trigger: "ct1"
+    replace: "^\\dagger "
+    force_clipboard: true
+  - trigger: "orñ"
+    replace: "^\\bot "
     force_clipboard: true
   - trigger: "m1ñ"
     replace: "^\\flat "
@@ -627,7 +616,9 @@ matches:
     replace: "\\vee "
 
   # Otras construcciones comunes
-
+  
+  - trigger: "phñ"
+    replace: "\\,\\cdot\\, "
   - trigger: "f1"
     replace: "\\frac1{$|$}"
   - trigger: "tf1"
@@ -644,7 +635,7 @@ matches:
     replace: "\\\\{$|$\\\\}_{k\\in \\mathbb Z}"
   - trigger: "looñ"
     replace: "\\lim_{$|$\\to\\infty}"
-  - trigger: "l0ñ"
+  - trigger: "l0"
     replace: "\\lim_{$|$\\to 0}"
   - trigger: "tooñ"
     replace: "\\to\\infty "

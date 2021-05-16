@@ -1,4 +1,5 @@
-
+name: TeX
+parent: default
 
 matches:
   # Específicos

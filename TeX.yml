@@ -171,6 +171,8 @@ matches:
     replace: "\\vec "
   - trigger: "chç"
     replace: "\\check "
+  - trigger: "mrç"
+    replace: "\\mathring "
 
   # Letras griegas
 
@@ -512,6 +514,12 @@ matches:
     replace: "\\operatorname{Re}"
   - trigger: "imñ"
     replace: "\\operatorname{Im}"
+  - trigger: "im1"
+    replace: "\\,\\lrcorner\\, "
+  - trigger: "im2"
+    replace: "\\,\\llcorner\\, "
+  - trigger: "nmñ"
+    replace: "\\nmid "
   - trigger: "mñ"
     replace: "\\mid "
   - trigger: "lñ"
@@ -534,22 +542,24 @@ matches:
     replace: "\\cup "
   - trigger: "nñ"
     replace: "\\cap "
+  - trigger: "frñ"
+    replace: "\\frown "
   - trigger: "coñ"
     replace: "^\\complement "
     force_clipboard: true
   - trigger: "t1"
     replace: "^\\top "
     force_clipboard: true
-  - trigger: "ct1"
+  - trigger: "ctñ"
     replace: "^\\dagger "
     force_clipboard: true
   - trigger: "orñ"
     replace: "^\\bot "
     force_clipboard: true
-  - trigger: "m1ñ"
+  - trigger: "mfñ"
     replace: "^\\flat "
     force_clipboard: true
-  - trigger: "m2ñ"
+  - trigger: "msñ"
     replace: "_\\sharp "
   - trigger: "bxñ"
     replace: "\\boxtimes "
@@ -616,7 +626,7 @@ matches:
     replace: "\\vee "
 
   # Otras construcciones comunes
-  
+
   - trigger: "phñ"
     replace: "\\,\\cdot\\, "
   - trigger: "f1"

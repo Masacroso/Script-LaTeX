@@ -34,7 +34,7 @@ He ido variando el diccionario con el tiempo según he visto que una cadena de s
 
 El script no pretende ser exhaustivo sino un modelo para que cada usuario se construya el suyo propio, haciendo las modificaciones que quiera. Su funcionamiento es sencillo, para saber cómo modificar cada diccionario (o hacer un script desde cero) hay que consultar la información sobre el funcionamiento de las [sustituciones en espanso](https://espanso.org/docs/matches/) o cómo funcionan los [hotstrings en autohotkey](https://lexikos.github.io/v2/docs/Hotstrings.htm), dependiendo de la versión del script que vayamos a usar.
 
-A continuación unos ejemplos de los tipos de reemplazos que hace el script:
+A continuación unos ejemplos de los tipos de reemplazo que hace el script:
 
 ## Letras griegas y hebreas:
 

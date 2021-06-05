@@ -22,7 +22,7 @@ El archivo TeX.ahk es el archivo de texto que contiene las sustituciones de cade
 
 Cuando el script se ha iniciado aparecerá un icono de color verde en la barra de tareas que indica que el programa está en ejecución pero inactivo (es decir que no realiza sustituciones). Para activarlo (o volverlo a desactivar) hay que presionar la combinación de teclas `Alt+Ñ`. Cuando el programa está activo (es decir, que hace sustituciones de cadenas de texto) el icono pasará a tener color rojo.
 
-Por comodidad, si se va a usar a diario, es recomendable hacer que el script se active al inicio de sesión, lo cual se puede hacer con el programador de atreas de windows.
+Por comodidad, si se va a usar a diario, es recomendable hacer que el script se active al inicio de sesión, lo cual se puede hacer con el programador de tareas de windows.
 
 ***
 

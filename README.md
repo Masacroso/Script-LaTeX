@@ -2,6 +2,16 @@ Script de sustitución de tecleos diseñado para escribir código de LaTeX muy r
 
 Hay tres versiones del script, cada una diseñada para un sistema de scripting diferente pero esencialmente todas las versiones tienen la misma funcionalidad, hay una versión para el sistema de scripting de autohotkey, otra para el sistema de scripting de autokey, y una última para el sistema de scripting de espanso.
 
+Actualmente usa la versión de espanso, ya que puedo utilizarla en varios sistemas operativos diferentes.
+
+## Script para espanso:
+
+[Espanso](https://espanso.org/) es un programa para definir y ejecutar scripts de sustituciones de cadenas de texto, y aunque no puede definir hotkeys como los programas anteriores su ventaja radica en que funciona en cualquier sistema operativo. 
+
+Para utilizar el script hay que instalar espanso en el sistema y una vez hecho esto colocar el archivo TeX.yml en la carpeta `/user` donde espanso guarda los scripts. Dependiendo del sistema operativo esta carpeta se encuentra en diferentes lugares, para saber dónde está se debe ejecutar el comando `espanso path` en una terminal del sistema (por ejemplo en sistemas como ubuntu se encuentra en `$HOME/.config/espanso/user/`).
+
+Para pasar de modo activo a inactivo (o viceversa) hay que pulsar dos veces seguidas la tecla ALT. Es recomendable editar el archivo TeX.yml colocando arriba de todo una lista de palabras clave que ahcen que espanso sólo esté activo cuando determinadas ventanas estén activas, como la ventana de un editor de texto como Typora, o una pestaña del explorador Firefox cond eterminado título, etc. Para más información consultar [aquí](https://espanso.org/docs/configuration/#application-specific-configurations).
+
 ## Script para autohotkey:
 
 [Autohotkey](https://www.autohotkey.com/) es un programa para correr scripts de sustitución de cadenas de texto y definir hotkeys entre otras cosas, y sólo está disponible para sistemas windows.
@@ -15,11 +25,3 @@ Cuando el script se ha iniciado aparecerá un icono de color verde en la barra d
 [Autokey](https://github.com/autokey/autokey) es un programa para correr scripts de sustitución de cadenas de texto y definir hotkeys entre otras cosas, y sólo está disponible para sistemas linux. 
 
 Para utilizar esta versión del script hay que instalar autokey en el sistema y luego descomprimir el archivo latex.zip en la carpeta donde autokey guarda las definiciones de las sustituciones y scripts, la cual se puede abrir desde la interfaz del programa (y en distribuciones tipo ubuntu es `$HOME/.config/autokey/data/latex/`).
-
-## Script para espanso:
-
-[Espanso](https://espanso.org/) es otro programa para definir y ejecutar scripts de sustituciones de cadenas de texto, y aunque no puede definir hotkeys como los programas anteriores su ventaja radica en que funciona en cualquier sistema operativo. 
-
-Para utilizar el script hay que instalar espanso en el sistema y una vez hecho esto colocar el archivo TeX.yml en la carpeta `/user` donde espanso guarda los scripts. Dependiendo del sistema operativo esta carpeta se encuentra en diferentes lugares, para saber dónde está se debe ejecutar el comando `espanso path` en una terminal del sistema (por ejemplo en sistemas como ubuntu se encuentra en `$HOME/.config/espanso/user/`).
-
-Para pasar de modo activo a inactivo (o viceversa) hay que pulsar dos veces seguidas la tecla ALT.

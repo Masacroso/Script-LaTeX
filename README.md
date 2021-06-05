@@ -28,8 +28,34 @@ Por comodidad, si se va a usar a diario, es recomendable hacer que el script se 
 
 # Funcionamiento básico del script y ejemplos:
 
-El script lo que hace es sustituir una cadena de tecleos por otros, por ejemplo si se teclea "agg" entonces esa cadena de texto es sustituida por "\alpha", si se teclea "sñ" esa cadena de texto es sustituida por "\sum_{}" (dejando el cursor entre los corchetes). Entonces los archivos del script lo que contienen es un diccionario que traducen unas pequeñas cadenas de texto por construcciones comunes de LaTeX.
+El script lo que hace es sustituir una cadena de tecleos por otros, abajo hay unos cuantos ejemplos del tipo de sustituciones que hace. Los archivos del script lo que contienen es un "diccionario" que traducen unas pequeñas cadenas de texto por construcciones comunes de LaTeX.
 
 He ido variando el diccionario con el tiempo según he visto que una cadena de sustitución es mejor que otra o más usada, etc. El diccionario es largo, para conocer qué sustituciones se han definido lo mejor es consultar el contenido de cada archivo de la versión del script que estemos usando (el archivo TeX.yml si usamos la versión de espanso o el archivo TeX.ahk si estamos usando la versión de autohotkey, ambos archivos se pueden abrir con cualquier editor de texto) que es donde están contenidas las sustituciones (el contenido de cada archivo puede verse directamente aquí en GitHub, sólo hay que clickear sobre el archivo del que queramos ver su contenido).
 
 El script no pretende ser exhaustivo sino un modelo para que cada usuario se construya el suyo propio, haciendo las modificaciones que quiera. Su funcionamiento es sencillo, para saber cómo modificar cada diccionario (o hacer un script desde cero) hay que consultar la información sobre el funcionamiento de las [sustituciones en espanso](https://espanso.org/docs/matches/) o cómo funcionan los [hotstrings en autohotkey](https://lexikos.github.io/v2/docs/Hotstrings.htm), dependiendo de la versión del script que vayamos a usar.
+
+A continuación unos ejemplos de los tipos de reemplazos que hace el script:
+
+## Letras griegas y hebreas:
+
+Para escribir letras griegas el intercambio es una letra seguido del sufijo gg, por ejemplo, la cadena agg es intercambiada por \alpha seguido de un espacio, es decir, el símbolo de alfa (minúscula) escrito en LaTeX y luego seguido de un espacio (no un espacio de LaTeX sino una pulsación de la tecla espaciadora).
+
+Las letras mayúsculas van en mayúsculas, es decir que Ggg es intercambiada por \Gamma, etc... Además si una letra tiene una variación ésta se escribe colocando una v delante de la cadena, es decir que vfgg se intercambia por \varphi (seguido de un espacio).
+
+He añadido además algunas letras hebreas de uso común, éstas se escriben con el sufijo hh en vez de gg, es decir que ahh deja el texto \aleph seguido de un espacio.
+
+## Operadores y relaciones:
+
+En general son dos o tres letras (generalmente letras significativas del texto en LaTeX al que reemplazan) seguidas de ñ, por ejemplo la cadena lñ es sustituida por \lim_{} con el cursor entre los corchetes. O por ejemplo sñ que sustituye a \sum_{} dejando el cursor entre el par de corchetes, o iñ que es reemplazada por \int_{} dejando de nuevo el cursor entre los corchetes.
+
+Otros tipos de operadores son por ejemplo cadenas como xx que es sustituida por \times seguido de un espacio, == por \equiv seguido de un espacio, etc... Lo he ido configurando a mi gusto de tal forma que me resulte sencillo recordar los reemplazos y sea rápido de teclear.
+
+## Otro tipo de construcciones:
+
+Por ejemplo los símbolos comúnmente asociados a conjuntos comunes siguen el patrón de letra en mayúsculas repetida, por ejemplo NN por \mathbb{N} o SS por \mathbb{S}, etc... Otras letras comunes de conjuntos no siguen este patrón, por ejemplo Rñ se sustituye por \mathbb{R} y Cñ por \mathbb{C}, eso es para evitar que cadenas como RR o CC que formen parte de palabras comunes en castellano o inglés sean remplazadas.
+
+Funciones comunes utilizan el sufijo ¡ (un signo de exclamación) en vez de ñ, por ejemplo s¡ sustituye a \sin seguido de un espacio, y l¡ sustituye a \log seguido de un espacio, o por ejemplo 1¡ es reemplazado por \mathbf{1}_{} donde el cursor se queda entre los corchetes, otro ejemplo sería fl¡ que sustituye a \lfloor  \rfloor quedando el cursor entre medias. Etc...
+
+También hay sustituciones para etiquetas de bbcode de uso común, que se utilizan con el sufijo bb. Y dos sustituciones específicas para el foro de rincón matemático: çç para [tex][/tex] (colocándose el cursor entre las etiquetas), y ññ para una sustitución similar para escribir matemáticas en modo \display y centrado.
+
+también hay sustituciones para construcciones comunes como fñ que es reemplazada por \frac{}{} (con el cursor entre el primer par de corchetes), o pxL que es sustituida por \partial/\partial x^1,\ldots,\partial/\partial x^n, que representa una base local para campos vectoriales, etc...

@@ -12,11 +12,11 @@ Hay dos versiones del script, cada uno para un sistema de scripting diferente pe
 
 Para utilizar el script hay que instalar espanso en el sistema operativo y una vez hecho esto colocar el archivo TeX.yml en la carpeta `/user` donde espanso guarda los scripts. Dependiendo del sistema operativo esta carpeta se encuentra en diferentes lugares, para saber dónde está se puede ejecutar el comando `espanso path` en una terminal del sistema (por ejemplo en sistemas como ubuntu se encuentra en `$HOME/.config/espanso/user/`).
 
-Para pasar de modo activo a inactivo (o viceversa) hay que pulsar dos veces seguidas la tecla ALT. Es recomendable editar el archivo TeX.yml colocando arriba de todo una lista de palabras clave que hacen que espanso sólo esté activo cuando determinadas ventanas (con determinadas palabras clave en sus títulos) estén activas, como la ventana de un editor de texto como Typora, o una pestaña del explorador Firefox con un título que contenga la palabra "matemáticas", etc. Para más información consultar [aquí](https://espanso.org/docs/configuration/#application-specific-configurations).
+Para pasar de modo activo a inactivo (o viceversa) hay que pulsar dos veces seguidas la tecla ALT. Es muy práctico editar el archivo del script TeX.yml colocando arriba de todo una lista de palabras clave que hacen que espanso sólo esté activo cuando determinadas ventanas (con determinadas palabras clave en sus títulos) estén activas, como la ventana de un editor de texto como Typora, o una pestaña del explorador Firefox con un título que contenga la palabra "matemáticas", etc. Para más información consultar [aquí](https://espanso.org/docs/configuration/#application-specific-configurations).
 
 ## Script para autohotkey:
 
-[Autohotkey](https://www.autohotkey.com/) es un programa para correr scripts de sustitución de cadenas de texto y definir hotkeys, entre otras cosas, y sólo está disponible para sistemas operativos windows.
+[Autohotkey](https://www.autohotkey.com/) es un programa para correr scripts de sustitución de cadenas de texto y definir hotkeys, entre otras cosas, y sólo está disponible para sistemas operativos Windows.
 
 El archivo TeX.ahk es el archivo de texto que contiene las sustituciones de cadenas de texto y hotkeys que se han definido, no hace falta descargarlo simplemente se puede utilizar como referencia o modelo. Para usar el script simplemente hay que descargar y descomprimir el archivo TeX.zip y ejecutar el archivo TeX.exe.
 

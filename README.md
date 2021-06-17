@@ -1,6 +1,6 @@
 Script de sustitución de tecleos diseñado para escribir código de LaTeX muy rápidamente. El diseño de los scripts tiene en consideración la distribución del teclado que se utiliza comúnmente en España e Hispanoamérica. 
 
-Hay dos versiones del script, cada uno para un sistema de scripting diferente pero esencialmente ambos scripts tienen la misma funcionalidad, hay una versión para el sistema de scripting de espanso y otra para autohotkey. Actualmente uso únicamente la versión de espanso, ya que puedo utilizarla en varios sistemas operativos diferentes.
+Hay dos versiones del script, cada uno para un sistema de scripting diferente pero esencialmente ambos scripts tienen la misma funcionalidad: hay una versión para el sistema de scripting de espanso y otra para autohotkey. Actualmente uso únicamente la versión de espanso, ya que puedo utilizarla en varios sistemas operativos diferentes.
 
 ***
 

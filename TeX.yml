@@ -32,6 +32,8 @@ matches:
     replace: "[color=$|$][/color]"
   - trigger: "spbb"
     replace: "[spoiler]$|$[/spoiler]"
+  - trigger: "qbb"
+    replace: "[quote]$|$[/quote]"
 
   # Funciones comunes
 
@@ -71,6 +73,8 @@ matches:
     replace: "\\arctan "
   - trigger: "s¡"
     replace: "\\sin "
+  - trigger: "s1"
+    replace: "\\operatorname{sen}"
   - trigger: "c¡"
     replace: "\\cos "
   - trigger: "t¡"
@@ -667,10 +671,14 @@ matches:
     replace: "\\searrow 0 "
   - trigger: "t0"
     replace: "\\to 0 "
-  - trigger: "s1"
+  - trigger: "s1oo"
     replace: "\\sum_{$|$\\geqslant 1}"
-  - trigger: "s0"
+  - trigger: "s0oo"
     replace: "\\sum_{$|$\\geqslant 0}"
+  - trigger: "s1n"
+    replace: "\\sum_{$|$\\geqslant 1}^n "
+  - trigger: "s0n"
+    replace: "\\sum_{$|$\\geqslant 0}^n "
   - trigger: "i0"
     replace: "\\int_0^{$|$}"
     force_clipboard: true

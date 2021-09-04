@@ -658,9 +658,9 @@ matches:
   - trigger: "s0oo"
     replace: "\\sum_{$|$\\geqslant 0}"
   - trigger: "s1n"
-    replace: "\\sum_{$|$\\geqslant 1}^n "
+    replace: "\\sum_{$|$=1}^n "
   - trigger: "s0n"
-    replace: "\\sum_{$|$\\geqslant 0}^n "
+    replace: "\\sum_{$|$=0}^n "
   - trigger: "i0"
     replace: "\\int_0^{$|$}"
     force_clipboard: true

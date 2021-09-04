@@ -73,7 +73,7 @@ matches:
     replace: "\\arctan "
   - trigger: "s¡"
     replace: "\\sin "
-  - trigger: "s1"
+  - trigger: "s1¡"
     replace: "\\operatorname{sen}"
   - trigger: "c¡"
     replace: "\\cos "

@@ -10,7 +10,7 @@ Hay dos versiones del script, cada uno para un sistema de scripting diferente pe
 
 [Espanso](https://espanso.org/) es un programa para definir y ejecutar scripts de sustituciones de cadenas de texto y funciona en sistemas operativos Windows, MacOS y Linux (pero de momento no en android). 
 
-Para utilizar el script hay que instalar espanso en el sistema operativo y una vez hecho esto colocar el archivo TeX.yml en la carpeta `/user` donde espanso guarda los scripts. Dependiendo del sistema operativo esta carpeta se encuentra en diferentes lugares, para saber dónde está se puede ejecutar el comando `espanso path` en una terminal del sistema (por ejemplo en sistemas como ubuntu se encuentra en `$HOME/.config/espanso/user/`).
+Para utilizar el script hay que instalar espanso en el sistema operativo y una vez hecho esto colocar el archivo TeX.yml en la carpeta `/user` donde espanso guarda los scripts. Dependiendo del sistema operativo esta carpeta se encuentra en diferentes lugares, para saber dónde está se puede ejecutar el comando `espanso path` en una terminal del sistema (por ejemplo en sistemas como ubuntu se encuentra en `$HOME/.config/espanso/`).
 
 Para pasar de modo activo a inactivo (o viceversa) hay que pulsar dos veces seguidas la tecla ALT. Es muy práctico editar el archivo del script TeX.yml colocando arriba de todo una lista de palabras clave que hacen que espanso sólo esté activo cuando determinadas ventanas (con determinadas palabras clave en sus títulos) estén activas, como la ventana de un editor de texto como Typora, o una pestaña del explorador Firefox con un título que contenga la palabra "matemáticas", etc. Para más información consultar [aquí](https://espanso.org/docs/configuration/#application-specific-configurations).
 

@@ -659,8 +659,10 @@ matches:
     replace: "\\sum_{$|$\\geqslant 0}"
   - trigger: "s1n"
     replace: "\\sum_{$|$=1}^n "
+    force_clipboard: true
   - trigger: "s0n"
     replace: "\\sum_{$|$=0}^n "
+    force_clipboard: true
   - trigger: "i0"
     replace: "\\int_0^{$|$}"
     force_clipboard: true

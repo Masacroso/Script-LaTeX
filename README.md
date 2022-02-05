@@ -1,6 +1,6 @@
-Script de sustitución de tecleos diseñado para escribir código de LaTeX muy rápidamente. El diseño de los scripts tiene en consideración la distribución del teclado que se utiliza comúnmente en España e Hispanoamérica. 
+Script de sustitución de tecleos diseñado para escribir código de [TeX](https://es.wikipedia.org/wiki/TeX) muy rápidamente. El diseño de los scripts tiene en consideración la distribución del teclado que se utiliza comúnmente en España e Hispanoamérica. 
 
-Hay dos versiones del script, cada uno para un sistema de scripting diferente pero esencialmente ambos scripts tienen la misma funcionalidad: hay una versión para el sistema de scripting de espanso y otra para autohotkey. Actualmente uso únicamente la versión de espanso, ya que puedo utilizarla en varios sistemas operativos diferentes.
+Hay dos versiones del script, cada uno para un sistema de scripting diferente pero esencialmente ambos scripts tienen la misma funcionalidad. Una versión es para el sistema de scripting de [espanso](https://espanso.org/) y otra para [autohotkey](https://www.autohotkey.com/). Actualmente sólo mantengo la versión de espanso, ya que puedo utilizarla en varios sistemas operativos diferentes y es la que utilizo.
 
 ***
 
@@ -10,13 +10,13 @@ Hay dos versiones del script, cada uno para un sistema de scripting diferente pe
 
 [Espanso](https://espanso.org/) es un programa para definir y ejecutar scripts de sustituciones de cadenas de texto y funciona en sistemas operativos Windows, MacOS y Linux (pero de momento no en android). 
 
-Para utilizar el script hay que instalar espanso 0.7.3 en el sistema operativo y una vez hecho esto colocar el archivo TeX.yml en la carpeta `/user` donde espanso guarda los scripts. Dependiendo del sistema operativo esta carpeta se encuentra en diferentes lugares, para saber dónde está se puede ejecutar el comando `espanso path` en una terminal del sistema (por ejemplo en sistemas como ubuntu se encuentra en `$HOME/.config/espanso/`).
+Para utilizar el script primero hay que instalar espanso 0.7.3 en el sistema operativo. Una vez hecho esto colocamos el archivo TeX.yml en la carpeta `/user` donde espanso guarda los scripts, que dependiendo del sistema operativo esta carpeta se encuentra en diferentes lugares (para saber dónde está se puede ejecutar el comando `espanso path` en una terminal del sistema, por ejemplo en sistemas como ubuntu se encuentra en `$HOME/.config/espanso/`). Una vez hecho esto espanso se reiniciará y el script estará activo. Si fuese necesario, espanso puede desactivarse pulsando dos veces seguidas la tecla ALT, y se puede volver a activar volviendo a pulsar dos evces la tecla ALT.
 
-Para pasar de modo activo a inactivo (o viceversa) hay que pulsar dos veces seguidas la tecla ALT. Es muy práctico editar el archivo del script TeX.yml colocando arriba de todo una lista de palabras clave que hacen que espanso sólo esté activo cuando determinadas ventanas (con determinadas palabras clave en sus títulos) estén activas, como la ventana de un editor de texto como Typora, o una pestaña del explorador Firefox con un título que contenga la palabra "matemáticas", etc. Para más información consultar [aquí](https://espanso.org/docs/configuration/#application-specific-configurations).
+En este archivo TeX.yml es donde se encuentra el diccionario que define las sustituciones. Por otra aprte es conveniente añadir al inicio del archivo TeX.yml una lista de palabras clave que hacen que espanso sólo esté activo en programas cuyas ventanas activas contengan alguna de estas palabras clave en su título. Por ejemplo se pueden poner nombres de editores de texto que soporten TeX como Typora, o palabras "matemáticas" las cuales se encuentran presente en el título de diversas páginas web con soporte para TeX, etc. Para más información consultar [aquí](https://espanso.org/docs/configuration/#application-specific-configurations).
 
 ## Script para autohotkey:
 
-[Autohotkey](https://www.autohotkey.com/) es un programa para correr scripts de sustitución de cadenas de texto y definir hotkeys, entre otras cosas, y sólo está disponible para sistemas operativos Windows.
+[Autohotkey](https://www.autohotkey.com/) es un programa para ejecutar scripts de sustitución de cadenas de texto y definir hotkeys, entre otras cosas, y sólo está disponible para sistemas operativos Windows.
 
 El archivo TeX.ahk es el archivo de texto que contiene las sustituciones de cadenas de texto y hotkeys que se han definido, no hace falta descargarlo simplemente se puede utilizar como referencia o modelo. Para usar el script simplemente hay que descargar y descomprimir el archivo TeX.zip y ejecutar el archivo TeX.exe.
 
@@ -30,9 +30,9 @@ Por comodidad, si se va a usar a diario, es recomendable hacer que el script se 
 
 El script lo que hace es sustituir una cadena de tecleos por otros, abajo hay unos cuantos ejemplos del tipo de sustituciones que hace. Los archivos del script lo que contienen es un "diccionario" que traducen unas pequeñas cadenas de texto por construcciones comunes de LaTeX.
 
-He ido variando el diccionario con el tiempo según he visto que una cadena de sustitución es mejor que otra o más usada, etc. El diccionario es largo, para conocer qué sustituciones se han definido lo mejor es consultar el contenido de cada archivo de la versión del script que estemos usando (el archivo TeX.yml si usamos la versión de espanso o el archivo TeX.ahk si estamos usando la versión de autohotkey, ambos archivos se pueden abrir con cualquier editor de texto) que es donde están contenidas las sustituciones (el contenido de cada archivo puede verse directamente aquí en GitHub, sólo hay que clickear sobre el archivo del que queramos ver su contenido).
+He ido variando el diccionario con el tiempo según he visto que una cadena de sustitución es mejor que otra o más usada, etc. El diccionario es largo, para conocer qué sustituciones se han definido lo mejor es consultar el contenido de cada archivo de la versión del script que estemos usando (el archivo TeX.yml si usamos la versión de espanso o el archivo TeX.ahk si estamos usando la versión de autohotkey, ambos archivos se pueden abrir con cualquier editor de texto). Además el contenido de dichos archivos también puede verse directamente en el repositorio de GitHub, sólo hay que clickear sobre el archivo del que queramos ver su contenido.
 
-El script no pretende ser exhaustivo sino un modelo para que cada usuario se construya el suyo propio, haciendo las modificaciones que quiera. Su funcionamiento es sencillo, para saber cómo modificar cada diccionario (o hacer un script desde cero) hay que consultar la información sobre el funcionamiento de las [sustituciones en espanso](https://espanso.org/docs/matches/) o cómo funcionan los [hotstrings en autohotkey](https://lexikos.github.io/v2/docs/Hotstrings.htm), dependiendo de la versión del script que vayamos a usar.
+El script no pretende ser exhaustivo sino un modelo para que cada usuario se construya el suyo propio, haciendo las modificaciones que considere. Su funcionamiento es sencillo, para saber cómo modificar cada diccionario (o hacer un script desde cero) hay que consultar la información sobre el funcionamiento de las [sustituciones en espanso](https://espanso.org/docs/matches/) o cómo funcionan los [hotstrings en autohotkey](https://lexikos.github.io/v2/docs/Hotstrings.htm), dependiendo de la versión del script que vayamos a usar.
 
 A continuación unos ejemplos de los tipos de reemplazo que hace el script:
 

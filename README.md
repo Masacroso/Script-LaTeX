@@ -40,7 +40,7 @@ A continuación unos ejemplos de los tipos de reemplazo que hace el script:
 
 Para escribir letras griegas el intercambio es una letra seguido del sufijo `gg`, por ejemplo, la cadena `agg` es intercambiada por `\alpha ` seguido de un espacio, es decir, el símbolo de alfa (minúscula) escrito en TeX y luego seguido de un espacio (no un espacio de TeX sino una pulsación de la tecla espaciadora).
 
-Las letras mayúsculas van en mayúsculas, es decir que `Ggg` es intercambiada por `\Gamma `, etc... Además si una letra tiene una variación ésta se escribe colocando una `v` delante de la cadena, es decir que `vfgg` se intercambia por `\varphi` (seguido de un espacio).
+Las letras mayúsculas van en mayúsculas, es decir que `Ggg` es intercambiada por `\Gamma `, etc... Además si una letra tiene una variación ésta se escribe colocando una `v` delante de la cadena, es decir que `vfgg` se intercambia por `\varphi ` (seguido de un espacio).
 
 He añadido además algunas letras hebreas de uso común, éstas se escriben con el sufijo `hh` en vez de `gg`, es decir que `ahh` deja el texto `\aleph ` seguido de un espacio.
 

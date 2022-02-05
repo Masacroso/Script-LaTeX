@@ -4,7 +4,7 @@ Hay dos versiones del script, cada uno para un sistema de scripting diferente pe
 
 ***
 
-# Versiones:
+# Versiones e instalaci:
 
 ## Script para espanso:
 

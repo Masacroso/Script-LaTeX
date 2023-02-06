@@ -2,15 +2,15 @@
 
 # Instalación:
 
-Para utilizar el script primero hay que instalar espanso 2.1.8 o posterior en el sistema operativo. Una vez instalado espanso ejecutamos en una terminal del sistema operativo `espanso path` y vamos a la primera dirección. Una vez en la carpeta colocamos el archivo TeX.yml en la carpte `/matches` para finalizar la instalación.
+Para utilizar el script primero hay que instalar espanso 2.1.8 o posterior en el sistema operativo. Una vez instalado espanso ejecutamos en una terminal del sistema operativo `espanso path` y vamos a la primera dirección. Una vez en la carpeta colocamos el archivo TeX.yml en la subcarpeta `/matches` para finalizar la instalación.
 
 # Funcionamiento básico del script y ejemplos:
 
-El script está activo por defecto para toda aplicación pero también se puede limitar la acción del script para que sólo esté activo en determinadas aplicaciones o páginas web, [aquí](https://espanso.org/docs/configuration/app-specific-configurations/) está la documentación detallada sobre ello. En cualquier caso presionando dos veces seguidas la tecla ALT desactivará (o reactivará) espanso.
+El script está activo por defecto para toda aplicación pero también se puede limitar para que sólo esté activo en determinadas aplicaciones o páginas web, [aquí](https://espanso.org/docs/configuration/app-specific-configurations/) está la documentación detallada para limitar la acción del script. En cualquier caso presionando dos veces seguidas la tecla ALT pausará (o reactivará) espanso, deteniendo o reactivando cualquier script de espanso.
 
 El script lo que hace es sustituir unas cadenas de texto pot otras, es decir, un texto que tecleemos es reemplazado por otro, y es en el archivo TeX.yml donde se encuentra el diccionario que define esas sustituciones. Podemos abrir el archivo con cualquier editor de texto y ver lo que contiene para entender qué sustituciones se han definido (después de leer la documentación sobre [definición de sustituciones](https://espanso.org/docs/matches/basics/#static-matches)), o también podemos activar la [barra buscadora de espanso](https://espanso.org/docs/configuration/options/#customizing-the-search-bar) para buscar activamente algún comando de TeX y ver qué secuencia la introduce. Además el contenido del archivo también puede verse directamente en el repositorio de GitHub, sólo hay que clickear sobre él.
 
-El script no pretende ser exhaustivo sino un modelo para que cada usuario se construya el suyo propio, haciendo las modificaciones que considere. Su funcionamiento es sencillo, para saber cómo modificar el diccionario (o hacer un script desde cero) hay que consultar la información sobre el funcionamiento de las [sustituciones](https://espanso.org/docs/matches/basics/).
+El script no pretende ser exhaustivo sino un modelo para que cada usuario se construya el suyo propio, haciendo las modificaciones que considere. Su funcionamiento es sencillo, para saber cómo modificar el diccionario (o hacer un script desde cero) hay que consultar la información sobre [sustituciones](https://espanso.org/docs/matches/basics/).
 
 A continuación unos ejemplos de los tipos de reemplazo que hace el script:
 

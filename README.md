@@ -16,11 +16,11 @@ A continuación unos ejemplos de los tipos de reemplazo que hace el script:
 
 ## Letras griegas y hebreas:
 
-Para escribir letras griegas el intercambio es una letra seguido del sufijo `gg`, por ejemplo, la cadena `agg` es intercambiada por `\alpha ` seguido de un espacio, es decir, el símbolo de alfa (minúscula) escrito en TeX y luego seguido de un espacio (no un espacio de TeX sino una pulsación de la tecla espaciadora).
+Para escribir letras griegas el intercambio es una letra seguido del sufijo `gg`, por ejemplo, la cadena `agg` es intercambiada por `\alpha `, es decir, el símbolo de alfa (minúscula) escrito en TeX y luego seguido de un espacio (no un espacio de TeX sino una pulsación de la tecla espaciadora).
 
-Las letras mayúsculas van en mayúsculas, es decir que `Ggg` es intercambiada por `\Gamma `, etc... Además si una letra tiene una variación ésta se escribe colocando una `v` delante de la cadena, es decir que `vfgg` se intercambia por `\varphi ` (seguido de un espacio).
+Las letras mayúsculas van en mayúsculas, es decir que `Ggg` es intercambiada por `\Gamma `, etc... Además si una letra tiene una variación ésta se escribe colocando una `v` delante de la cadena, es decir que `vfgg` se intercambia por `\varphi `.
 
-He añadido además algunas letras hebreas de uso común, éstas se escriben con el sufijo `hh` en vez de `gg`, es decir que `ahh` deja el texto `\aleph ` seguido de un espacio.
+He añadido además algunas letras hebreas de uso común, éstas se escriben con el sufijo `hh` en vez de `gg`, es decir que `ahh` deja el texto `\aleph `.
 
 ## Operadores y relaciones:
 
@@ -28,8 +28,8 @@ En general son dos o tres letras (generalmente letras significativas del texto e
 
 ## Otro tipo de construcciones:
 
-Por ejemplo los símbolos comúnmente asociados a conjuntos comunes siguen el patrón de letra en mayúsculas repetida, por ejemplo `NN` por `\mathbb{N}` o `QQ` por `\mathbb{Q}`. Otras letras comunes de conjuntos no siguen este patrón, por ejemplo `RR ` más un espacio se sustituye por `\mathbb{R}` y `CC ` más un espacio por `\mathbb{C}`, eso es para evitar que cadenas como `RR` o `CC` que formen parte de palabras comunes en castellano o inglés sean remplazadas.
+Pulsar `++` produce `^{}` (para insertar superíndices) y `--` produce `_{}` (para insertar subíndices). Símbolos comúnmente asociados a conjuntos comunes siguen el patrón de letra en mayúsculas repetida, por ejemplo `NN` por `\mathbb{N}` o `QQ` por `\mathbb{Q}`. Otras letras comunes de conjuntos no siguen este patrón, por ejemplo `RR ` (nótese el espacio al final) se sustituye por `\mathbb{R}` y `CC ` por `\mathbb{C}`, eso es para evitar que cadenas como `RR` o `CC` que formen parte de palabras comunes en castellano o inglés sean remplazadas.
 
-Funciones comunes utilizan el sufijo `¡` (un signo de exclamación) en vez de `ñ`, por ejemplo `s¡` sustituye a `\sin `, y `l¡` sustituye a `\log `, o por ejemplo `1¡` es reemplazado por `\mathbf{1}_{}`, otro ejemplo sería `fl¡` que sustituye a `\lfloor  \rfloor `, etc...
+Funciones comunes utilizan el sufijo `¡` (un signo de exclamación) en vez de `ñ`, por ejemplo `s¡` sustituye a `\sin `, y `l¡` sustituye a `\log `, o por ejemplo `1¡` es reemplazado por `\mathbf{1}_{}`, otro ejemplo sería `fl¡` que sustituye a `\lfloor  \rfloor `, etc... También hay sustituciones para construcciones comunes como `fñ` que es reemplazada por `\frac{}{}`, `bñ` es remplazada por `\binom{}{}`, `pxL` que es sustituida por `\partial/\partial x^1,\ldots,\partial/\partial x^n `, que representa una base local para campos vectoriales, etc...
 
-También hay sustituciones para construcciones comunes como `fñ` que es reemplazada por `\frac{}{}`, `bñ` es remplazada por `\binom{}{}`, `pxL` que es sustituida por `\partial/\partial x^1,\ldots,\partial/\partial x^n `, que representa una base local para campos vectoriales, etc...
+Estos son s

@@ -2,7 +2,7 @@
 
 # Instalación:
 
-Para utilizar el script primero hay que instalar espanso 2.1.8 o posterior en el sistema operativo. Una vez instalado espanso ejecutamos en una terminal del sistema operativo `espanso path` y vamos a la primera dirección. Una vez en la carpeta colocamos el archivo TeX.yml en la subcarpeta `/matches` para finalizar la instalación.
+Para utilizar el script primero hay que instalar espanso 2.1.8 o posterior en el sistema operativo. Una vez instalado espanso ejecutamos en una terminal del sistema operativo `espanso path`, lo que nos mostrará una pequeña lista de directorios. Vamos al primer directorio de la lista y una vez en la carpeta colocamos el archivo TeX.yml en la subcarpeta `/matches` para finalizar la instalación.
 
 # Funcionamiento básico del script y ejemplos:
 

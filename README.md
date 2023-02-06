@@ -32,4 +32,4 @@ Pulsar `++` produce `^{}` (para insertar superíndices) y `--` produce `_{}` (pa
 
 Funciones comunes utilizan el sufijo `¡` (un signo de exclamación) en vez de `ñ`, por ejemplo `s¡` sustituye a `\sin `, y `l¡` sustituye a `\log `, o por ejemplo `1¡` es reemplazado por `\mathbf{1}_{}`, otro ejemplo sería `fl¡` que sustituye a `\lfloor  \rfloor `, etc... También hay sustituciones para construcciones comunes como `fñ` que es reemplazada por `\frac{}{}`, `bñ` es remplazada por `\binom{}{}`, `pxL` que es sustituida por `\partial/\partial x^1,\ldots,\partial/\partial x^n `, que representa una base local para campos vectoriales, etc...
 
-Estos son s
+Estos son sólo algunos ejemplos.

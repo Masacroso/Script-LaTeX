@@ -1,455 +1,406 @@
-name: TeX
-parent: default
-
 matches:
-  # Específicos
+  # Esenciales
 
-  - trigger: "çç"
-    replace: "[tex]$|$[/tex]"
-  - trigger: "ññ"
-    replace: "[center][tex]\\displaystyle{\n$|$\n}[/tex][/center]"
   - trigger: ",,ñ"
-    replace: "$$\n$|$\n$$"
-  - trigger: "++"
+    replace: |-
+      $$
+      $|$
+      $$
+  - trigger: ++
     replace: "^{$|$}"
-    force_clipboard: true
   - trigger: "--"
     replace: "_{$|$}"
 
-  # Etiquetas de bbcode comunes
-
-  - trigger: "ibb"
-    replace: "[i]$|$[/i]"
-  - trigger: "bbb"
-    replace: "[b]$|$[/b]"
-  - trigger: "ubb"
-    replace: "[url=$|$][/url]"
-  - trigger: "cbb"
-    replace: "[code]$|$[/code]"
-  - trigger: "sbb"
-    replace: "[size=$|$][/size]"
-  - trigger: "colbb"
-    replace: "[color=$|$][/color]"
-  - trigger: "spbb"
-    replace: "[spoiler]$|$[/spoiler]"
-  - trigger: "qbb"
-    replace: "[quote]$|$[/quote]"
-
   # Funciones comunes
 
-  - trigger: "tr¡"
-    replace: "\\operatorname{tr}"
-  - trigger: "d¡"
-    replace: "\\det "
-  - trigger: "di¡"
-    replace: "\\dim "
-  - trigger: "rk¡"
-    replace: "\\operatorname{rank}"
-  - trigger: "sig¡"
-    replace: "\\operatorname{sign}"
-  - trigger: "id¡"
-    replace: "\\operatorname{id}"
-  - trigger: "asq¡"
-    replace: "\\sqrt[$|$]{}"
-  - trigger: "p¡"
-    replace: "\\operatorname{proj}_{$|$}"
-  - trigger: "sq¡"
-    replace: "\\sqrt{$|$}"
-  - trigger: "fl¡"
+  - trigger: sq¡
+    replace: \sqrt{$|$}
+  - trigger: fl¡
     replace: "\\lfloor $|$ \\rfloor "
-  - trigger: "cl¡"
+  - trigger: cl¡
     replace: "\\lceil $|$ \\rceil "
-  - trigger: "ct¡"
+  - trigger: ct¡
     replace: "\\cot "
-  - trigger: "cs¡"
+  - trigger: cs¡
     replace: "\\cosec "
-  - trigger: "sec¡"
+  - trigger: sec¡
     replace: "\\sec "
-  - trigger: "as¡"
+  - trigger: as¡
     replace: "\\arcsin "
-  - trigger: "ac¡"
+  - trigger: ac¡
     replace: "\\arccos "
-  - trigger: "at¡"
+  - trigger: at¡
     replace: "\\arctan "
-  - trigger: "s¡"
+  - trigger: s¡
     replace: "\\sin "
-  - trigger: "s1¡"
-    replace: "\\operatorname{sen}"
-  - trigger: "c¡"
+  - trigger: c¡
     replace: "\\cos "
-  - trigger: "t¡"
+  - trigger: t¡
     replace: "\\tan "
-  - trigger: "sh¡"
+  - trigger: sh¡
     replace: "\\sinh "
-  - trigger: "ch¡"
+  - trigger: ch¡
     replace: "\\cosh "
-  - trigger: "th¡"
+  - trigger: th¡
     replace: "\\tanh "
-  - trigger: "l¡"
+  - trigger: l¡
     replace: "\\log "
-  - trigger: "e¡"
-    replace: "\\exp\\left($|$\\right)"
-  - trigger: "1¡"
-    replace: "\\mathbf{1}_{$|$}"
-  - trigger: "a¡"
-    replace: "\\left| $|$ \\right|"
-  - trigger: "n¡"
-    replace: "\\left\\| $|$ \\right\\|"
+  - trigger: e¡
+    replace: \exp\left($|$\right)
+  - trigger: 1¡
+    replace: \mathbf{1}_{$|$}
+  - trigger: a¡
+    replace: \left| $|$ \right|
+  - trigger: n¡
+    replace: \left\| $|$ \right\|
 
   # Notaciones de conjuntos matemáticos comunes
 
-  - trigger: "Rñ"
-    replace: "\\mathbb{R}"
-  - trigger: "R2"
-    replace: "\\overline{\\mathbb {R}}"
-  - trigger: "R1"
-    replace: "\\hat{\\mathbb {R}}"
-  - trigger: "R0"
-    replace: "\\mathbb R\\setminus\\\\{0\\\\}"
-  - trigger: "Cñ"
-    replace: "\\mathbb{C}"
-  - trigger: "C1"
-    replace: "\\hat{\\mathbb C}"
-  - trigger: "C0"
-    replace: "\\mathbb C\\setminus\\\\{0\\\\}"
-  - trigger: "ZZ"
-    replace: "\\mathbb{Z}"
-  - trigger: "Z0"
-    replace: "\\mathbb Z\\setminus\\\\{0\\\\}"
-  - trigger: "QQ"
-    replace: "\\mathbb{Q}"
-  - trigger: "Q0"
-    replace: "\\mathbb Q\\setminus\\\\{0\\\\}"
-  - trigger: "NN"
-    replace: "\\mathbb{N}"
-  - trigger: "N1"
-    replace: "\\mathbb N\\setminus\\\\{0\\\\}"
-  - trigger: "N0"
-    replace: "\\mathbb N\\cup\\\\{0\\\\}"
-  - trigger: "PP"
-    replace: "\\mathbb{P}"
-  - trigger: "DD"
-    replace: "\\mathbb{D}"
-  - trigger: "cD"
-    replace: "\\overline{\\mathbb D}"
-  - trigger: "cB"
-    replace: "\\overline{\\mathbb B}"
-  - trigger: "BB"
-    replace: "\\mathbb{B}"
-  - trigger: "HH"
-    replace: "\\mathbb{H}"
-  - trigger: "SS"
-    replace: "\\mathbb{S}"
-  - trigger: "KK"
-    replace: "\\mathbb{K}"
-  - trigger: "FF"
-    replace: "\\mathbb{F}"
+  - trigger: "RR "
+    replace: \mathbb{R}
+  - trigger: "CC "
+    replace: \mathbb{C}
+  - trigger: ZZ
+    replace: \mathbb{Z}
+  - trigger: QQ
+    replace: \mathbb{Q}
+  - trigger: NN
+    replace: \mathbb{N}
 
   # Estilos y formatos
 
-  - trigger: "opñ"
-    replace: "\\operatorname{$|$}"
-  - trigger: "ttñ"
-    replace: "\\mathtt{$|$}"
-  - trigger: "bbñ"
-    replace: "\\mathbb{$|$}"
-  - trigger: "sfñ"
-    replace: "\\mathsf{$|$}"
-  - trigger: "bfñ"
-    replace: "\\mathbf{$|$}"
-  - trigger: "bsñ"
-    replace: "\\boldsymbol{$|$}"
-  - trigger: "rmñ"
-    replace: "\\mathrm{$|$}"
-  - trigger: "fkñ"
-    replace: "\\mathfrak{$|$}"
-  - trigger: "calñ"
-    replace: "\\mathcal{$|$}"
-  - trigger: "scrñ"
-    replace: "\\mathscr{$|$}"
-  - trigger: "colñ"
+  - trigger: opñ
+    replace: \operatorname{$|$}
+  - trigger: ttñ
+    replace: \mathtt{$|$}
+  - trigger: bbñ
+    replace: \mathbb{$|$}
+  - trigger: sfñ
+    replace: \mathsf{$|$}
+  - trigger: bfñ
+    replace: \mathbf{$|$}
+  - trigger: bsñ
+    replace: \boldsymbol{$|$}
+  - trigger: rmñ
+    replace: \mathrm{$|$}
+  - trigger: fkñ
+    replace: \mathfrak{$|$}
+  - trigger: calñ
+    replace: \mathcal{$|$}
+  - trigger: scrñ
+    replace: \mathscr{$|$}
+  - trigger: colñ
     replace: "{\\color{$|$}{}}"
-  - trigger: "ubñ"
-    replace: "\\underbrace{$|$}_{}"
-  - trigger: "obñ"
-    replace: "\\overbrace{$|$}^{}"
-    force_clipboard: true
-  - trigger: "osñ"
-    replace: "\\overset{$|$}{}"
-  - trigger: "stñ"
-    replace: "\\substack{$|$}"
-  - trigger: "atñ"
+  - trigger: ubñ
+    replace: \underbrace{$|$}_{}
+  - trigger: obñ
+    replace: \overbrace{$|$}^{}
+  - trigger: osñ
+    replace: \overset{$|$}{}
+  - trigger: stñ
+    replace: \substack{$|$}
+  - trigger: atñ
     replace: "\\atop "
-  - trigger: "qqñ"
+  - trigger: qqñ
     replace: "\\qquad "
-  - trigger: "qñ"
+  - trigger: qñ
     replace: "\\quad "
-  - trigger: "tñ"
-    replace: "\\text{ $|$ }"
-  - trigger: "boxñ"
-    replace: "\\bbox[5px,border:2px solid]{$|$}"
+  - trigger: tñ
+    replace: \text{ $|$ }
+  - trigger: boxñ
+    replace: \bbox[5px,border:2px solid]{$|$}
 
   # Acentos y similares
 
-  - trigger: "opç"
-    replace: "\\overparen{$|$}"
-  - trigger: "upç"
-    replace: "\\underparen{$|$}"
-  - trigger: "olç"
-    replace: "\\overline{$|$}"
-  - trigger: "ulç"
-    replace: "\\underline{$|$}"
-  - trigger: "wtç"
-    replace: "\\widetilde{$|$}"
-  - trigger: "tç"
+  - trigger: olç
+    replace: \overline{$|$}
+  - trigger: ulç
+    replace: \underline{$|$}
+  - trigger: wtç
+    replace: \widetilde{$|$}
+  - trigger: tç
     replace: "\\tilde "
-  - trigger: "whç"
-    replace: "\\widehat{$|$}"
-  - trigger: "hç"
+  - trigger: whç
+    replace: \widehat{$|$}
+  - trigger: hç
     replace: "\\hat "
-  - trigger: "dddç"
+  - trigger: dddç
     replace: "\\dddot "
-  - trigger: "ddç"
+  - trigger: ddç
     replace: "\\ddot "
-  - trigger: "dç"
+  - trigger: dç
     replace: "\\dot "
-  - trigger: "avç"
-    replace: "\\overrightarrow{$|$}"
-  - trigger: "vç"
+  - trigger: avç
+    replace: \overrightarrow{$|$}
+  - trigger: vç
     replace: "\\vec "
-  - trigger: "chç"
+  - trigger: chç
     replace: "\\check "
-  - trigger: "mrç"
+  - trigger: mrç
     replace: "\\mathring "
 
   # Letras griegas
 
-  - trigger: "agg"
+  - trigger: agg
     replace: "\\alpha "
-  - trigger: "bgg"
+  - trigger: bgg
     replace: "\\beta "
-  - trigger: "Bgg"
+  - trigger: Bgg
     replace: "\\Beta "
-  - trigger: "ggg"
+  - trigger: ggg
     replace: "\\gamma "
-  - trigger: "Ggg"
+  - trigger: Ggg
     replace: "\\Gamma "
-  - trigger: "dgg"
+  - trigger: dgg
     replace: "\\delta "
-  - trigger: "igg"
+  - trigger: igg
     replace: "\\iota "
-  - trigger: "Dgg"
+  - trigger: Dgg
     replace: "\\Delta "
-  - trigger: "vegg"
+  - trigger: vegg
     replace: "\\varepsilon "
-  - trigger: "egg"
+  - trigger: egg
     replace: "\\epsilon "
-  - trigger: "etgg"
+  - trigger: etgg
     replace: "\\eta "
-  - trigger: "kgg"
+  - trigger: kgg
     replace: "\\kappa "
-  - trigger: "vrgg"
+  - trigger: vrgg
     replace: "\\varrho "
-  - trigger: "rgg"
+  - trigger: rgg
     replace: "\\rho "
-  - trigger: "vthgg"
+  - trigger: vthgg
     replace: "\\vartheta "
-  - trigger: "thgg"
+  - trigger: thgg
     replace: "\\theta "
-  - trigger: "Thgg"
+  - trigger: Thgg
     replace: "\\Theta "
-  - trigger: "tgg"
+  - trigger: tgg
     replace: "\\tau "
-  - trigger: "vfgg"
+  - trigger: vfgg
     replace: "\\varphi "
-  - trigger: "fgg"
+  - trigger: fgg
     replace: "\\phi "
-  - trigger: "Fgg"
+  - trigger: Fgg
     replace: "\\Phi "
-  - trigger: "zgg"
+  - trigger: zgg
     replace: "\\zeta "
-  - trigger: "lgg"
+  - trigger: lgg
     replace: "\\lambda "
-  - trigger: "Lgg"
+  - trigger: Lgg
     replace: "\\Lambda "
-  - trigger: "psgg"
+  - trigger: psgg
     replace: "\\psi "
-  - trigger: "Psgg"
+  - trigger: Psgg
     replace: "\\Psi "
-  - trigger: "sgg"
+  - trigger: sgg
     replace: "\\sigma "
-  - trigger: "Sgg"
+  - trigger: vsgg
+    replace: "\\varsigma "
+  - trigger: Sgg
     replace: "\\Sigma "
-  - trigger: "cgg"
+  - trigger: cgg
     replace: "\\chi "
-  - trigger: "ogg"
+  - trigger: ogg
     replace: "\\omega "
-  - trigger: "Ogg"
+  - trigger: Ogg
     replace: "\\Omega "
-  - trigger: "vpgg"
+  - trigger: vpgg
     replace: "\\varpi "
-  - trigger: "pgg"
+  - trigger: pgg
     replace: "\\pi "
-  - trigger: "Pgg"
+  - trigger: Pgg
     replace: "\\Pi "
-  - trigger: "xgg"
+  - trigger: xgg
     replace: "\\xi "
-  - trigger: "Xgg"
+  - trigger: Xgg
     replace: "\\Xi "
-  - trigger: "ngg"
+  - trigger: ngg
     replace: "\\nu "
-  - trigger: "mgg"
+  - trigger: mgg
     replace: "\\mu "
-  - trigger: "ugg"
+  - trigger: ugg
     replace: "\\upsilon "
-  - trigger: "Ugg"
+  - trigger: Ugg
     replace: "\\Upsilon "
 
   # Letras hebreas
 
-  - trigger: "ahh"
+  - trigger: ahh
     replace: "\\aleph "
-  - trigger: "bhh"
+  - trigger: bhh
     replace: "\\beth "
-  - trigger: "ghh"
+  - trigger: ghh
     replace: "\\gimel "
-  - trigger: "dhh"
+  - trigger: dhh
     replace: "\\dalet "
 
   # Otras letras
 
-  - trigger: "pmm"
+  - trigger: pM
     replace: "\\wp "
-  - trigger: "lmm"
+  - trigger: lM
     replace: "\\ell "
-  - trigger: "immñ"
+  - trigger: iM
     replace: "\\imath"
-  - trigger: "jmm"
+  - trigger: jM
     replace: "\\jmath "
 
   # Entornos
 
-  - trigger: "casñ"
-    replace: "\\begin{cases}\n$|$\n\\end{cases}"
-  - trigger: "aliñ"
-    replace: "\\begin{align*}\n$|$\n\\end{align*}"
-  - trigger: "bmñ"
-    replace: "\\begin{bmatrix}\n$|$\n\\end{bmatrix}"
-  - trigger: "Bmñ"
-    replace: "\\begin{Bmatrix}\n$|$\n\\end{Bmatrix}"
-  - trigger: "vmñ"
-    replace: "\\begin{vmatrix}\n$|$\n\\end{vmatrix}"
-  - trigger: "Vmñ"
-    replace: "\\begin{Vmatrix}\n$|$\n\\end{Vmatrix}"
-  - trigger: "pmñ"
-    replace: "\\begin{pmatrix}\n$|$\n\\end{pmatrix}"
-  - trigger: "smñ"
-    replace: "\\left[\\begin{smallmatrix}$|$\\end{smallmatrix}\\right]"
-  - trigger: "asmñ"
-    replace: "\\left(\\begin{smallmatrix}$|$\\end{smallmatrix}\\right)"
-  - trigger: "arrñ"
-    replace: "\\begin{array}{$|$}\n\n\\end{array}"
+  - trigger: casñ
+    replace: |-
+      \begin{cases}
+      $|$
+      \end{cases}
+  - trigger: aliñ
+    replace: |-
+      \begin{align*}
+      $|$
+      \end{align*}
+  - trigger: bmñ
+    replace: |-
+      \begin{bmatrix}
+      $|$
+      \end{bmatrix}
+  - trigger: Bmñ
+    replace: |-
+      \begin{Bmatrix}
+      $|$
+      \end{Bmatrix}
+  - trigger: vmñ
+    replace: |-
+      \begin{vmatrix}
+      $|$
+      \end{vmatrix}
+  - trigger: Vmñ
+    replace: |-
+      \begin{Vmatrix}
+      $|$
+      \end{Vmatrix}
+  - trigger: pmñ
+    replace: |-
+      \begin{pmatrix}
+      $|$
+      \end{pmatrix}
+  - trigger: smñ
+    replace: \left[\begin{smallmatrix}$|$\end{smallmatrix}\right]
+  - trigger: asmñ
+    replace: \left(\begin{smallmatrix}$|$\end{smallmatrix}\right)
+  - trigger: arñ
+    replace: |-
+      \begin{array}{$|$}
+
+      \end{array}
+  - trigger: ptñ
+    replace: |-
+      \begin{prooftree}
+      $|$
+      \end{prooftree}
+  - trigger: xyñ
+    replace: |-
+      \xymatrix{
+      $|$
+      }
 
   # Objetos matemáticos comunes y otros símbolos
 
-  - trigger: "btñ"
+  - trigger: btñ
     replace: "\\bullet "
-  - trigger: "0ñ"
+  - trigger: 0ñ
     replace: "\\emptyset "
-  - trigger: "ooñ"
+  - trigger: ooñ
     replace: "\\infty "
-  - trigger: "cdñ"
+  - trigger: cdñ
     replace: "\\cdots "
-  - trigger: "ldñ"
+  - trigger: ldñ
     replace: "\\ldots "
-  - trigger: "ddñ"
+  - trigger: ddñ
     replace: "\\ddots "
-  - trigger: "vdñ"
+  - trigger: vdñ
     replace: "\\vdots "
-  - trigger: "pngñ"
-    replace: "\\triangleleft "
-  - trigger: "ngñ"
-    replace: "\\trianglelefteq "
 
   # Delimitadores
 
-  - trigger: "s((ñ"
-    replace: "\\left(\\kern-.4em\\left($|$\\right)\\kern-.4em\\right)"
-  - trigger: "((ñ"
-    replace: "(\\kern-.25em($|$)\\kern-.25em)"
-  - trigger: "(ñ"
-    replace: "\\left($|$\\right)"
+  - trigger: s((ñ
+    replace: \left(\kern-.4em\left($|$\right)\kern-.4em\right)
+  - trigger: ((ñ
+    replace: (\kern-.25em($|$)\kern-.25em)
+  - trigger: (ñ
+    replace: \left($|$\right)
   - trigger: "s[[ñ"
-    replace: "\\left[\\kern-.4em\\left[$|$\\right]\\kern-.4em\\right]"
+    replace: \left[\kern-.4em\left[$|$\right]\kern-.4em\right]
   - trigger: "[[ñ"
     replace: "[\\![$|$]\\!]"
   - trigger: "[ñ"
-    replace: "\\left[$|$\\right]"
+    replace: \left[$|$\right]
   - trigger: "{{"
-    replace: "\\\\{$|$\\\\}"
+    replace: "\\{$|$\\}"
   - trigger: "{ñ"
-    replace: "\\left\\\\{$|$\\right\\\\}"
-  - trigger: "s<<ñ"
+    replace: \left\{$|$\right\}
+  - trigger: s<<ñ
     replace: "\\left\\langle\\kern-.5em\\left\\langle $|$ \\right\\rangle\\kern-.5em\\right\\rangle "
   - trigger: "<<ñ"
     replace: "\\langle\\kern-.25em\\langle $|$ \\rangle\\kern-.25em\\rangle "
-  - trigger: "s<ñ"
+  - trigger: s<ñ
     replace: "\\left\\langle $|$ \\right\\rangle "
   - trigger: "<ñ"
     replace: "\\langle $|$ \\rangle "
   - trigger: "|ñ"
-    replace: "\\left .$|$\\right|_{}"
+    replace: \left .$|$\right|_{}
 
   # Flechas
 
-  - trigger: "lrañ"
+  - trigger: lrañ
     replace: "\\longrightarrow "
-  - trigger: "lmtñ"
+  - trigger: lmtñ
     replace: "\\longmapsto "
-  - trigger: "mtñ"
+  - trigger: mtñ
     replace: "\\mapsto "
-  - trigger: "toñ"
+  - trigger: toñ
     replace: "\\to "
-  - trigger: "Lrañ"
+  - trigger: Lrañ
     replace: "\\Leftrightarrow "
-  - trigger: "ifñ"
+  - trigger: ifñ
     replace: "\\iff "
-  - trigger: "Rañ"
+  - trigger: Rañ
     replace: "\\Rightarrow "
-  - trigger: "impñ"
+  - trigger: impñ
     replace: "\\implies "
-  - trigger: "Lañ"
+  - trigger: Lañ
     replace: "\\Leftarrow "
-  - trigger: "imbñ"
+  - trigger: imbñ
     replace: "\\impliedby "
-  - trigger: "uañ"
+  - trigger: uañ
     replace: "\\uparrow "
-  - trigger: "dañ"
+  - trigger: dañ
     replace: "\\downarrow "
-  - trigger: "neañ"
+  - trigger: neañ
     replace: "\\nearrow "
-  - trigger: "seañ"
+  - trigger: seañ
     replace: "\\searrow "
-  - trigger: "incñ"
+  - trigger: incñ
     replace: "\\hookrightarrow "
-  - trigger: "injñ"
+  - trigger: injñ
     replace: "\\rightarrowtail "
-  - trigger: "bijñ"
+  - trigger: bijñ
     replace: "\\leftrightarrow "
-  - trigger: "surñ"
+  - trigger: surñ
     replace: "\\twoheadrightarrow "
-  - trigger: "xañ"
-    replace: "\\xrightarrow{$|$}"
+  - trigger: xañ
+    replace: \xrightarrow{$|$}
+  - trigger: pfñ
+    replace: \rightharpoonup
 
   # Relaciones y lógica
 
-  - trigger: "/="
+  - trigger: /=
     replace: "\\neq "
-  - trigger: "iso1"
+  - trigger: iso1
     replace: "\\cong "
-  - trigger: "iso2"
+  - trigger: iso2
     replace: "\\simeq "
-  - trigger: "erñ"
+  - trigger: erñ
     replace: "\\sim "
   - trigger: "=="
     replace: "\\equiv "
@@ -457,38 +408,48 @@ matches:
     replace: "\\leqslant "
   - trigger: ">="
     replace: "\\geqslant "
-  - trigger: "lañ"
+  - trigger: lañ
     replace: "\\,\\land\\, "
-  - trigger: "loñ"
+  - trigger: loñ
     replace: "\\,\\lor\\, "
-  - trigger: "ssñ"
+  - trigger: lnñ
+    replace: "\\lnot "
+  - trigger: ssñ
     replace: "\\subset "
-  - trigger: "snñ"
+  - trigger: snñ
     replace: "\\subsetneq "
-  - trigger: "Ssñ"
+  - trigger: Ssñ
     replace: "\\supset "
-  - trigger: "Snñ"
+  - trigger: Snñ
     replace: "\\supsetneq "
-  - trigger: "niñ"
+  - trigger: pngñ
+    replace: "\\triangleleft "
+  - trigger: ngñ
+    replace: "\\trianglelefteq "
+  - trigger: niñ
     replace: "\\notin "
-  - trigger: "inñ"
+  - trigger: inñ
     replace: "\\in "
-  - trigger: "appñ"
+  - trigger: appñ
     replace: "\\approx "
-  - trigger: "thñ"
+  - trigger: thñ
     replace: "\\therefore\\quad "
-  - trigger: "bcñ"
+  - trigger: bcñ
     replace: "\\because\\quad "
-  - trigger: "fañ"
+  - trigger: fañ
     replace: "\\forall "
-  - trigger: "neñ"
+  - trigger: neñ
     replace: "\\nexists "
-  - trigger: "exñ"
+  - trigger: exñ
     replace: "\\exists "
-  - trigger: "Tñ"
+  - trigger: Tñ
     replace: "\\top "
-  - trigger: "Fñ"
+  - trigger: Fñ
     replace: "\\bot "
+  - trigger: dtsñ
+    replace: "\\vDash "
+  - trigger: tsñ
+    replace: "\\vdash "
 
   # Operadores pequeños y otras funciones
 
@@ -498,227 +459,161 @@ matches:
     replace: "\\star "
   - trigger: "-ñ"
     replace: "\\setminus "
-  - trigger: "sdñ"
+  - trigger: sdñ
     replace: "\\,\\triangle\\, "
-  - trigger: "xx"
+  - trigger: xx
     replace: "\\times "
-  - trigger: "nbñ"
+  - trigger: nbñ
     replace: "\\nabla "
-  - trigger: "pd1"
-    replace: "\\frac{d}{dx}"
-  - trigger: "pd2"
-    replace: "\\frac{\\partial}{\\partial x}"
-  - trigger: "pd3"
+  - trigger: pd1
+    replace: \frac{d}{d $|$}
+  - trigger: pd2
+    replace: \frac{\partial}{\partial $|$}
+  - trigger: pd3
     replace: "\\partial "
-  - trigger: "Pñ"
+  - trigger: Pñ
     replace: "\\Pr "
-  - trigger: "Eñ"
-    replace: "\\operatorname{E}"
-  - trigger: "reñ"
-    replace: "\\operatorname{Re}"
-  - trigger: "imñ"
-    replace: "\\operatorname{Im}"
-  - trigger: "nmñ"
+  - trigger: n//
     replace: "\\nmid "
-  - trigger: "mñ"
+  - trigger: //
     replace: "\\mid "
-  - trigger: "lñ"
-    replace: "\\lim_{$|$}"
-  - trigger: "Sñ"
-    replace: "\\sup_{$|$}"
-  - trigger: "Iñ"
-    replace: "\\inf_{$|$}"
-  - trigger: "vliñ"
-    replace: "\\varliminf_{$|$}"
-  - trigger: "liñ"
-    replace: "\\liminf_{$|$\\to\\infty}"
-  - trigger: "vlsñ"
-    replace: "\\varlimsup_{$|$}"
-  - trigger: "lsñ"
-    replace: "\\limsup_{$|$\\to\\infty}"
-  - trigger: "duñ"
+  - trigger: lñ
+    replace: \lim_{$|$}
+  - trigger: "maxñ"
+    replace: \max_{$|$}
+  - trigger: "minñ"
+    replace: \min_{$|$}
+  - trigger: "supñ"
+    replace: \sup_{$|$}
+  - trigger: "infñ"
+    replace: \inf_{$|$}
+  - trigger: "inf  "
+    replace: \inf\{ $|$ \}
+  - trigger: "sup  "
+    replace: \sup\{ $|$ \}
+  - trigger: "max  "
+    replace: \max\{ $|$ \}
+  - trigger: "min  "
+    replace: \min\{ $|$ \}
+  - trigger: liñ
+    replace: \liminf_{$|$\to\infty}
+  - trigger: lsñ
+    replace: \limsup_{$|$\to\infty}
+  - trigger: duñ
     replace: "\\sqcup "
-  - trigger: "uñ"
+  - trigger: uñ
     replace: "\\cup "
-  - trigger: "nñ"
+  - trigger: nñ
     replace: "\\cap "
-  - trigger: "frñ"
-    replace: "\\frown "
-  - trigger: "coñ"
+  - trigger: coñ
     replace: "^\\complement "
-    force_clipboard: true
-  - trigger: "trñ"
+  - trigger: trñ
     replace: "^\\top "
-    force_clipboard: true
-  - trigger: "ctñ"
+  - trigger: ctñ
     replace: "^\\dagger "
-    force_clipboard: true
-  - trigger: "orñ"
+  - trigger: orñ
     replace: "^\\bot "
-    force_clipboard: true
-  - trigger: "mfñ"
+  - trigger: m1ñ
     replace: "^\\flat "
-    force_clipboard: true
-  - trigger: "msñ"
+  - trigger: m2ñ
     replace: "_\\sharp "
-  - trigger: "bxñ"
+  - trigger: bxñ
     replace: "\\boxtimes "
-  - trigger: "b+ñ"
+  - trigger: b+ñ
     replace: "\\boxplus "
-  - trigger: "b-ñ"
+  - trigger: b-ñ
     replace: "\\boxminus "
-  - trigger: "b.ñ"
+  - trigger: b.ñ
     replace: "\\boxdot "
-  - trigger: "o+ñ"
+  - trigger: o+ñ
     replace: "\\oplus "
-  - trigger: "oxñ"
+  - trigger: oxñ
     replace: "\\otimes "
-  - trigger: "o-ñ"
+  - trigger: o-ñ
     replace: "\\ominus "
-  - trigger: "o.ñ"
+  - trigger: o.ñ
     replace: "\\odot "
-  - trigger: "cñ"
+  - trigger: cñ
     replace: "\\circ "
-  - trigger: "dñ"
-    replace: "\\mathop{}\\!d "
-  - trigger: "ppñ"
+  - trigger: c*
+    replace: "\\circledast "
+  - trigger: dñ
+    replace: "\\,d "
+  - trigger: ppñ
     replace: "\\perp "
 
   # Operadores grandes
 
-  - trigger: "O+ñ"
-    replace: "\\bigoplus_{$|$}"
-  - trigger: "O.ñ"
-    replace: "\\bigodot_{$|$}"
-  - trigger: "Oxñ"
-    replace: "\\bigotimes_{$|$}"
-  - trigger: "asñ"
+  - trigger: O+ñ
+    replace: \bigoplus_{$|$}
+  - trigger: O.ñ
+    replace: \bigodot_{$|$}
+  - trigger: Oxñ
+    replace: \bigotimes_{$|$}
+  - trigger: asñ
     replace: "\\sum "
-  - trigger: "sñ"
-    replace: "\\sum_{$|$}"
-  - trigger: "oiñ"
+  - trigger: sñ
+    replace: \sum_{$|$}
+  - trigger: oiñ
     replace: "\\oint "
-  - trigger: "aiñ"
+  - trigger: aiñ
     replace: "\\int "
-  - trigger: "iñ"
-    replace: "\\int_{$|$}"
-  - trigger: "cpñ"
-    replace: "\\coprod_{$|$}"
-  - trigger: "pñ"
-    replace: "\\prod_{$|$}"
-  - trigger: "aUñ"
+  - trigger: iñ
+    replace: \int_{$|$}
+  - trigger: cpñ
+    replace: \coprod_{$|$}
+  - trigger: pñ
+    replace: \prod_{$|$}
+  - trigger: aUñ
     replace: "\\bigcup "
-  - trigger: "Uñ"
-    replace: "\\bigcup_{$|$}"
-  - trigger: "aNñ"
+  - trigger: Uñ
+    replace: \bigcup_{$|$}
+  - trigger: aNñ
     replace: "\\bigcap "
-  - trigger: "Nñ"
-    replace: "\\bigcap_{$|$}"
-  - trigger: "aWñ"
+  - trigger: Nñ
+    replace: \bigcap_{$|$}
+  - trigger: aWñ
     replace: "\\bigwedge "
-  - trigger: "Wñ"
-    replace: "\\bigwedge_{$|$}"
-  - trigger: "Vñ"
-    replace: "\\bigvee_{$|$}"
-  - trigger: "wñ"
+  - trigger: Wñ
+    replace: \bigwedge_{$|$}
+  - trigger: Vñ
+    replace: \bigvee_{$|$}
+  - trigger: wñ
     replace: "\\wedge "
-  - trigger: "vñ"
+  - trigger: vñ
     replace: "\\vee "
+  - trigger: imñ
+    replace: "\\,{\\Large\\lrcorner}\\, "
 
   # Otras construcciones comunes
 
-  - trigger: "phñ"
+  - trigger: phñ
     replace: "\\,\\cdot\\, "
-  - trigger: "f1"
-    replace: "\\frac1{$|$}"
-  - trigger: "tf1"
-    replace: "\\tfrac1{$|$}"
-  - trigger: "tfñ"
-    replace: "\\tfrac{$|$}{}"
-  - trigger: "fñ"
-    replace: "\\frac{$|$}{}"
-  - trigger: "bñ"
-    replace: "\\binom{$|$}{}"
+  - trigger: f1
+    replace: \frac1{$|$}
+  - trigger: tf1
+    replace: \tfrac1{$|$}
+  - trigger: tfñ
+    replace: \tfrac{$|$}{}
+  - trigger: fñ
+    replace: \frac{$|$}{}
+  - trigger: bñ
+    replace: \binom{$|$}{}
+  - trigger: qed
+    replace: ∎
   - trigger: "sN"
-    replace: "\\\\{$|$\\\\}_{n\\in \\mathbb N}"
-  - trigger: "sZ"
-    replace: "\\\\{$|$\\\\}_{k\\in \\mathbb Z}"
-  - trigger: "looñ"
-    replace: "\\lim_{$|$\\to\\infty}"
-  - trigger: "l0"
-    replace: "\\lim_{$|$\\to 0}"
-  - trigger: "tooñ"
-    replace: "\\to\\infty "
-  - trigger: "d0"
-    replace: "\\searrow 0 "
-  - trigger: "t0"
-    replace: "\\to 0 "
-  - trigger: "s1oo"
-    replace: "\\sum_{$|$\\geqslant 1}"
-  - trigger: "s0oo"
-    replace: "\\sum_{$|$\\geqslant 0}"
-  - trigger: "s1n"
-    replace: "\\sum_{$|$=1}^n "
-    force_clipboard: true
-  - trigger: "s0n"
-    replace: "\\sum_{$|$=0}^n "
-    force_clipboard: true
-  - trigger: "i0"
-    replace: "\\int_0^{$|$}"
-    force_clipboard: true
-  - trigger: "qed"
-    replace: "∎"
-  - trigger: "imgñ"
-    replace: "\\operatorname{img}"
-  - trigger: "kñ"
-    replace: "\\ker "
-  - trigger: "domñ"
-    replace: "\\operatorname{dom}"
-
-  # Listas
-
-  - trigger: "1nñ"
-    replace: "\\in\\\\{1,\\ldots,n\\\\}"
-  - trigger: "0nñ"
-    replace: "\\in\\\\{0,\\ldots,n\\\\}"
-  - trigger: "pxL"
-    replace: "\\partial/\\partial x^1,\\ldots,\\partial/\\partial x^n"
-    force_clipboard: true
-  - trigger: "pyL"
-    replace: "\\partial/\\partial y^1,\\ldots,\\partial/\\partial y^n"
-    force_clipboard: true
-  - trigger: "dxL"
-    replace: "dx^1,\\ldots,dx^n"
-    force_clipboard: true
-  - trigger: "dyL"
-    replace: "dy^1,\\ldots,dy^n"
-    force_clipboard: true
-  - trigger: "axL"
-    replace: "x_1,\\ldots,x_n"
-  - trigger: "xL"
-    replace: "x^1,\\ldots,x^n"
-    force_clipboard: true
-  - trigger: "yL"
-    replace: "y^1,\\ldots,y^n"
-    force_clipboard: true
-  - trigger: "rL"
-    replace: "r^1,\\ldots,r^n"
-    force_clipboard: true
-  - trigger: "aL"
-    replace: "a_1,\\ldots,a_n"
-  - trigger: "bL"
-    replace: "b_1,\\ldots,b_n"
-  - trigger: "cL"
-    replace: "c_1,\\ldots,c_n"
-  - trigger: "eL"
-    replace: "e_1,\\ldots,e_n"
-  - trigger: "fL"
-    replace: "f_1,\\ldots,f_n"
-  - trigger: "gL"
-    replace: "g_1,\\ldots,g_n"
-  - trigger: "hL"
-    replace: "h_1,\\ldots,h_n"
-  - trigger: "vL"
-    replace: "v_1,\\ldots,v_n"
-  - trigger: "wL"
-    replace: "w_1,\\ldots,w_n"
+    replace: \{$|$_n\}_{n\in\mathbb{N}}
+  - trigger: "sI"
+    replace: \{$|$_r\}_{r\in I}
+  - trigger: "sT"
+    replace: \{$|$_\beta\}_{\beta <\alpha}
+  - trigger: "sL"
+    replace: \{$|$_k\}_{1\leqslant k \leqslant n}
+  - trigger: quotñ
+    replace: |-
+      \xymatrix@H=2em{
+      X \ar@{->>}[r]^-\pi\ar@{->}[dr]_-f &X/\sim_f\ar@{>->}[d]^{\exists !\bar f}\\
+      &Y
+      }
+  - trigger: eeñ
+    replace: \mathrm{\mathbf e}_{$|$}

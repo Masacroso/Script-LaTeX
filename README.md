@@ -24,12 +24,14 @@ He añadido además algunas letras hebreas de uso común, éstas se escriben con
 
 ## Operadores y relaciones:
 
-En general son dos o tres letras (generalmente letras significativas del texto en TeX al que reemplazan) seguidas de `ñ`, por ejemplo la cadena `lñ` es sustituida por `\lim_{}`. O por ejemplo `sñ` que sustituye a `\sum_{}`, o `iñ` que es reemplazada por `\int_{}`, etc. Otros tipos de operadores son por ejemplo cadenas como `xx` que es sustituida por `\times `, `==` por `\equiv `, etc.
+En general son dos o tres letras (generalmente letras significativas del texto en TeX al que reemplazan) seguidas de `ñ`, por ejemplo la cadena `lñ` es sustituida por `\lim_{}`. O por ejemplo `sñ` que sustituye a `\sum_{}`, o `iñ` que es reemplazada por `\int_{}`, etc. Otros tipos de operadores son por ejemplo cadenas como `xx` que es sustituida por `\times `, `==` por `\equiv `, `<=` se transforma en `\leqslant `, etc.
 
 ## Otro tipo de construcciones:
 
-Pulsar `++` produce `^{}` (para insertar superíndices) y `--` produce `_{}` (para insertar subíndices). Símbolos comúnmente asociados a conjuntos comunes siguen el patrón de letra en mayúsculas repetida, por ejemplo `NN` por `\mathbb{N}` o `QQ` por `\mathbb{Q}`. Otras letras comunes de conjuntos no siguen este patrón, por ejemplo `RR ` (nótese el espacio al final) se sustituye por `\mathbb{R}` y `CC ` por `\mathbb{C}`, eso es para evitar que cadenas como `RR` o `CC` que formen parte de palabras comunes en castellano o inglés sean remplazadas.
+Pulsar `++` produce `^{}` (para insertar superíndices) y `--` produce `_{}` (para insertar subíndices), o pulsar `{{` produce `\{  \}` dejando el cursor en medio, y `<ñ` produce `\langle   \rangle` dejando de nuevo el cursor en medio, etc.
 
-Funciones comunes utilizan el sufijo `¡` (un signo de exclamación) en vez de `ñ`, por ejemplo `s¡` sustituye a `\sin `, y `l¡` sustituye a `\log `, o por ejemplo `1¡` es reemplazado por `\mathbf{1}_{}`, otro ejemplo sería `fl¡` que sustituye a `\lfloor  \rfloor `, etc... También hay sustituciones para construcciones comunes como `fñ` que es reemplazada por `\frac{}{}`, `bñ` es remplazada por `\binom{}{}`, `pxL` que es sustituida por `\partial/\partial x^1,\ldots,\partial/\partial x^n `, que representa una base local para campos vectoriales, etc...
+Símbolos comúnmente asociados a conjuntos comunes siguen el patrón de letra en mayúsculas repetida, por ejemplo `NN` por `\mathbb{N}` o `QQ` por `\mathbb{Q}`. Otras letras comunes de conjuntos no siguen este patrón, por ejemplo `RR ` (nótese el espacio al final) se sustituye por `\mathbb{R}` y `CC ` por `\mathbb{C}`, eso es para evitar que cadenas como `RR` o `CC` que formen parte de palabras comunes en castellano o inglés sean remplazadas.
+
+Funciones comunes utilizan el sufijo `¡` (un signo de exclamación) en vez de `ñ`, por ejemplo `s¡` sustituye a `\sin `, y `l¡` sustituye a `\log `, o por ejemplo `1¡` es reemplazado por `\mathbf{1}_{}`, otro ejemplo sería `fl¡` que sustituye a `\lfloor  \rfloor `, etc... También hay sustituciones para construcciones comunes como `fñ` que es reemplazada por `\frac{}{}`, `bñ` es remplazada por `\binom{}{}`, `pxL` que es sustituida por `\partial/\partial x^1,\ldots,\partial/\partial x^n `, que representa una base local para campos vectoriales, o por ejemplo `sN` que genera `\{ _n\}_{n\in\mathbb{N}}` dejando el cursor justo antes del cursor bajo (tal construcción se use para definir sucesiones rápidamente), etc...
 
 Estos son sólo algunos ejemplos.

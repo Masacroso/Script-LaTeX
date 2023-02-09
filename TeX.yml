@@ -389,8 +389,8 @@ matches:
     replace: "\\twoheadrightarrow "
   - trigger: xañ
     replace: \xrightarrow{$|$}
-  - trigger: pfñ
-    replace: \rightharpoonup
+  - trigger: wañ
+    replace: "\\rightharpoonup "
 
   # Relaciones y lógica
 

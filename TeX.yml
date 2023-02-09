@@ -400,7 +400,7 @@ matches:
     replace: "\\cong "
   - trigger: iso2
     replace: "\\simeq "
-  - trigger: erñ
+  - trigger: iso3
     replace: "\\sim "
   - trigger: "=="
     replace: "\\equiv "
@@ -487,13 +487,13 @@ matches:
     replace: \sup_{$|$}
   - trigger: "infñ"
     replace: \inf_{$|$}
-  - trigger: "inf  "
+  - trigger: "inf{"
     replace: \inf\{ $|$ \}
-  - trigger: "sup  "
+  - trigger: "sup{"
     replace: \sup\{ $|$ \}
-  - trigger: "max  "
+  - trigger: "max{"
     replace: \max\{ $|$ \}
-  - trigger: "min  "
+  - trigger: "min{"
     replace: \min\{ $|$ \}
   - trigger: liñ
     replace: \liminf_{$|$\to\infty}
@@ -587,8 +587,6 @@ matches:
 
   # Otras construcciones comunes
 
-  - trigger: phñ
-    replace: "\\,\\cdot\\, "
   - trigger: f1
     replace: \frac1{$|$}
   - trigger: tf1
@@ -603,17 +601,5 @@ matches:
     replace: ∎
   - trigger: "sN"
     replace: \{$|$_n\}_{n\in\mathbb{N}}
-  - trigger: "sI"
-    replace: \{$|$_r\}_{r\in I}
-  - trigger: "sT"
-    replace: \{$|$_\beta\}_{\beta <\alpha}
   - trigger: "sL"
     replace: \{$|$_k\}_{1\leqslant k \leqslant n}
-  - trigger: quotñ
-    replace: |-
-      \xymatrix@H=2em{
-      X \ar@{->>}[r]^-\pi\ar@{->}[dr]_-f &X/\sim_f\ar@{>->}[d]^{\exists !\bar f}\\
-      &Y
-      }
-  - trigger: eeñ
-    replace: \mathrm{\mathbf e}_{$|$}

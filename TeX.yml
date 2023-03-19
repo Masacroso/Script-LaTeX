@@ -292,11 +292,6 @@ matches:
       \begin{array}{$|$}
 
       \end{array}
-  - trigger: ptñ
-    replace: |-
-      \begin{prooftree}
-      $|$
-      \end{prooftree}
   - trigger: xyñ
     replace: |-
       \xymatrix{

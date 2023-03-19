@@ -375,9 +375,9 @@ matches:
     replace: "\\uparrow "
   - trigger: dañ
     replace: "\\downarrow "
-  - trigger: neañ
+  - trigger: ua1
     replace: "\\nearrow "
-  - trigger: seañ
+  - trigger: da1
     replace: "\\searrow "
   - trigger: incñ
     replace: "\\hookrightarrow "
@@ -422,10 +422,6 @@ matches:
     replace: "\\supset "
   - trigger: Snñ
     replace: "\\supsetneq "
-  - trigger: pngñ
-    replace: "\\triangleleft "
-  - trigger: ngñ
-    replace: "\\trianglelefteq "
   - trigger: niñ
     replace: "\\notin "
   - trigger: inñ
@@ -473,10 +469,6 @@ matches:
     replace: "\\partial "
   - trigger: Pñ
     replace: "\\Pr "
-  - trigger: n//
-    replace: "\\nmid "
-  - trigger: //
-    replace: "\\mid "
   - trigger: lñ
     replace: \lim_{$|$}
   - trigger: "maxñ"

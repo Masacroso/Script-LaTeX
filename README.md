@@ -1,8 +1,10 @@
-[Espanso](https://espanso.org/) es un programa para definir y ejecutar scripts de sustituciones de cadenas de texto y funciona en sistemas operativos Windows, MacOS y Linux (pero de momento no en android). Con él he diseñado un script para escribir código [TeX](https://es.wikipedia.org/wiki/TeX) muy rápidamente. El diseño del script tiene en consideración la distribución del teclado que se utiliza comúnmente en España e Hispanoamérica.
+[Espanso](https://espanso.org/) es un programa para definir y ejecutar scripts de sustituciones de cadenas de texto y funciona en sistemas operativos Windows, MacOS y Linux. Con él he diseñado un script para escribir código [TeX](https://es.wikipedia.org/wiki/TeX) muy rápidamente. El diseño del script tiene en consideración la distribución del teclado que se utiliza comúnmente en España e Hispanoamérica.
 
 # Instalación:
 
 Para utilizar el script primero hay que instalar espanso 2.1.8 o posterior en el sistema operativo. Una vez instalado espanso ejecutamos en una terminal del sistema operativo `espanso path`, lo que nos mostrará una pequeña lista de directorios. Vamos al primer directorio de la lista y una vez allí ponemos el archivo TeX.yml de este repositorio en la subcarpeta `/matches` para finalizar la instalación.
+
+En Android se puede instalar a través de la aplicación [TextToolsPro](https://github.com/lochidev/TextToolsPro).
 
 # Funcionamiento básico del script y ejemplos:
 

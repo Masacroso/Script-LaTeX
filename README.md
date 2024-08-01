@@ -2,7 +2,7 @@
 
 # Instalación:
 
-En sistemas operativos, excepto en Android, para utilizar el script primero hay que instalar espanso 2.1.8 o posterior en el sistema operativo. Una vez instalado espanso ejecutamos en una terminal del sistema operativo `espanso path`, lo que nos mostrará una pequeña lista de directorios. Vamos al primer directorio de la lista y una vez allí ponemos el archivo TeX.yml de este repositorio en la subcarpeta `/matches` para finalizar la instalación.
+En sistemas operativos, excepto en Android, para utilizar el script primero hay que instalar espanso 2.2.1 o posterior en el sistema operativo. Una vez instalado espanso ejecutamos en una terminal del sistema operativo `espanso path`, lo que nos mostrará una pequeña lista de directorios. Vamos al primer directorio de la lista y una vez allí ponemos el archivo TeX.yml de este repositorio en la subcarpeta `/match` para finalizar la instalación.
 
 En Android se puede usar el script a través de la aplicación [TextToolsPro](https://github.com/lochidev/TextToolsPro).
 
